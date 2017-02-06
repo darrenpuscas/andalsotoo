@@ -1,0 +1,3 @@
+-left out Alignments from orig Underscores
+-should strip out navigation classes we took out from Darren's css.
+-set body font-size to 10px so that 1rem = 10px.

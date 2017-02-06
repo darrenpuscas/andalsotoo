@@ -1,0 +1,15 @@
+.nav-content {
+    width: 87%;
+    margin: 0 auto;
+    @media $medium {
+        width: 92%;
+    }
+    @media $large {
+        width: 92%;
+    }
+    @media $ex-large {
+        width: 92%;
+        max-width: 900000000px;
+
+    }
+}

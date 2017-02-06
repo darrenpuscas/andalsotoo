@@ -1,0 +1,65 @@
+
+#stories {
+
+}
+
+.first-story {
+    width: 100%;
+    @media $medium {
+      width: 65%;
+    }
+    @media $large {
+      width: 48%;
+    }
+    @media $ex-large {
+      width: 48%;
+    }
+}
+.story-width {
+    width: 48%;
+    @media $medium {
+      width: 32%;
+    }
+    @media $large {
+      width: 24%;
+    }
+    @media $ex-large {
+      width: 16%;
+    }
+}
+.story-summary {
+    margin-bottom: 30px;
+    padding: 1%;
+    @media $medium {
+        margin-bottom: 12px;
+    }
+    @media $large {
+        margin-bottom: 12px;
+    }
+    @media $ex-large {
+        margin-bottom: 12px;
+
+    }
+}
+.grid-item {
+
+}
+
+/*masonry CSS*/
+.gutter-sizer { width: 0%;}
+
+
+.item1 {
+    width: 40%;
+    /*background: purple;*/
+}
+.item2 {
+    /*background: green;*/
+    margin-bottom: 25px;
+}
+.img-container {
+    width: 100%;
+}
+#stories img {
+
+}

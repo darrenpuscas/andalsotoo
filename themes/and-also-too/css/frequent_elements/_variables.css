@@ -1,0 +1,59 @@
+/*
+
+Theme Name: And Also Too
+Theme URI:
+Author: Michael Smith and Darren Puscas
+Author URI:
+Description: Theme developed for And Also Too site
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: _s
+Tags:
+This theme, like WordPress, is licensed under the GPL.
+
+Breakpoints:
+* 0 - 640 is covered by normal setting
+* 641 - 1024 is covered by @medium
+* 1000 - 1200 is cttovered by @large
+* narrower than 1020, we need a white gutter
+*/
+
+$medium: screen and (min-width: 768px) and (max-width: 1024px);
+$large: screen and (min-width: 1025px) and (max-width: 1320px);
+$ex-large: screen and (min-width: 1321px);
+$ex-large-background: screen and (min-width: 1721px);
+
+/*
+    inner max width is 1020
+    outer max width is 1400
+    $container-default-width: 90%;
+*/
+
+$outer-max-width: 1280px;
+
+/*Colours*/
+
+$sitePurple: #5A2788;
+$siteTeal: #00929E;
+
+$backgroundGrey: #EBEBE8;
+$lightBackgroundGrey: #f5f3f6;
+$offWhite: #F3F4F5;
+$textGrey: #34343F;
+$borderGrey: #979797;
+$darkBorderGrey: #343434;
+$white: #fff;
+$marginBlue: #006395;
+$darkBlue: #005395;
+$lightBlue: #4A90E2;
+$green: #85C51F;
+$nearBlack: #222;
+$baseTextColour: #232323;
+
+/*Text Related*/
+
+$textMargin: 75%;
+$largeParaText: 1.8rem;
+$montserrat: "Gotham SSm A", "Gotham SSm B";
+$sentinel: "Gotham SSm A", "Gotham SSm B";
