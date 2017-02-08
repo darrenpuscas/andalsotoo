@@ -1,3 +1,7 @@
+.entry-content {
+
+  }
+
 .outer-content {
     width: 85.2%;
     margin: 0 auto;
@@ -59,6 +63,23 @@
     @media $large {}
     @media $ex-large {}
 }
+.row {
+  padding-top: 9.6%;
+  padding-bottom: 12.6%;
+  @media $medium {
+    padding-top: 9.6%;
+    padding-bottom: 12.6%;
+  }
+  @media $large {
+
+    padding-top: 9.6%;
+    padding-bottom: 12.6%;
+  }
+  @media $ex-large {
+    padding-top: 10.6%;
+    padding-bottom: 12.6%;
+  }
+}
 
 .row-top-pad {
 	padding-top: 10%;
@@ -66,10 +87,10 @@
 		padding-top: 8%;
 	}
 	@media $large {
-		padding-top: 6%;
+		padding-top: 16%;
 	}
 	@media $ex-large {
-		padding-top: 6%;
+		padding-top: 16%;
 	}
 }
 .row-bottom-pad {
@@ -78,10 +99,10 @@
 		padding-bottom: 8%;
 	}
 	@media $large {
-		padding-bottom: 6%;
+		padding-bottom: 16%;
 	}
 	@media $ex-large {
-		padding-bottom: 6%;
+		padding-bottom: 16%;
 	}
 }
 .row-tb-pad {
@@ -92,12 +113,12 @@
 			padding-bottom: 8%;
 		}
 		@media $large {
-			padding-top: 6%;
-			padding-bottom: 6%;
+			padding-top: 12.6%;
+			padding-bottom: 12.6%;
 		}
 		@media $ex-large {
-			padding-top: 6%;
-			padding-bottom: 6%;
+			padding-top: 12.6%;
+			padding-bottom: 12.6%;
 		}
 }
 
@@ -105,25 +126,25 @@
   object-fit: cover;
     object-position: 57% 50%;
   width: 820px;
-  height: 420px;
+  height: 400px;
   @media $medium {
     object-position: 50% 50%;
     object-fit: cover;
     width: 1000px;
-    height: 520px;
+    height: 100%;
   }
   @media $large {
     object-fit: cover;
     object-position: 50% 50%;
     width: 1400px;
-    height: 520px;
+    height: 100%;
 
   }
   @media $ex-large {
     object-fit: cover;
     object-position: 10% 10%;
     width: 2900px;
-    height: 650px;
+    height: 100%;
     display: block;
 
   }
@@ -131,7 +152,7 @@
     object-fit: cover;
     object-position: 0% 0%;
     width: 2900px;
-    height: 650px;
+    height: 100%;
   }
 }
 

@@ -219,16 +219,29 @@ table {
 --------------------------------------------------------------*/
 button, input[type="button"], input[type="reset"], input[type="submit"] {
     border: 1px solid;
-    border-color: #ccc #ccc #bbb;
-    border-radius: 3px;
-    background: #e6e6e6;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-    color: rgba(0, 0, 0, .8);
-    font-size: 12px;
-    font-size: 0.75rem;
+    background: #fff;
+    font-size: 16px;
+    font-family: Montserrat;
     line-height: 1;
-    padding: .6em 1em .4em;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8)
+    letter-spacing: 4px;
+    padding: 1.0em 2.7em 1.0em;
+    font-weight: 700;
+    text-transform: uppercase
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        font-size: 16px
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        font-size: 25px
+    }
+}
+@media screen and (min-width: 1321px) {
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        font-size: 25px
+    }
 }
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
@@ -490,18 +503,30 @@ a:hover, a:active {
 # Typography
 --------------------------------------------------------------*/
 body, button, input, select, textarea {}
-h1 {}
+h1 {
+    font-size: 25px;
+    padding-bottom: 5px
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1 {}
+    h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+        line-height: 1.4
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     h1 {
-        font-size: 30px;
-        padding-bottom: 6px
+        font-size: 35px;
+        padding-bottom: 6px;
+        line-height: 1.5
     }
 }
 @media screen and (min-width: 1321px) {
-    h1 {}
+    h1 {
+        font-size: 35px;
+        padding-bottom: 5px;
+        line-height: 1.5
+    }
 }
 h2 {
     font-size: 18px;
@@ -690,6 +715,7 @@ h1.entry-title {
 .bypostauthor {
     display: block
 }
+.entry-content {}
 .outer-content {
     width: 85.2%;
     margin: 0 auto
@@ -774,6 +800,28 @@ h1.entry-title {
 @media screen and (min-width: 1321px) {
     .background-image {}
 }
+.row {
+    padding-top: 9.6%;
+    padding-bottom: 12.6%
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        padding-top: 9.6%;
+        padding-bottom: 12.6%
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    .row {
+        padding-top: 9.6%;
+        padding-bottom: 12.6%
+    }
+}
+@media screen and (min-width: 1321px) {
+    .row {
+        padding-top: 10.6%;
+        padding-bottom: 12.6%
+    }
+}
 .row-top-pad {
     padding-top: 10%
 }
@@ -784,12 +832,12 @@ h1.entry-title {
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     .row-top-pad {
-        padding-top: 6%
+        padding-top: 16%
     }
 }
 @media screen and (min-width: 1321px) {
     .row-top-pad {
-        padding-top: 6%
+        padding-top: 16%
     }
 }
 .row-bottom-pad {
@@ -802,12 +850,12 @@ h1.entry-title {
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     .row-bottom-pad {
-        padding-bottom: 6%
+        padding-bottom: 16%
     }
 }
 @media screen and (min-width: 1321px) {
     .row-bottom-pad {
-        padding-bottom: 6%
+        padding-bottom: 16%
     }
 }
 .row-tb-pad {
@@ -822,14 +870,14 @@ h1.entry-title {
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     .row-tb-pad {
-        padding-top: 6%;
-        padding-bottom: 6%
+        padding-top: 12.6%;
+        padding-bottom: 12.6%
     }
 }
 @media screen and (min-width: 1321px) {
     .row-tb-pad {
-        padding-top: 6%;
-        padding-bottom: 6%
+        padding-top: 12.6%;
+        padding-bottom: 12.6%
     }
 }
 .bg img {
@@ -838,7 +886,7 @@ h1.entry-title {
     -o-object-position: 57% 50%;
        object-position: 57% 50%;
     width: 820px;
-    height: 420px
+    height: 400px
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .bg img {
@@ -847,7 +895,7 @@ h1.entry-title {
         -o-object-fit: cover;
            object-fit: cover;
         width: 1000px;
-        height: 520px
+        height: 100%
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -857,7 +905,7 @@ h1.entry-title {
         -o-object-position: 50% 50%;
            object-position: 50% 50%;
         width: 1400px;
-        height: 520px
+        height: 100%
     }
 }
 @media screen and (min-width: 1321px) {
@@ -867,7 +915,7 @@ h1.entry-title {
         -o-object-position: 10% 10%;
            object-position: 10% 10%;
         width: 2900px;
-        height: 650px;
+        height: 100%;
         display: block
     }
 }
@@ -878,7 +926,7 @@ h1.entry-title {
         -o-object-position: 0% 0%;
            object-position: 0% 0%;
         width: 2900px;
-        height: 650px
+        height: 100%
     }
 }
 .bg {
@@ -921,79 +969,183 @@ h1.entry-title {
     }
 }
 /*may not need a separate footer*/
-#stories {}
-.first-story {
+/*--------------# Front--General---------------*/
+.front-header, .front-content-area {
+    position: relative
+}
+.front-content-area {}
+.front-no-overlay1 {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .front-no-overlay1 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    .front-no-overlay1 {}
+}
+@media screen and (min-width: 1321px) {
+    .front-no-overlay1 {}
+}
+.front-no-overlay2 {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .front-no-overlay2 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    .front-no-overlay2 {}
+}
+@media screen and (min-width: 1321px) {
+    .front-no-overlay2 {}
+}
+.front-content-textonly {
+    vertical-align: middle;
+    text-align: center
+}
+.front-content-heading1, .front-content-heading3, .front-content-heading5 {
+    color: #fff
+}
+.front-content-heading2, .front-content-heading4 {
+    color: #5A2788
+}
+.front-overlay-text, .front-overlay-text1, .front-overlay-text2, .front-overlay-text3 {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 0;
+    text-align: center;
     width: 100%
 }
+.front-overlay-text1 {
+    top: calc(50% - 100px);
+    left: 0;
+    text-align: center
+}
+.front-overlay-text2 {
+    top: calc(40% - 100px);
+    left: 0;
+    text-align: center
+}
+.front-overlay-text3 {
+    top: calc(30% - 100px);
+    left: 0;
+    text-align: center
+}
+.front-content-heading {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    letter-spacing: 4px
+}
+.front-content-text {
+    font-family: Vollkorn;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 18px
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .first-story {
-        width: 65%
+    .front-content-text {
+        font-size: 18px;
+        padding-bottom: 18px
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
-    .first-story {
-        width: 48%
+    .front-content-text {
+        font-size: 25px;
+        padding-bottom: 18px
     }
 }
 @media screen and (min-width: 1321px) {
-    .first-story {
-        width: 48%
+    .front-content-text {
+        font-size: 25px;
+        padding-bottom: 12px
     }
 }
-.story-width {
-    width: 48%
+.front-content-text1 {
+    color: #00000
+}
+.front-content-text2 {
+    color: #fff
+}
+.front-button1 {
+    color: #00929E
+}
+.front-button2 {
+    color: #00000
+}
+/*--------------# Front--Header---------------*/
+.front-header {
+    color: white;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 57% 50%;
+       object-position: 57% 50%
+}
+/*--------------# Front--What-We-Do---------------*/
+/*--------------# Front--How-We-Do-It---------------*/
+/*--------------# Front--Latest-Posts---------------*/
+.latest-post-indiv {
+    padding: 12px 0 4px;
+    margin: 4px 0 16px
+}
+.latest-post-indiv h2 {
+    margin: 3px 0;
+    padding-bottom: 2px
+}
+.latest-posts-title {
+    border-bottom: 0.5px solid #00929E;
+    margin: 0.67em 0 0
+}
+.latest-posts-date {
+    color: #00929E;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+.latest-posts-text {
+    border-bottom: 0.5px solid #00929E
+}
+/*--------------# Front--Announcements---------------*/
+.announcement-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .story-width {
-        width: 32%
+    .announcement-content {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
-    .story-width {
-        width: 24%
+    .announcement-content {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between
     }
 }
 @media screen and (min-width: 1321px) {
-    .story-width {
-        width: 16%
+    .announcement-content {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between
     }
 }
-.story-summary {
-    margin-bottom: 30px;
-    padding: 1%
+.announcement-indiv {
+    width: 22%;
+    text-align: left
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .story-summary {
-        margin-bottom: 12px
-    }
+.announcement-date {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: montserrat;
+    letter-spacing: 3px
 }
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-    .story-summary {
-        margin-bottom: 12px
-    }
+.announcement-text {
+    font-family: vollkorn;
+    font-size: 21px;
+    margin-top: 6px
 }
-@media screen and (min-width: 1321px) {
-    .story-summary {
-        margin-bottom: 12px
-    }
-}
-.grid-item {}
-/*masonry CSS*/
-.gutter-sizer {
-    width: 0%
-}
-.item1 {
-    width: 40%
-    /*background: purple;*/
-}
-.item2 {
-    /*background: green;*/
-    margin-bottom: 25px
-}
-.img-container {
-    width: 100%
-}
-#stories img {}
 .shift-title-main {}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .shift-title-main {}

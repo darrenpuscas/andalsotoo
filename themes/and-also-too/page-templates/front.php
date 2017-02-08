@@ -20,73 +20,107 @@ get_header(); ?>
 				<div class="entry-content">
 
 					<header class="front-header entry-header">
-						<div class="bg">
-								<img src="/wp-content/uploads/2017/02/home-landing.png">
-						</div>
-								<div class="outer-content">
-									<div class="front-content-inner">
-											<h1 class="">A collaborative design studio for social justice visionaries</h1>
-
-									</div><!-- .front-content-inner-->
-
-								</div><!-- .outer-content-->
-
+							<div class="bg">
+									<img src="/wp-content/uploads/2017/02/home-landing.png">
+							</div>
+							<div class="front-overlay-text front-overlay-text1">
+								<div class="front-content-inner std-content-area">
+										<h1 class="front-content-heading front-content-heading1">A collaborative design studio for social justice visionaries</h1>
+								</div><!-- .front-content-inner-->
+							</div><!-- .outer-content-->
 					</header><!-- .entry-header -->
 
 
+					<section class="front-content-area what-we-do row">
+								<div class="front-no-overlay1">
+									<div class="front-content-inner front-content-textonly std-content-area">
+											<h1 class="front-content-heading front-content-heading2">What we do</h1>
+											<div class="what-we-do-text front-content-text">We work with and within communities that are fighting back against injustice to co-design awesome new things in awesome new ways.
+											</div>
+											<button class="front-button1">Read Stories</button>
+								  </div><!-- .outer-content-->
+					</section><!-- .front-content what-we-do -->
 
-					<div class="front-content what-we-do">
 
-								<div class="outer-content">
-									<div class="front-content-inner">
-											<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+					<section class="front-content-area how-we-do-it">
+							<div class="bg">
+									<img src="/wp-content/uploads/2017/02/how-do-it.png">
+							</div>
+							<div class="front-overlay-text front-overlay-text2">
+								<div class="front-content-inner std-content-area">
+										<h1 class="front-content-heading front-content-heading3">How we do it</h1>
+										<div class="front-content-text front-content-text2">Our work is rooted in design justice, which informs our day-to-day practice. We document our learnings by sharing research; these learnings can support or transform our theory.
+										</div>
+										<button class="front-button2">About Us</button>
+								</div><!-- .front-content-inner-->
+							</div><!-- .outer-content-->
+					</section><!-- .front-content how-we-do-it -->
+
+
+					<section class="front-content-area front-latest-posts row">
+								<div class="front-no-overlay2">
+									<div class="front-content-inner front-content-textonly std-content-area">
+											<h1 class="latest-posts-title front-content-heading front-content-heading4">Latest Posts</h1>
+
+													<div class="latest-post-indiv">
+													<h2 class="latest-posts-date">Nov 1, 2016
+													</h2>
+													<div class="latest-posts-text front-content-text">Visualizing the Impacts of Network-Based Organizing
+													</div>
+											  </div>
+
+												<div class="latest-post-indiv">
+													<h2 class="latest-posts-date">Oct 31, 2016
+													</h2>
+													<div class="latest-posts-text front-content-text">Co-Creating a Visual Vocabulary of Social Justice Imagery
+													</div>
+												</div>
 
 									</div><!-- .front-content-inner-->
-
 								</div><!-- .outer-content-->
-
-					</div><!-- .front-content what-we-do -->
-
+					</section><!-- .front-content front-latest-posts -->
 
 
-					<div class="front-content-area how-we-do-it">
-						<div class="bg">
-								<img src="/wp-content/uploads/2017/02/how-do-it.png">
-						</div>
-								<div class="outer-content">
-									<div class="front-content-inner">
+					<section class="front-content-area announcements">
+							<div class="bg">
+									<img src="/wp-content/uploads/2017/02/announcements.png">
+							</div>
+							<div class="front-overlay-text front-overlay-text3">
+								<div class="front-content-inner outer-content">
+										<h1 class="front-content-heading front-content-heading5">Announcements</h1>
 
-									</div><!-- .front-content-inner-->
+										<div class="announcement-content">
+												<div class="announcement-indiv announcement-1">
+														<div class="announcement-date">Nov 1, 2016</div>
+														<p class="announcement-text">
+															We’re so excited to be presenting in Malmö, Sweden alongside Feathers of Hope at the Decolonising Design Symposium: Intersectional Perspectives on Design, Politics and Power. Una will be presenting about Design Justice.
+														</p>
+												</div>
+												<div class="announcement-indiv announcement-2">
+														<div class="announcement-date">Oct 26, 2016</div>
+														<p class="announcement-text">
+															Una will join a panel of brilliant thinkers and builders in the platform co-operative space at Building the Co-operative Internet, Nov. 11–13.
+														</p>
+												</div>
+												<div class="announcement-indiv announcement-3">
+														<div class="announcement-date">Sep 22, 2016</div>
+														<p class="announcement-text">
+															We’re pleased to announce a new team member, Lupe Pérez! Lupe is a talented Montréal based designer. Read more about her on our People page.
+														</p>
+												</div>
+												<div class="announcement-indiv announcement-4">
+														<div class="announcement-date">Sep 1, 2016</div>
+														<p class="announcement-text">
+															Join us at MozFest, Oct. 28-30 in London UK! We’re hoping to connect with others who are centering people and communities who are often marginalized by technology.
+														</p>
+												</div>
+											</div><!-- .announcement-content-->
 
-								</div><!-- .outer-content-->
 
-					</div><!-- .front-content how-we-do-it -->
-
-
-					<div class="front-content-area front-latest-posts">
-
-								<div class="outer-content">
-									<div class="front-content-inner">
-
-									</div><!-- .front-content-inner-->
-
-								</div><!-- .outer-content-->
-
-					</div><!-- .front-content front-latest-posts -->
-
-					<div class="front-content-area announcements">
-						<div class="bg">
-								<img src="/wp-content/uploads/2017/02/announcements.png">
-						</div>
-								<div class="outer-content">
-									<div class="front-content-inner">
-
-									</div><!-- .front-content-inner-->
-
-								</div><!-- .outer-content-->
-
-					</div><!-- .front-content announcements -->
-
+								</div><!-- .front-content-inner-->
+							</div><!-- .outer-content-->
+					</section><!-- .front-content announcements -->
 
 				</div><!-- .entry-content -->
 
@@ -96,22 +130,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
----------------------------------------------------------------
-
-	<div class="people-col1 left-content-full">
-			<h2 class="people-name">
-				Una Lee
-			</h2>
-			<div class="people-title">
-				Creative Director
-			</div>
-		<div class="people-description">
-			Una Lee is a graphic designer, facilitator, and design theorist working in social justice. She uses collaborative and community centered design processes to draw on the brilliance, wisdom, and creativity of communities affected by urgent social issues. The tools and images that have been cocreated through these processes have contributed to substantial changes in legislation and policy, rallied international support, received coverage from major media outlets in Canada, the US, and Mexico, as well as garnered numerous awards. Una resides in Toronto and collaborates internationally.
-		</div>
-	</div>
-	<div class="people-col2 right-content-smaller">
-		<img src="/wp-content/uploads/2017/01/una.png">
-	</div>
 
 
 

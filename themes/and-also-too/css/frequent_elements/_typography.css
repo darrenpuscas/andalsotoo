@@ -5,12 +5,23 @@
 body, button, input, select, textarea {}
 
 h1 {
-    @media $medium {}
-    @media $large {
+  font-size: 25px;
+  padding-bottom: 5px;
+    @media $medium {
       font-size: 30px;
-      padding-bottom: 6px;
+      padding-bottom: 5px;
+      line-height: 1.4;
     }
-    @media $ex-large {}
+    @media $large {
+      font-size: 35px;
+      padding-bottom: 6px;
+      line-height: 1.5;
+    }
+    @media $ex-large {
+      font-size: 35px;
+      padding-bottom: 5px;
+      line-height: 1.5;
+    }
 }
 
 h2 {

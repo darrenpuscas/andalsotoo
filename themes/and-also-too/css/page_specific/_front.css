@@ -1,65 +1,170 @@
+/*--------------# Front--General---------------*/
 
-#stories {
-
+.front-header, .front-content-area {
+  position: relative;
 }
 
-.first-story {
-    width: 100%;
+.front-content-area {
+}
+.front-no-overlay1 {
+  @media $medium {
+  }
+  @media $large {
+  }
+  @media $ex-large {
+  }
+}
+.front-no-overlay2 {
+  @media $medium {
+  }
+  @media $large {
+  }
+  @media $ex-large {
+  }
+}
+.front-content-textonly  {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.front-content-heading1, .front-content-heading3, .front-content-heading5 {
+  color: $white;
+}
+.front-content-heading2, .front-content-heading4 {
+  color: $sitePurple;
+}
+
+.front-overlay-text, .front-overlay-text1, .front-overlay-text2, .front-overlay-text3 {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.front-overlay-text1 {
+  top: calc(50% - 100px);
+  left: 0;
+  text-align: center;
+
+}
+.front-overlay-text2 {
+  top: calc(40% - 100px);
+  left: 0;
+  text-align: center;
+
+}
+.front-overlay-text3 {
+  top: calc(30% - 100px);
+  left: 0;
+  text-align: center;
+}
+
+.front-content-heading {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  letter-spacing: 4px;
+}
+
+.front-content-text {
+  font-family: Vollkorn;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 18px;
+  @media $medium {
+    font-size: 18px;
+    padding-bottom: 18px;
+  }
+  @media $large {
+    font-size: 25px;
+    padding-bottom: 18px;
+  }
+  @media $ex-large {
+    font-size: 25px;
+    padding-bottom: 12px;
+  }
+}
+.front-content-text1 {
+    color: $black;
+}
+.front-content-text2 {
+    color: $white;
+}
+
+.front-button1 {
+  color: $siteTeal;
+}
+.front-button2 {
+  color: $black;
+}
+
+/*--------------# Front--Header---------------*/
+
+.front-header {
+  color: white;
+  object-fit: cover;
+  object-position: 57% 50%;
+}
+
+/*--------------# Front--What-We-Do---------------*/
+
+/*--------------# Front--How-We-Do-It---------------*/
+
+/*--------------# Front--Latest-Posts---------------*/
+
+.latest-post-indiv {
+  padding: 12px 0 4px;
+  margin: 4px 0 16px;
+}
+.latest-post-indiv h2 {
+  margin: 3px 0;
+  padding-bottom: 2px;
+}
+.latest-posts-title {
+  border-bottom: 0.5px solid $siteTeal;
+  margin: 0.67em 0 0;
+}
+.latest-posts-date {
+  color: $siteTeal;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.latest-posts-text {
+  border-bottom: 0.5px solid $siteTeal;
+}
+
+
+/*--------------# Front--Announcements---------------*/
+
+
+.announcement-content {
+      display: flex;
+      flex-direction: row;
     @media $medium {
-      width: 65%;
+      justify-content: space-between;
     }
     @media $large {
-      width: 48%;
+      justify-content: space-between;
+
     }
     @media $ex-large {
-      width: 48%;
+      justify-content: space-between;
     }
-}
-.story-width {
-    width: 48%;
-    @media $medium {
-      width: 32%;
-    }
-    @media $large {
-      width: 24%;
-    }
-    @media $ex-large {
-      width: 16%;
-    }
-}
-.story-summary {
-    margin-bottom: 30px;
-    padding: 1%;
-    @media $medium {
-        margin-bottom: 12px;
-    }
-    @media $large {
-        margin-bottom: 12px;
-    }
-    @media $ex-large {
-        margin-bottom: 12px;
-
-    }
-}
-.grid-item {
-
 }
 
-/*masonry CSS*/
-.gutter-sizer { width: 0%;}
-
-
-.item1 {
-    width: 40%;
-    /*background: purple;*/
+.announcement-indiv {
+  width: 22%;
+    text-align: left;
 }
-.item2 {
-    /*background: green;*/
-    margin-bottom: 25px;
+.announcement-date {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: montserrat;
+  letter-spacing: 3px;
 }
-.img-container {
-    width: 100%;
-}
-#stories img {
-
+.announcement-text {
+  font-family: vollkorn;
+  font-size: 21px;
+  margin-top: 6px;
 }
