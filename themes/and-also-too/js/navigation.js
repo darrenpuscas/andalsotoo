@@ -8,12 +8,18 @@
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
+	console.log(container);
 	if ( ! container ) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
+	openToggle = document.getElementById( 'open-toggle' );
+	// console.log(openToggle);
+	if ( 'undefined' === typeof openToggle ) {
+		return;
+	}
+	closeToggle = document.getElementById('close-toggle');
+	if ( 'undefined' === typeof closeToggle ) {
 		return;
 	}
 
@@ -21,7 +27,7 @@
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
+		openToggle.style.display = 'none';
 		return;
 	}
 
@@ -30,20 +36,20 @@
 		menu.className += ' nav-menu';
 	}
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+	openToggle.onclick = function() {
+		container.className += ' toggled';
+		openToggle.setAttribute( 'aria-expanded', 'true' );
+		menu.setAttribute( 'aria-expanded', 'true' );
+	};
+
+	closeToggle.onclick = function() {
 			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
+			closeToggle.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
 	};
 
 	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
+	links = menu.getElementsByTagName( 'a' );
 
 	// Each time a menu link is focused or blurred, toggle focus.
 	for ( i = 0, len = links.length; i < len; i++ ) {

@@ -1,6 +1,14 @@
-.nav-content {
+/*Header*/
+
+.site-header {
     width: 87%;
     margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+
     @media $medium {
         width: 92%;
     }
@@ -10,6 +18,114 @@
     @media $ex-large {
         width: 92%;
         max-width: 900000000px;
+    }
+}
+.site-content {
+    margin-top: 30px;
+}
+
+.header-content {
+    /*.nav from menu.css*/
+    background: gray;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media $medium {
 
     }
+    @media $large {
+
+    }
+    @media $ex-large {
+
+    }
+}
+
+.anchor-link {
+    background: aqua;
+        @media $medium {
+            display: none;
+        }
+        @media $large {
+            display: none;
+        }
+        @media $ex-large {
+            display: none;
+        }
+    a {
+        text-decoration: none;
+        margin: 3px;
+    }
+}
+.anchor-close {
+    display: none;
+}
+.main-navigation.toggled .anchor-close {
+    display: block;
+}
+
+.nav-social-medium {
+    display: none;
+    flex: .4;
+
+    @media $medium {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1.7rem;
+	}
+
+	@media $large {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1.7rem;
+	}
+
+	@media $ex-large {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1.7rem;
+	}
+}
+.nav-social {
+    display: block;
+
+    @media $medium {
+        display: none;
+    }
+    @media $large {
+        display: none;
+    }
+    @media $ex-large {
+        display: none;
+    }
+}
+.site-branding-medium {
+    display: block;
+    flex: .6;
+
+    @media $medium {
+        flex: .6;
+    }
+    @media $large {
+        flex: .6;
+    }
+    @media $ex-large {
+        flex: .6;
+    }
+}
+.site-branding {
+    width: 50%;
+    flex: 3;
+    display: none;
+}
+
+.main-navigation.toggled .site-branding {
+    display: block;
 }

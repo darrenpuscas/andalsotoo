@@ -104,6 +104,7 @@ add_action( 'widgets_init', 'and_also_too_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
 function and_also_too_scripts() {
 
 	wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome-4.7.0/css/font-awesome.min.css' );
@@ -112,9 +113,19 @@ function and_also_too_scripts() {
 
 	wp_enqueue_style( 'and-also-too-style', get_stylesheet_uri() );
 
+	if ( is_page( 'Stories' ) ) {
 	wp_enqueue_script( 'app-masonry', get_template_directory_uri() . '/js/app-masonry.js', array('masonry'), '', true );
+	}
 
-	wp_enqueue_script( 'and-also-too-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	if ( is_page( 'About' ) ) {
+	  wp_enqueue_script( 'about-macy-lib', get_template_directory_uri() . '/js/macy-min.js', array(), '', true );
+	}
+
+	if ( is_page( 'About' ) ) {
+	  wp_enqueue_script( 'about-macy', get_template_directory_uri() . '/js/about-macy.js', array(), '', true );
+	}
+
+	wp_enqueue_script( 'and-also-too-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, true );
 
 	wp_enqueue_script( 'and-also-too-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -123,6 +134,10 @@ function and_also_too_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'and_also_too_scripts' );
+
+
+
+
 
 /**
  * Implement the Custom Header feature.

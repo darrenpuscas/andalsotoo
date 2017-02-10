@@ -1,1 +1,71 @@
-/*may not need a separate footer*/
+.site-footer {
+    align-items: center;
+
+    @media $medium {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    @media $large {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    @media $ex-large {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}
+.footer-middle {
+    /*wraps logo and medium social and comes second on dsktop*/
+    order: 2;
+}
+
+.footer-logo {
+    max-width: 75%;
+    margin: auto;
+}
+.logo-img {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.footer-phone {
+    /*comes first on desktop*/
+    order: 1;
+}
+.contact-phone {
+    text-align: center;
+}
+.footer-social {
+    text-align: center;
+    display: block;
+    @media $medium {
+        display: none;
+    }
+    @media $large {
+        display: none;
+    }
+    @media $ex-large {
+        display: none;
+    }
+}
+.footer-social-medium {
+    display: none;
+    @media $medium {
+        display: block;;
+    }
+    @media $large {
+        display: block;
+    }
+    @media $ex-large {
+        display: block;
+    }
+}
+.footer-email {
+    /*comes last on dsktop*/
+    order: 3;
+    text-align: center;
+}

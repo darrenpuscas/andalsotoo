@@ -31,71 +31,62 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	/*equivalent to .mobile-flex on menu.css*/
+	background: yellow;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	text-align: end;
+	flex: 1.4;
+	display: none;
+	    @media $medium {
+	    	display: block;
+	    }
+	    @media $large {
+	        display: block;
+	    }
+	    @media $ex-large {
+			display: block;
+	    }
+
 }
 
-.main-navigation ul {
+ul.simple-toggle {
+	/*ul.simple-toggle on menu.css*/
 	display: none;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+
+	@media $medium {
+		display: block;
+		flex: 2;
+	}
+
+	@media $large {
+		display: block;
+		flex: 2;
+	}
+
+	@media $ex-large {
+		display: block;
+		flex: 2;
+	}
 }
 
-.main-navigation li {
-	float: left;
-	position: relative;
+ul.simple-toggle li {
+	display: inline-block;
+    text-align: left;
 }
 
-.main-navigation a {
+ul.simple-toggle li a {
 	display: block;
+	padding: 15px 10px;
 	text-decoration: none;
 }
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
+ul.simple-toggle li:hover > a,
+ul.simple-toggle li.focus > a {
+	background-color: #ccc;
 }
 
 .main-navigation .current_page_item > a,
@@ -105,19 +96,61 @@ a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
+.main-navigation.toggled {
+	display: flex;
+	background-color: #F4F4F4;
+	box-shadow: 2px 2px 3px #444444;
+	position: fixed;
+	top: 0;
+	right: 3%;
+	z-index: 500;
+}
 .main-navigation.toggled ul {
 	display: block;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.main-navigation.toggled ul li {
+	display: block; list-style: none; text-align: center; }
+.main-navigation.toggled ul li a {
+	display: block;
+	padding: 20px 10px;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+.main-navigation.toggled ul a:hover {
+	background-color: #ccc;
+	color: #fff;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
+.main-navigation.toggled > .nav-social {
+	flex: 1;
+    /*display: flex;*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1.7rem;
+}
+
+.menu-toggle {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	@media $medium {
 		display: none;
 	}
-	.main-navigation ul {
-		display: block;
+
+	@media $large {
+	    display: none;
 	}
+
+	@media $ex-large {
+		display: none;
+	    }
 }
+
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
