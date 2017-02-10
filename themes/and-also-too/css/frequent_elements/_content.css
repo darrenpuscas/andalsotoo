@@ -30,20 +30,18 @@
 	margin: 1.5em 0 0;
 }
 h1.entry-title {
-	font-size: 20px;
+	font-size: 2.0rem;
 	font-style: bold;
 	font-family: montserrat;
-	color: white;
 	text-transform: uppercase;
-	letter-spacing: 3px;
 	@media $medium {
-		font-size: 35px;
+		font-size: 2.5rem;
 	}
 	@media $large {
-		font-size: 35px;
+		font-size: 3.5rem;
 	}
 	@media $ex-large {
-		font-size: 35px;
+		font-size: 3.5rem;
 	}
 
 }

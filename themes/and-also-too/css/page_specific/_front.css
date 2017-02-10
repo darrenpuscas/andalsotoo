@@ -34,41 +34,18 @@
   color: $sitePurple;
 }
 
-.front-overlay-text, .front-overlay-text1, .front-overlay-text2, .front-overlay-text3 {
-  position: absolute;
-  top: calc(50% - 100px);
-  left: 0;
-  text-align: center;
-  width: 100%;
-}
-.front-overlay-text1 {
-  top: calc(50% - 100px);
-  left: 0;
-  text-align: center;
-
-}
-.front-overlay-text2 {
-  top: calc(40% - 100px);
-  left: 0;
-  text-align: center;
-
-}
-.front-overlay-text3 {
-  top: calc(30% - 100px);
-  left: 0;
-  text-align: center;
-}
-
 .front-content-heading {
   text-transform: uppercase;
   font-family: Montserrat;
   letter-spacing: 4px;
+  margin-bottom: 2px;
 }
 
 .front-content-text {
   font-family: Vollkorn;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.6;
   padding-bottom: 18px;
   @media $medium {
     font-size: 18px;
@@ -79,7 +56,7 @@
     padding-bottom: 18px;
   }
   @media $ex-large {
-    font-size: 25px;
+    font-size: 28px;
     padding-bottom: 12px;
   }
 }
@@ -101,13 +78,86 @@
 
 .front-header {
   color: white;
-  object-fit: cover;
-  object-position: 57% 50%;
+  text-align: center;
+}
+
+.bg-front-header {
+background: url(http://and-also-too.dev/wp-content/uploads/2017/02/home-landing.png);
+background-position: 45% 100%;
+background-size: cover;
+  @media $medium {
+    background-size: cover;
+  background-position: 75% 20%;
+  }
+  @media $large {
+  background-position: 75% 20%;
+  background-size: cover;
+  }
+  @media $ex-large {
+  background-position: 75% 20%;
+  background-size: cover;
+  }
+}
+
+.overlay-front-header {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  @media $medium {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  @media $large {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
+  @media $ex-large {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
 }
 
 /*--------------# Front--What-We-Do---------------*/
 
 /*--------------# Front--How-We-Do-It---------------*/
+
+.how-we-do-it {
+  text-align: center;
+}
+
+.bg-how-we-do-it {
+background: url(http://and-also-too.dev/wp-content/uploads/2017/02/how-do-it.png);
+  background-position: 45% 100%;
+    background-size: cover;
+  @media $medium {
+
+      background-size: 105% 120%;
+  }
+  @media $large {
+
+background-size: 105% 100%;
+  }
+  @media $ex-large {
+
+background-size: 105% 100%;
+  }
+}
+
+.overlay-how-we-do-it {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  @media $medium {
+    padding-top: 17%;
+    padding-bottom: 17%;
+  }
+  @media $large {
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+  @media $ex-large {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
+}
 
 /*--------------# Front--Latest-Posts---------------*/
 
@@ -136,25 +186,72 @@
 
 /*--------------# Front--Announcements---------------*/
 
+.bg-announce {
+background: url(http://and-also-too.dev/wp-content/uploads/2017/02/announcements.png);
+  background-size: 145% 120%;
+  @media $medium {
+  }
+  @media $large {
+background-size: cover;
+  }
+  @media $ex-large {
+background-size: cover;
+  }
+}
+
+.overlay-announce {
+    padding-top: 14%;
+    padding-bottom: 14%;
+  @media $medium {
+    padding-top: 9%;
+    padding-bottom: 9%;
+  }
+  @media $large {
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+  @media $ex-large {
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}
 
 .announcement-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     @media $medium {
+      flex-wrap: wrap;
+        flex-direction: row;
       justify-content: space-between;
     }
     @media $large {
+        flex-direction: row;
       justify-content: space-between;
 
     }
     @media $ex-large {
+        flex-direction: row;
       justify-content: space-between;
     }
 }
 
 .announcement-indiv {
-  width: 22%;
-    text-align: left;
+  width: 100%;
+    text-align: center;
+    @media $medium {
+
+      width: 46%;
+      text-align: left;
+    }
+    @media $large {
+        width: 22%;
+        text-align: left;
+
+    }
+    @media $ex-large {
+        width: 22%;
+        text-align: left;
+    }
 }
 .announcement-date {
   color: $white;
@@ -167,4 +264,65 @@
   font-family: vollkorn;
   font-size: 21px;
   margin-top: 6px;
+}
+.announcements-heading {
+  color: $white;
+  text-align: center;
+  padding-bottom: 12px;
+    @media $medium {
+  padding-bottom: 2.5rem;
+
+    }
+    @media $large {
+      padding-bottom: 2rem;
+    }
+    @media $ex-large {
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.front-overlay-text, .front-overlay-text1, .front-overlay-text2, .front-overlay-text3 {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.front-overlay-text1 {
+  top: calc(50% - 100px);
+  left: 0;
+  text-align: center;
+
+}
+.front-overlay-text2 {
+  top: calc(40% - 100px);
+  left: 0;
+  text-align: center;
+
+}
+.front-overlay-text3 {
+  top: calc(60% - 10px);
+  left: 0;
+  text-align: center;
+  @media $medium {
+    top: calc(30% - 100px);
+  }
+  @media $large {
+  top: calc(30% - 100px);
+  }
+  @media $ex-large {
+    top: calc(30% - 100px);
+  }
 }

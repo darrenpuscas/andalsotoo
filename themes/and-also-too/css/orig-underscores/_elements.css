@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 *,
@@ -10,6 +11,8 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 blockquote:before,

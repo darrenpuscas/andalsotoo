@@ -11,7 +11,7 @@ input[type="submit"] {
 	font-family: Montserrat;
 	line-height: 1;
 	letter-spacing: 4px;
-	padding: 1.0em 2.7em 1.0em;
+	padding: 1.3em 2.7em 1.3em;
 	font-weight: 700;
 	text-transform: uppercase;
 	@media $medium {

@@ -1,0 +1,171 @@
+/*Blog CSS*/
+.blog-flex {
+    margin-top: 20px;
+
+    @media $medium {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media $large {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media $ex-large {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.date-container {}
+
+.featured-image {}
+
+.blog-entry-meta {
+    /*might combine with general entry meta if it doesn't conflict*/
+    display: block;;
+
+    @media $medium {
+        display: none;
+    }
+    @media $large {
+        display: none;
+    }
+    @media $ex-large {
+        display: none;
+    }
+}
+.blog-entry-meta-medium {
+    /*might combine with general entry meta if it doesn't conflict*/
+    display: none;
+    width: 25%;
+
+    @media $medium {
+        display: block;
+        flex: 0 0 auto;
+    }
+    @media $large {
+        display: block;
+        flex: 0 0 auto;
+    }
+    @media $ex-large {
+        display: block;
+        flex: 0 0 auto;
+    }
+}
+
+.blog-date-num, .blog-date-month, .blog-date-year {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: montserrat;
+    line-height: 1;
+    /*display: block;*/
+    @media $medium {
+        display: block;
+    }
+    @media $large {
+        display: block;
+    }
+    @media $ex-large {
+        display: block;
+    }
+}
+
+.blog-date-num {
+  color: $sitePurple;
+  line-height: 0.8;
+  @media $medium {
+    line-height: 0.8;
+
+  }
+  @media $large {
+  font-size: 6.5rem;
+  line-height: 0.8;
+  }
+  @media $ex-large {
+    font-size: 6.5rem;
+    line-height: 0.8;
+  }
+}
+.blog-date-month {
+  color: $sitePurple;
+  @media $medium {
+
+  }
+  @media $large {
+font-size: 3.5rem
+  }
+  @media $ex-large {
+    font-size: 3.5rem
+  }
+}
+.blog-date-year {
+  color: $siteTeal;
+  @media $medium {
+
+  }
+  @media $large {
+  font-size: 3.5rem
+  }
+  @media $ex-large {
+    font-size: 3.5rem
+  }
+}
+.blog-category {
+      font-family: montserrat;
+  color: $sitePurple;
+  text-transform: uppercase;
+  font-weight: 700;
+  @media $medium {
+
+  }
+  @media $large {
+  font-size: 2.0rem;
+  }
+  @media $ex-large {
+    font-size: 2.0rem;
+    padding-top: 2rem;
+  }
+}
+
+.blog-content {
+  width: 100%;
+    @media $medium {
+        flex: 0 0 auto;
+          width: 100%;
+    }
+    @media $large {
+        flex: 0 0 auto;
+          width: 50%;
+    }
+    @media $ex-large {
+        flex: 0 0 auto;
+          width: 50%;
+    }
+    h3 {
+       letter-spacing: 1px;
+       line-height: 1.2;
+       font-size: 2.5rem;
+       font-style: bold;
+       font-family: montserrat;
+       text-transform: uppercase;
+
+       margin: 1.3rem 0;
+       color: $sitePurple;
+    }
+    a {
+      text-decoration: none;
+    }
+}
+
+.read-link {
+    text-transform: uppercase;
+}
+.read-link > i {
+    color: green;
+}
+
+
+.bempty {
+  width:25%;
+ height:10px;
+}

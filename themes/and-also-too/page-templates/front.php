@@ -17,16 +17,13 @@ get_header(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-				<div class="entry-content">
+			<div class="entry-content">
 
-					<header class="front-header entry-header">
-							<div class="bg">
-									<img src="/wp-content/uploads/2017/02/home-landing.png">
-							</div>
-							<div class="front-overlay-text front-overlay-text1">
-								<div class="front-content-inner std-content-area">
+			  <header class="front-header entry-header">
+						<div class="bg-front-header">
+								 <div class="overlay-front-header std-content-area">
 										<h1 class="front-content-heading front-content-heading1">A collaborative design studio for social justice visionaries</h1>
-								</div><!-- .front-content-inner-->
+								 </div><!-- .front-content-inner-->
 							</div><!-- .outer-content-->
 					</header><!-- .entry-header -->
 
@@ -44,17 +41,14 @@ get_header(); ?>
 
 
 					<section class="front-content-area how-we-do-it">
-							<div class="bg">
-									<img src="/wp-content/uploads/2017/02/how-do-it.png">
-							</div>
-							<div class="front-overlay-text front-overlay-text2">
-								<div class="front-content-inner std-content-area">
+							<div class="bg-how-we-do-it">
+								<div class="overlay-how-we-do-it std-content-area">
 										<h1 class="front-content-heading front-content-heading3">How we do it</h1>
 										<div class="front-content-text front-content-text2">Our work is rooted in design justice, which informs our day-to-day practice. We document our learnings by sharing research; these learnings can support or transform our theory.
 										</div>
 										<button class="front-button2">About Us</button>
-								</div><!-- .front-content-inner-->
-							</div><!-- .outer-content-->
+								</div><!-- .overlay-how-we-do-it-->
+							</div><!-- .bg-how-we-do-it-->
 					</section><!-- .front-content how-we-do-it -->
 
 
@@ -83,12 +77,11 @@ get_header(); ?>
 
 
 					<section class="front-content-area announcements">
-							<div class="bg">
-									<img src="/wp-content/uploads/2017/02/announcements.png">
-							</div>
-							<div class="front-overlay-text front-overlay-text3">
-								<div class="front-content-inner outer-content">
-										<h1 class="front-content-heading front-content-heading5">Announcements</h1>
+
+								<div class="bg-announce">
+								<div class="overlay-announce outer-content">
+
+										<h1 class="announcements-heading  front-content-heading">Announcements</h1>
 
 										<div class="announcement-content">
 												<div class="announcement-indiv announcement-1">
@@ -115,11 +108,10 @@ get_header(); ?>
 															Join us at MozFest, Oct. 28-30 in London UK! We’re hoping to connect with others who are centering people and communities who are often marginalized by technology.
 														</p>
 												</div>
+
 											</div><!-- .announcement-content-->
-
-
-								</div><!-- .front-content-inner-->
-							</div><!-- .outer-content-->
+								</div><!-- .overlay-announce-->
+							</div><!-- .bg-announce-->
 					</section><!-- .front-content announcements -->
 
 				</div><!-- .entry-content -->
