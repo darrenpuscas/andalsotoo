@@ -1,3 +1,16 @@
+#main {
+  padding-top: 4em;
+  @media $medium {
+  padding-top: 9em;
+  }
+  @media $large {
+  padding-top: 9em;
+  }
+  @media $ex-large {
+  padding-top: 9em;
+  }
+}
+
 .entry-content {
 
   }

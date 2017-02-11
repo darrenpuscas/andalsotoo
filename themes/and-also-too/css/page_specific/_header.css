@@ -10,7 +10,7 @@
     transform: translateX(-50%);
         padding: 2.1em 0;
         background: white;
-
+        border-bottom: 2px solid #787878;
     @media $medium {
         padding: 3em 0;
     }
@@ -85,7 +85,7 @@
 
 .nav-social-medium {
     display: none;
-    flex: .4;
+    flex: .3;
 
     @media $medium {
         display: flex;

@@ -815,6 +815,24 @@ h1.entry-title {
 .bypostauthor {
     display: block;
 }
+#main {
+    padding-top: 4em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #main {
+        padding-top: 9em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    #main {
+        padding-top: 9em;
+    }
+}
+@media screen and (min-width: 1321px) {
+    #main {
+        padding-top: 9em;
+    }
+}
 .entry-content {}
 .outer-content {
     width: 85.2%;
@@ -1063,6 +1081,7 @@ h1.entry-title {
             transform: translateX(-50%);
     padding: 2.1em 0;
     background: white;
+    border-bottom: 2px solid #787878;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .site-header {
@@ -1160,9 +1179,9 @@ h1.entry-title {
 }
 .nav-social-medium {
     display: none;
-    -webkit-box-flex: .4;
-        -ms-flex: .4;
-            flex: .4;
+    -webkit-box-flex: .3;
+        -ms-flex: .3;
+            flex: .3;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .nav-social-medium {
@@ -2278,7 +2297,7 @@ h1.entry-title {
 }
 /*Blog CSS*/
 .blog-flex {
-    margin-top: 20px;
+    margin-bottom: 90px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .blog-flex {
@@ -2331,7 +2350,6 @@ h1.entry-title {
 .blog-entry-meta-medium {
     /*might combine with general entry meta if it doesn't conflict*/
     display: none;
-    width: 25%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .blog-entry-meta-medium {
@@ -2339,6 +2357,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
+        width: 16%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2347,6 +2366,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
+        width: 12%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2355,6 +2375,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
+        width: 10%;
     }
 }
 .blog-date-num, .blog-date-month, .blog-date-year {
@@ -2385,6 +2406,8 @@ h1.entry-title {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .blog-date-num {
+        font-size: 6.5rem;
+        line-height: 0.8;
         line-height: 0.8;
     }
 }
@@ -2404,7 +2427,9 @@ h1.entry-title {
     color: #5A2788;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .blog-date-month {}
+    .blog-date-month {
+        font-size: 3.5rem;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     .blog-date-month {
@@ -2420,7 +2445,9 @@ h1.entry-title {
     color: #00929E;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .blog-date-year {}
+    .blog-date-year {
+        font-size: 3.5rem;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
     .blog-date-year {
@@ -2473,7 +2500,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-        width: 100%;
+        width: 84%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2481,7 +2508,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-        width: 50%;
+        width: 76%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2489,7 +2516,7 @@ h1.entry-title {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
-        width: 50%;
+        width: 80%;
     }
 }
 .read-link {
@@ -2499,8 +2526,23 @@ h1.entry-title {
     color: green;
 }
 .bempty {
-    width: 25%;
+    width: 0%;
     height: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bempty {
+        width: 0%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    .bempty {
+        width: 12%;
+    }
+}
+@media screen and (min-width: 1321px) {
+    .bempty {
+        width: 10%;
+    }
 }
 /*Individual Story*/
 .story-featured-image {

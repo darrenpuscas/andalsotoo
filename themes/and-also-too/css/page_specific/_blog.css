@@ -1,6 +1,6 @@
 /*Blog CSS*/
 .blog-flex {
-    margin-top: 20px;
+    margin-bottom: 90px;
 
     @media $medium {
         display: flex;
@@ -37,19 +37,20 @@
 .blog-entry-meta-medium {
     /*might combine with general entry meta if it doesn't conflict*/
     display: none;
-    width: 25%;
-
     @media $medium {
         display: block;
         flex: 0 0 auto;
+        width: 16%;
     }
     @media $large {
         display: block;
         flex: 0 0 auto;
+        width: 12%;
     }
     @media $ex-large {
         display: block;
         flex: 0 0 auto;
+        width: 10%;
     }
 }
 
@@ -74,6 +75,8 @@
   color: $sitePurple;
   line-height: 0.8;
   @media $medium {
+    font-size: 6.5rem;
+    line-height: 0.8;
     line-height: 0.8;
 
   }
@@ -89,7 +92,7 @@
 .blog-date-month {
   color: $sitePurple;
   @media $medium {
-
+font-size: 3.5rem
   }
   @media $large {
 font-size: 3.5rem
@@ -101,7 +104,7 @@ font-size: 3.5rem
 .blog-date-year {
   color: $siteTeal;
   @media $medium {
-
+  font-size: 3.5rem
   }
   @media $large {
   font-size: 3.5rem
@@ -131,15 +134,15 @@ font-size: 3.5rem
   width: 100%;
     @media $medium {
         flex: 0 0 auto;
-          width: 100%;
+          width: 84%;
     }
     @media $large {
         flex: 0 0 auto;
-          width: 50%;
+          width: 76%;
     }
     @media $ex-large {
         flex: 0 0 auto;
-          width: 50%;
+          width: 80%;
     }
     h3 {
        letter-spacing: 1px;
@@ -166,6 +169,17 @@ font-size: 3.5rem
 
 
 .bempty {
-  width:25%;
+  width:0%;
  height:10px;
+ @media $medium {
+
+       width: 0%;
+ }
+ @media $large {
+       width: 12%;
+ }
+ @media $ex-large {
+
+       width: 10%;
+ }
 }
