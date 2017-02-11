@@ -1,52 +1,65 @@
 /*Header*/
 
 .site-header {
-    width: 87%;
+    width: 100%;
     margin: 0 auto;
     position: fixed;
     top: 0;
     z-index: 1000;
     left: 50%;
     transform: translateX(-50%);
+        padding: 2.1em 0;
+        background: white;
 
     @media $medium {
-        width: 92%;
+        padding: 3em 0;
     }
     @media $large {
-        width: 92%;
+
+        padding: 3em 0;
     }
     @media $ex-large {
-        width: 92%;
+
         max-width: 900000000px;
+        padding: 3em 0;
     }
 }
 .site-content {
-    margin-top: 30px;
+    margin-top: 52px;
+    @media $medium {
+        margin-top: 92px;
+    }
+    @media $large {
+        margin-top: 92px;
+    }
+    @media $ex-large {
+        margin-top: 92px;
+
+    }
 }
 
 .header-content {
     /*.nav from menu.css*/
-    background: gray;
-    width: 100%;
+    margin: 0 auto;
+    width: 87%;
     display: flex;
-
     align-items: center;
     justify-content: space-between;
     position: relative;
 
     @media $medium {
-
+      width: 92%;
     }
     @media $large {
-
+      width: 92%;
     }
     @media $ex-large {
-
+      width: 92%;
     }
 }
 
 .anchor-link {
-    background: aqua;
+    text-transform: uppercase;
         @media $medium {
             display: none;
         }
@@ -59,6 +72,8 @@
     a {
         text-decoration: none;
         margin: 3px;
+        font-size: 1.4rem;
+        color: $black;
     }
 }
 .anchor-close {
@@ -93,6 +108,18 @@
         font-size: 1.7rem;
 	}
 }
+.nav-social-medium .fa {
+    padding-left: 0.6em;
+    @media $medium {
+          padding-left: 0.4em;
+    }
+    @media $large {
+      padding-left: 0.6em;
+    }
+    @media $ex-large {
+      padding-left: 0.6em;
+    }
+}
 .nav-social {
     display: block;
 
@@ -108,7 +135,8 @@
 }
 .site-branding-medium {
     display: block;
-    flex: .6;
+    flex: none;
+    width: 70%;
 
     @media $medium {
         flex: .6;

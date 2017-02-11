@@ -36,7 +36,7 @@ $outer-max-width: 1280px;
 
 $sitePurple: #5A2788;
 $siteTeal: #00929E;
-$black: #00000;
+$black: #000000;
 $white: #ffffff;
 
 $backgroundGrey: #EBEBE8;
@@ -47,5 +47,3 @@ $nearBlack: #222;
 
 $textMargin: 75%;
 $largeParaText: 1.8rem;
-$montserrat: "Gotham SSm A", "Gotham SSm B";
-$sentinel: "Gotham SSm A", "Gotham SSm B";

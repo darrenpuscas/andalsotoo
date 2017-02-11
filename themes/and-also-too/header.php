@@ -15,7 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat|Vollkorn">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat|Vollkorn|Roboto">
 <?php wp_head(); ?>
 </head>
 
@@ -53,7 +53,8 @@
 			</nav><!-- #site-navigation -->
 			<span class="anchor-link">
 				<a id="open-toggle" href="#">
-					<i class="fa fa-bars" aria-hidden="true"></i> Menu
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					Menu
 				</a>
 			</span>
 			<div class="nav-social-medium">
@@ -66,7 +67,7 @@
 
 
 
-		</div><!-- .site-header -->
+		</span><!-- .site-header -->
 
 	</header><!-- #masthead -->
 
