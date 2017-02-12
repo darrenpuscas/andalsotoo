@@ -2871,7 +2871,6 @@ h1.entry-title {
         width: 10%;
     }
 }
-/*@import 'page_specific/story-indiv';*/
 /*Individual Story*/
 .story-featured-image {
     /*You'll probably replace all the featured image classes with bg and the calc positioning*/
@@ -2990,12 +2989,4 @@ h1.entry-title {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-.story-image-gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-.story-image-in-gallery {
-    margin: 10px;
 }
