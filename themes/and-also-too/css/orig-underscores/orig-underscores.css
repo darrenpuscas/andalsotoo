@@ -651,7 +651,7 @@ a:hover, a:active {
 }
 
 .hentry {
-    margin: 0 0 1.5em;
+    margin: 0em;
 }
 
 .byline, .updated:not(.published) {

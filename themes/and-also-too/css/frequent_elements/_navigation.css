@@ -33,34 +33,51 @@ a:active {
 .main-navigation {
 	/*equivalent to .mobile-flex on menu.css*/
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	font-family: Roboto;
 	font-weight: 400;
-	text-align: end;
 	flex: 1.4;
 	display: none;
 	color: $black;
 	    @media $medium {
 	    	display: block;
 				font-size: 1rem;
+				color: $black;
+				text-align: end;
 	    }
 	    @media $large {
 	        display: block;
 					font-size: 1.3rem;
+					color: $black;
+					text-align: end;
 	    }
 	    @media $ex-large {
 			display: block;
 			font-size: 1.3rem;
+			color: $black;
+			text-align: end;
 	    }
 
 }
+#close-toggle {
+	text-align: end;
+	color: $black;
+	font-weight: 700;
+	font-family: roboto;
+	text-decoration: none;
+	.fa {
+		padding-bottom: 1.8rem;
+
+	}
+}
+
 
 ul.simple-toggle {
 	/*ul.simple-toggle on menu.css*/
 	display: none;
 	list-style: none;
-	margin: 0;
 	padding-left: 0;
+	margin: 0;
 
 	@media $medium {
 		display: block;
@@ -107,25 +124,30 @@ ul.simple-toggle li.focus > a {
 .main-navigation.toggled {
 	display: flex;
 	background-color: #F4F4F4;
-	box-shadow: 2px 2px 3px #444444;
 	position: fixed;
 	top: 0;
-	right: 3%;
+	right: 0;
 	z-index: 500;
+	padding: 1rem 1rem 4rem 2rem;
+	margin: 0.8rem;
+	border: 1px solid $siteTeal;
 }
 .main-navigation.toggled ul {
 	display: block;
 	list-style: none outside none;
-	margin: 0;
-	padding: 0;
+	margin: 0 0 1em;
+	padding-right: 2em;
 }
 .main-navigation.toggled ul li {
 	display: block; list-style: none; text-align: center; }
 .main-navigation.toggled ul li a {
+	text-align: left;
 	display: block;
-	padding: 20px 10px;
-	border-bottom: 1px solid #ccc;
+	padding: 10px 0px 2px;
+	border-bottom: 1px solid $siteTeal;
 	text-decoration: none;
+	color: $sitePurple;
+	font-weight: 700;
 }
 .main-navigation.toggled ul a:hover {
 	background-color: #ccc;
@@ -157,6 +179,22 @@ ul.simple-toggle li.focus > a {
 	@media $ex-large {
 		display: none;
 	    }
+}
+
+.mobile-nav-middle {
+	width: 50%;
+	@media $medium {
+		width: 100%;
+	}
+
+	@media $large {
+	width: 100%;
+	}
+
+	@media $ex-large {
+width: 100%;
+			}
+
 }
 
 

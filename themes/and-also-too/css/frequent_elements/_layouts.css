@@ -1,4 +1,4 @@
-#main {
+.site-main {
   padding-top: 4em;
   @media $medium {
   padding-top: 9em;
@@ -9,6 +9,10 @@
   @media $ex-large {
   padding-top: 9em;
   }
+}
+
+.page-template-people .site-main, .home .site-main {
+    padding-top: 0em;
 }
 
 .entry-content {
@@ -34,7 +38,7 @@
     width: 75%;
     margin: 0 auto;
     @media $medium {
-        width: 58.9%;
+        width: 66.6%;
     }
     @media $large {
         width: 58.9%;

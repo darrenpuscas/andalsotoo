@@ -122,6 +122,7 @@
 }
 .nav-social {
     display: block;
+    text-align: left;
 
     @media $medium {
         display: none;
@@ -131,6 +132,9 @@
     }
     @media $ex-large {
         display: none;
+    }
+    .fa {
+      padding-right: 0.6em;
     }
 }
 .site-branding-medium {
@@ -149,11 +153,18 @@
     }
 }
 .site-branding {
-    width: 50%;
+    width: 35%;
     flex: 3;
     display: none;
+    margin-left: 30px;
+padding-top: 82px;
 }
 
 .main-navigation.toggled .site-branding {
     display: block;
+
+}
+.main-navigation.toggled img {
+    width: 65%;
+    align: right;
 }

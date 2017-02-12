@@ -1,47 +1,160 @@
 .site-footer {
-    align-items: center;
+  border-top: 2px solid #787878;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+  @media $medium {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
+  }
+  @media $large {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  @media $ex-large {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+}
+
+.footer-content {
+    align-items: center;
+    margin: 0 auto;
     @media $medium {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 66.6%;
 
     }
     @media $large {
         display: flex;
-        justify-content: space-around;
-
+        justify-content: space-between;
+        width: 58.9%;
     }
     @media $ex-large {
         display: flex;
-        justify-content: space-around;
-
+        flex: grow;
+        justify-content: space-between;
+        width: 58.9%;
     }
 
 }
 .footer-middle {
-    /*wraps logo and medium social and comes second on dsktop*/
+    /*wraps logo and medium social and comes second on desktop*/
     order: 2;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    @media $medium {
+
+        width: 55%;
+
+    }
+    @media $large {
+
+        width: 45%;
+    }
+    @media $ex-large {
+
+        width: 33%;
+    }
 }
 
 .footer-logo {
-    max-width: 75%;
+    margin: 0 auto 1rem;
+    width: 100%;
+    @media $medium {
+    display: none;
+    }
+    @media $large {
+    display: none;
+    }
+    @media $ex-large {
+    display: none;
+    }
+}
+.footer-logo-medium {
+  display: none;
     margin: auto;
+    @media $medium {
+    display: block;
+    }
+    @media $large {
+    display: block;
+    }
+    @media $ex-large {
+    display: block;
+    }
 }
 .logo-img {
-    width: 50%;
+    width: 230px;
     margin: auto;
     text-align: center;
+    @media $medium {
+  width: 60px;
+    }
+    @media $large {
+    width: 60px;
+    }
+    @media $ex-large {
+      width: 80px;
+    }
+}
+.footer-phone, .footer-email {
+    width: 100%;
+    font-family: vollkorn;
+    font-size: 1.6rem;
+    @media $medium {
+      font-size: 1.3rem;
+    }
+    @media $large {
+      font-size: 1.6rem;
+    }
+    @media $ex-large {
+      font-size: 1.6rem;
+    }
 }
 .footer-phone {
     /*comes first on desktop*/
+      margin: 0 auto;
+    text-align: center;
     order: 1;
+    @media $medium {
+    text-align: left;
+    }
+    @media $large {
+    text-align: left;
+    }
+    @media $ex-large {
+    text-align: left;
+    }
+}
+.footer-email {
+    /*comes last on desktop*/
+      margin: 0 auto;
+    order: 3;
+    text-align: center;
+    @media $medium {
+    text-align: right;
+    }
+    @media $large {
+  text-align: right;
+    }
+    @media $ex-large {
+    text-align: right;
+    }
 }
 .contact-phone {
-    text-align: center;
+
 }
 .footer-social {
     text-align: center;
     display: block;
+    margin: 0 auto;
+    padding: 1rem 0 0rem;
+    order: 4;
+    font-size: 1.8rem;
     @media $medium {
         display: none;
     }
@@ -50,22 +163,29 @@
     }
     @media $ex-large {
         display: none;
+    }
+    .fa {
+      padding: 0 0.3rem;
     }
 }
 .footer-social-medium {
     display: none;
+    text-align: center;
+order: 4;
     @media $medium {
+      padding: 2rem 0 0;
         display: block;;
     }
     @media $large {
+      padding: 2rem 0 0;
         display: block;
     }
     @media $ex-large {
+      padding: 3rem 0 0;
         display: block;
     }
-}
-.footer-email {
-    /*comes last on dsktop*/
-    order: 3;
-    text-align: center;
+    .fa {
+      font-size: 1.8rem;
+      padding: 0 0.3rem;
+    }
 }

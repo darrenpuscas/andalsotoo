@@ -45,7 +45,7 @@
     @media $large {
         display: block;
         flex: 0 0 auto;
-        width: 12%;
+        width: 15.55%;
     }
     @media $ex-large {
         display: block;
@@ -138,7 +138,7 @@ font-size: 3.5rem
     }
     @media $large {
         flex: 0 0 auto;
-          width: 76%;
+          width: 58.9%;
     }
     @media $ex-large {
         flex: 0 0 auto;
@@ -176,7 +176,7 @@ font-size: 3.5rem
        width: 0%;
  }
  @media $large {
-       width: 12%;
+       width: 15.55%;
  }
  @media $ex-large {
 
