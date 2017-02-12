@@ -1,0 +1,80 @@
+/*Individual Story*/
+
+.story-featured-image {
+    /*You'll probably replace all the featured image classes with bg and the calc positioning*/
+    position: relative;
+}
+.story-title {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+.story-image {
+    width: 45%;
+}
+.story-2col-flex {
+    align-items: baseline;
+
+    @media $medium {
+        display: flex;
+    }
+    @media $large {
+        display: flex;
+    }
+    @media $ex-large {
+        display: flex;
+    }
+
+}
+.story-left-col {
+
+    @media $medium {
+        flex: 3;
+    }
+    @media $large {
+        flex: 3;
+    }
+    @media $ex-large {
+        flex: 3;
+    }
+
+}
+.story.right-col {
+
+    @media $medium {
+        flex: 1;
+    }
+    @media $large {
+        flex: 1;
+    }
+    @media $ex-large {
+        flex: 1;
+    }
+}
+.story-social {
+
+    @media $medium {
+        flex: 1;
+        border-top: solid 1px green;
+        border-bottom: solid 1px green;
+        padding: 10% 0;
+    }
+    @media $large {
+        flex: 1;
+        border-top: solid 1px green;
+        border-bottom: solid 1px green;
+        padding: 10% 0;
+    }
+    @media $ex-large {
+        flex: 1;
+        border-top: solid 1px green;
+        border-bottom: solid 1px green;
+        padding: 10% 0;
+    }
+
+}
+.story-tags-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

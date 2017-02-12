@@ -8,7 +8,7 @@
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
-	console.log(container);
+	// console.log(container);
 	if ( ! container ) {
 		return;
 	}
