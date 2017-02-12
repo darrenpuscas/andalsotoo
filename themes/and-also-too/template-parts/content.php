@@ -21,7 +21,7 @@
 							<span class="blog-date-month">nov</span>
 							<span class="blog-date-year">2016</span>
 						</div>
-						<div class="blog-category">debrief</div>
+						<div class="blog-category">Debrief</div>
 					</div><!-- .entry-meta -->
 					<?php endif; ?>
 

@@ -1,22 +1,26 @@
 .site-main {
-  padding-top: 4em;
+  padding-top: 5em;
   padding-bottom: 4em;
   @media $medium {
-  padding-top: 9em;
+  padding-top: 6em;
   padding-bottom: 7em;
   }
   @media $large {
-  padding-top: 9em;
+  padding-top: 6em;
   padding-bottom: 7em;
   }
   @media $ex-large {
-  padding-top: 9em;
+  padding-top: 6em;
   padding-bottom: 7em;
   }
 }
 
 .page-template-people .site-main, .home .site-main {
     padding-top: 0em;
+}
+
+.page-template-blog .site-main {
+    padding-bottom: 0em;
 }
 
 

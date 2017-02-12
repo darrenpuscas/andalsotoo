@@ -16,7 +16,23 @@
     }
 }
 
-.date-container {}
+.date-container {
+  padding-bottom: 0.6rem;
+  padding-top: 1.2rem;
+  @media $medium {
+      padding-bottom: 1.6rem;
+      padding-top: 0rem;
+  }
+  @media $large {
+      padding-bottom: 2rem;
+      padding-top: 0rem;
+  }
+  @media $ex-large {
+      padding-bottom: 2rem;
+      padding-top: 0rem;
+      padding-left: 32%;
+  }
+}
 
 .featured-image {}
 
@@ -45,12 +61,12 @@
     @media $large {
         display: block;
         flex: 0 0 auto;
-        width: 15.55%;
+        width: 15.45%;
     }
     @media $ex-large {
         display: block;
         flex: 0 0 auto;
-        width: 10%;
+        width: 15.45%;
     }
 }
 
@@ -58,7 +74,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-family: montserrat;
-    line-height: 1;
+    line-height: 1.4;
     /*display: block;*/
     @media $medium {
         display: block;
@@ -73,60 +89,83 @@
 
 .blog-date-num {
   color: $sitePurple;
+  font-size: 2.6rem;
   line-height: 0.8;
+  letter-spacing: 3px;
   @media $medium {
-    font-size: 6.5rem;
+    font-size: 5.4rem;
     line-height: 0.8;
-    line-height: 0.8;
-
   }
   @media $large {
-  font-size: 6.5rem;
+  font-size: 6rem;
   line-height: 0.8;
+  letter-spacing: 2px;
+    padding-bottom: 0.2rem;
   }
   @media $ex-large {
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 0.8;
+      padding-bottom: 0.2rem;
   }
 }
 .blog-date-month {
   color: $sitePurple;
+  font-size: 2.6rem;
+    letter-spacing: 3px;
   @media $medium {
-font-size: 3.5rem
+font-size: 2.5rem;
+line-height: 1.2;
   }
   @media $large {
-font-size: 3.5rem
+font-size: 3.0rem;
+line-height: 1.2;
   }
   @media $ex-large {
-    font-size: 3.5rem
+    font-size: 3.0rem;
+line-height: 1.2;
   }
 }
 .blog-date-year {
-  color: $siteTeal;
+  color: $sitePurple;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
   @media $medium {
-  font-size: 3.5rem
+    color: $siteTeal;
+  font-size: 2.5rem;
+  line-height: 1.1;
   }
   @media $large {
-  font-size: 3.5rem
+    color: $siteTeal;
+  font-size: 3.0rem;
+  line-height: 1.1;
   }
   @media $ex-large {
-    font-size: 3.5rem
+    color: $siteTeal;
+    font-size: 3.0rem;
+    line-height: 1.2;
   }
 }
 .blog-category {
-      font-family: montserrat;
-  color: $sitePurple;
+  font-family: montserrat;
+  color: $siteTeal;
   text-transform: uppercase;
+  font-size: 1.8rem;
   font-weight: 700;
+  letter-spacing: 1px;
   @media $medium {
-
+    color: $sitePurple;
+  font-size: 1.4rem;
   }
   @media $large {
-  font-size: 2.0rem;
+    color: $sitePurple;
+  font-size: 1.6rem;
+
   }
   @media $ex-large {
-    font-size: 2.0rem;
-    padding-top: 2rem;
+    color: $sitePurple;
+    font-size: 1.6rem;
+    padding-left: 32%;
+
   }
 }
 
@@ -138,33 +177,63 @@ font-size: 3.5rem
     }
     @media $large {
         flex: 0 0 auto;
-          width: 58.9%;
+          width: 69.1%;
     }
     @media $ex-large {
         flex: 0 0 auto;
-          width: 80%;
+          width: 69.1%;
     }
     h3 {
        letter-spacing: 1px;
        line-height: 1.2;
-       font-size: 2.5rem;
+       font-size: 2.8rem;
        font-style: bold;
        font-family: montserrat;
        text-transform: uppercase;
-
-       margin: 1.3rem 0;
+       margin: 1.3rem 0 0;
        color: $sitePurple;
+       @media $medium {
+         margin: 2.2rem 0 0.2rem;
+       }
+       @media $large {
+         margin: 1.8rem 0 0.2rem;
+       }
+       @media $ex-large {
+         margin: 2.2rem 0 0.2rem;
+       }
     }
+
     a {
       text-decoration: none;
+      color: $sitePurple;
+    }
+    p {
+      	margin-top: 0;
     }
 }
 
-.read-link {
+.blog-content .read-link {
     text-transform: uppercase;
+    font-weight: 700;
+        font-size: 2.1rem;
+        color: $siteTeal;
+    float: right;
+    letter-spacing: 1px;
+    @media $medium {
+    font-size: 1.8rem;
+    float: right;
+    }
+    @media $large {
+    font-size: 2.1rem;
+    float: right;
+    }
+    @media $ex-large {
+      font-size: 2.1rem;
+      float: right;
+    }
 }
 .read-link > i {
-    color: green;
+    color: $siteTeal;
 }
 
 
@@ -176,10 +245,10 @@ font-size: 3.5rem
        width: 0%;
  }
  @media $large {
-       width: 15.55%;
+       width: 15.45%;
  }
  @media $ex-large {
 
-       width: 10%;
+       width: 15.45%;
  }
 }
