@@ -96,40 +96,54 @@ get_header(); ?>
 
 					<section class="front-content-area announcements">
 
-								<div class="bg-announce">
-								<div class="overlay-announce outer-content">
+						<div class="bg-announce">
+						<div class="overlay-announce outer-content">
 
-										<h1 class="announcements-heading  front-content-heading">Announcements</h1>
+							<h1 class="announcements-heading front-content-heading">Announcements</h1>
 
-										<div class="announcement-content">
-												<div class="announcement-indiv announcement-1">
-														<div class="announcement-date">Nov 1, 2016</div>
-														<p class="announcement-text">
-															We’re so excited to be presenting in Malmö, Sweden alongside Feathers of Hope at the Decolonising Design Symposium: Intersectional Perspectives on Design, Politics and Power. Una will be presenting about Design Justice.
-														</p>
-												</div>
-												<div class="announcement-indiv announcement-2">
-														<div class="announcement-date">Oct 26, 2016</div>
-														<p class="announcement-text">
-															Una will join a panel of brilliant thinkers and builders in the platform co-operative space at Building the Co-operative Internet, Nov. 11–13.
-														</p>
-												</div>
-												<div class="announcement-indiv announcement-3">
-														<div class="announcement-date">Sep 22, 2016</div>
-														<p class="announcement-text">
-															We’re pleased to announce a new team member, Lupe Pérez! Lupe is a talented Montréal based designer. Read more about her on our People page.
-														</p>
-												</div>
-												<div class="announcement-indiv announcement-4">
-														<div class="announcement-date">Sep 1, 2016</div>
-														<p class="announcement-text">
-															Join us at MozFest, Oct. 28-30 in London UK! We’re hoping to connect with others who are centering people and communities who are often marginalized by technology.
-														</p>
-												</div>
+							<div class="announcement-content">
 
-											</div><!-- .announcement-content-->
-								</div><!-- .overlay-announce-->
-							</div><!-- .bg-announce-->
+
+
+
+
+
+								<div class="announcement-indiv announcement-1">
+									<div class="announcement-date">Nov 1, 2016</div>
+									<p class="announcement-text">
+										We’re so excited to be presenting in Malmö, Sweden alongside Feathers of Hope at the Decolonising Design Symposium: Intersectional Perspectives on Design, Politics and Power. Una will be presenting about Design Justice.
+									</p>
+								</div>
+
+
+									<div class="announcement-indiv announcement-2">
+										<div class="announcement-date">Oct 26, 2016</div>
+										<p class="announcement-text">
+											Una will join a panel of brilliant thinkers and builders in the platform co-operative space at Building the Co-operative Internet, Nov. 11–13.
+										</p>
+									</div>
+
+									<div class="announcement-indiv announcement-3">
+										<div class="announcement-date">Sep 22, 2016</div>
+										<p class="announcement-text">
+											We’re pleased to announce a new team member, Lupe Pérez! Lupe is a talented Montréal based designer. Read more about her on our People page.
+										</p>
+									</div>
+
+									<div class="announcement-indiv announcement-4">
+										<div class="announcement-date">Sep 1, 2016</div>
+										<p class="announcement-text">
+											Join us at MozFest, Oct. 28-30 in London UK! We’re hoping to connect with others who are centering people and communities who are often marginalized by technology.
+										</p>
+									</div>
+
+
+
+
+
+								</div><!-- .announcement-content-->
+							</div><!-- .overlay-announce-->
+						</div><!-- .bg-announce-->
 					</section><!-- .front-content announcements -->
 
 				</div><!-- .entry-content -->
