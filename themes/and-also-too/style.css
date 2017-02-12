@@ -2183,6 +2183,109 @@ h1.entry-title {
 @media screen and (min-width: 1321px) {
     .shift-text-4 {}
 }
+.contact-content {
+    /*same widths as site-content(nav-content)*/
+    width: 87%;
+    margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 92%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+    .contact-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 92%;
+    }
+}
+@media screen and (min-width: 1321px) {
+    .contact-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 92%;
+    }
+}
+.contact-col-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 10px;
+}
+.contact-col-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 10px;
+    padding-bottom: 33%;
+}
+.contact-map {
+    max-width: 650px;
+    /*max-height: 891px;*/
+    min-width: 300px;
+    /*min-height: 400px;*/
+    /*padding-bottom: 33%;*/
+}
+#wpgmza_map[style] {
+    height: auto !important;
+    min-height: 200px;
+    position: static !important;
+}
+/*maintain aspect-ratio*/
+.wrapper {
+    position: relative;
+    width: 100%;
+    /* <-- just a default, can be anything. */
+}
+.three-by-two.aspect-ratio {
+    padding-bottom: 66.666%;
+}
+.four-by-three.aspect-ratio {
+    padding-bottom: 75%;
+}
+.sixteen-by-nine.aspect-ratio {
+    padding-bottom: 56.25%;
+}
+.map-aspect {
+    padding-bottom: 33.33%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 24px;
+    /* Optional padding for content area */
+}
+/*
+	The classes above have all of the aspect ratio magic we need.
+	They can be reused on any element.
+	Below are some element-specific styles
+*/
+.half {
+    width: 50%;
+    float: left;
+    background: beige;
+}
+/* Positioning for the main box */
+.main-box {
+    width: 80%;
+    margin: 5% auto;
+}
+/* Styles for the content in the main box */
+.main-box > .content {
+    background: #ffe5e5;
+}
 .people-intro-content {
     position: absolute;
     top: 27%;
@@ -2753,6 +2856,7 @@ h1.entry-title {
     width: 0%;
     height: 10px;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .bempty {
         width: 0%;
@@ -2768,6 +2872,9 @@ h1.entry-title {
         width: 10%;
     }
 }
+=======
+/*@import 'page_specific/story-indiv';*/
+>>>>>>> MLocalDev
 /*Individual Story*/
 .story-featured-image {
     /*You'll probably replace all the featured image classes with bg and the calc positioning*/
