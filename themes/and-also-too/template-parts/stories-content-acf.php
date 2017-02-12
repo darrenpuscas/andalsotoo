@@ -121,13 +121,20 @@
 			</aside><!-- story-right-col -->
 		</section><!-- story-2col-flex- -->
 	    <section class="story-image-gallery">
-	   		<div class="story-image alignleft">
-				<!-- Note: I used .alignleft and .alignright on the images because that's what WP uses automatically if you align images in the editor in the admin area. But it doesn't work on mobile because the two images don't re-align one ontop of each other. I guess we'll have to use an ACF gallery and not allow such an image layout in the admin editor -->
-				<img src="http://and-also-too.dev/wp-content/uploads/2017/02/photo3.png" alt="">
-			</div>
-			<div class="story-image alignright">
-				<img src="http://and-also-too.dev/wp-content/uploads/2017/02/photo3.png" alt="">
-			</div>
+			<!-- Note: I used .alignleft and .alignright on the images because that's what WP uses automatically if you align images in the editor in the admin area. But it doesn't work on mobile because the two images don't re-align one ontop of each other. I guess we'll have to use an ACF gallery and not allow such an image layout in the admin editor -->
+				<?php
+
+					$images = get_field('story_image_gallery');
+					if( $images ): ?>
+					        <?php foreach( $images as $image ): ?>
+					            <div class="story-gallery-image">
+					                <a href="<?php echo $image['url']; ?>">
+					                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+					                </a>
+					            </div>
+					        <?php endforeach; ?>
+					<?php endif; ?>
+
 	    </section>
 	    <section class="story-secondary-content">
 		    <p>

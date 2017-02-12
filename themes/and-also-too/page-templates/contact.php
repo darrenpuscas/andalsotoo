@@ -16,37 +16,24 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<?php while ( have_posts() ) : the_post();?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
-
-				<?php
-					echo "test php";
-					?>
-					<div>
-					<?php
-					the_field('text_test');
-
-					$test_text =  get_field('text_test');
-					echo $test_text;
-
-						echo '<pre>';
-							var_dump( $test_text );
-						echo '</pre>';
-
-
-
-				?>
-					</div>
-
 				<div class="entry-content">
 					<div class="contact-content">
 						<section class="contact-col-left">
-							<div class="contact-map">
-								<!-- <img src="http://and-also-too.dev/wp-content/uploads/2017/02/map_filler.png" alt="" /> -->
+
+
+						<div class="wrapper">
+							<div class="map-aspect">
+								<div class="contact-map">
+									<?php //google map
+									the_content();
+									?>
+								</div>
 							</div>
+						</div>
+
 						</section><!-- contact-col-left -->
 
 						<section class="contact-col-right">
@@ -79,48 +66,6 @@ get_header(); ?>
 						</section><!-- contact-col-right -->
 
 					</div><!-- .contact-content-->
-						<p>
-							Map Here????
-						</p>
-						<?php
-						//google map:
-
-
-//
-// while ( have_posts() ) : the_post();
-
-
-
-
-
-							the_field('text_test');
-
-
-
-						$location = get_field('google_map');
-
-						echo '<pre>';
-							var_dump( $location );
-						echo '</pre>';
-
-
-
-						// if( !empty($location) ):
-						?>
-						<div class="acf-map">
-							<p>ACF Map here!!!</p>
-							 <div
-
-							 class="marker"
-							 data-lat="<?php echo $location['lat']; ?>"
-							 data-lng="<?php echo $location['lng']; ?>">
-							 </div>
-
-						</div>
-<?php					 //endif;
-
-						// endwhile; // End of the loop.
-?>
 
 
 
@@ -131,7 +76,7 @@ get_header(); ?>
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
-
+		<?php endwhile; // End of the loop.?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
