@@ -1,7 +1,94 @@
+.page-template-about .site-main {
+  padding-top: 0;
+}
+.page-template-about .site-footer {
+  border-top: 0px solid #787878;
+}
+
 .about-full-width {
     /*background: #D8BFD8;*/
     position: relative;
 }
+.about-full-width2 {
+
+  z-index: -999;
+
+  @media $medium {
+
+  }
+  @media $large {
+
+  }
+  @media $ex-large {
+
+  }
+}
+
+
+
+
+
+.bg-about-1 {
+background: url(http://and-also-too.dev/wp-content/uploads/2017/02/about-background-1.png);
+  background-position: 45% 100%;
+    background-size: cover;
+  @media $medium {
+
+      background-size: 105% 120%;
+  }
+  @media $large {
+
+background-size: 105% 100%;
+  }
+  @media $ex-large {
+
+background-size: 105% 100%;
+  }
+}
+
+
+.overlay-about-1 {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  @media $medium {
+    padding-top: 17%;
+    padding-bottom: 17%;
+  }
+  @media $large {
+    padding-top: 12%;
+    padding-bottom: 12%;
+  }
+  @media $ex-large {
+    padding-top: 16%;
+    padding-bottom: 16%;
+  }
+}
+.overlay-about-2 {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  @media $medium {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  @media $large {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  @media $ex-large {
+    padding-top: 19%;
+    padding-bottom: 19%;
+  }
+}
+
+.about-title-main {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  letter-spacing: 4px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+
 .about-background {
     position: absolute;
     z-index: -1;
@@ -28,50 +115,176 @@
     }
 
 }
+.about-grid-item[style] {
+    width: 50%!important;
+}
+.about-group1[style] {
+    top: -30%!important;
+    @media $medium {
+      top: -26%!important;
+      left: 50%!important;
+
+    }
+    @media $large {
+      top: -20%!important;
+      left: 50%!important;
+
+    }
+    @media $ex-large {
+      top: -26%!important;
+      left: 50%!important;
+    }
+}
+.about-group-2[style] {
+    top: -30%!important;
+    @media $medium {
+      top: 10%!important;
+    }
+    @media $large {
+      top: 5%!important;
+
+    }
+    @media $ex-large {
+      top: 5%!important;
+
+    }
+}
+.about-group3[style] {
+    top: 40%!important;
+    @media $medium {
+      top: 40%!important;
+    left: 50%!important;
+    }
+    @media $large {
+      top: 30%!important;
+    left: 50%!important;
+    }
+    @media $ex-large {
+      top: 30%!important;
+    left: 50%!important;
+    }
+}
+.about-group4[style] {
+    top: 70%!important;
+    @media $medium {
+      top: 70%!important;
+
+    }
+    @media $large {
+      top: 70%!important;
+
+    }
+    @media $ex-large {
+      top: 80%!important;
+
+    }
+}
+.about-group5[style] {
+    top: 70%!important;
+    @media $medium {
+      top: 70%!important;
+    left: 50%!important;
+    }
+    @media $large {
+      top: 70%!important;
+    left: 50%!important;
+    }
+    @media $ex-large {
+      top: 60%!important;
+    left: 50%!important;
+    }
+}
+.eee {
+  position: relative;
+}
+.about-contact[style] {
+    top: 70%!important;
+    @media $medium {
+      top: 70%!important;
+
+    }
+    @media $large {
+      top: 90%!important;
+
+    }
+    @media $ex-large {
+      top: 70%!important;
+
+    }
+}
+
+.shift-title-1, .shift-title-2, .shift-title-3, .shift-title-4 {
+  color: $black;
+  font-family: Montserrat;
+  font-weight: 700;
+    font-size: 18px;
+  @media $medium {
+    font-size: 18px;
+  }
+  @media $large {
+    font-size: 25px;
+  }
+  @media $ex-large {
+    font-size: 25px;
+    padding: 0.4em 0;
+  }
+}
+.shift-text-1, .shift-text-2, .shift-text-3, .shift-text-4 {
+  color: $black;
+  font-family: Vollkorn;
+  font-weight: 400;
+  @media $medium {
+    font-size: 22px;
+  }
+  @media $large {
+    font-size: 22px;
+  }
+  @media $ex-large {
+    font-size: 22px;
+  }
+}
+
+
+
 .shift-title-1 {
     text-transform: uppercase;
 
     @media $medium {
-
+    width: 82.6%;
 
     }
     @media $large {
-
+    width: 82.6%;
 
     }
     @media $ex-large {
-
+    width: 82.6%;
 
     }
 }
 .shift-text-1 {
+  color: $white;
     @media $medium {
-
-
+    width: 82.6%;
     }
     @media $large {
-
-
+    width: 82.6%;
     }
     @media $ex-large {
-
-
+    width: 82.6%;
     }
 
 }
 .shift-image-1 {
     position: relative;
     @media $medium {
-
-
+    width: 82.6%;
     }
     @media $large {
-
-
+    width: 82.6%;
     }
     @media $ex-large {
-
-
+    width: 82.6%;
     }
 
 }
@@ -119,31 +332,39 @@
 .shift-title-2 {
     text-transform: uppercase;
     @media $medium {
+      text-align: right;
+      padding: 0 1.4em 1em 0.7em;
 
 
     }
     @media $large {
 
+text-align: right;
+padding: 0 1.4em 1em 0.7em;
 
     }
     @media $ex-large {
-
+      text-align: right;
+      padding: 0 1.4em 1em 0.7em;
 
     }
 
 }
 .shift-text-2 {
     @media $medium {
-
+  width: 82.6%;
+  padding-bottom: 2em;
 
     }
     @media $large {
-
-
+  width: 82.6%;
+  text-align: right;
+  padding-bottom: 2em;
     }
     @media $ex-large {
-
-
+  width: 82.6%;
+  text-align: right;
+  padding-bottom: 2em;
     }
 
 }
@@ -182,15 +403,15 @@
 .shift-text-3 {
     @media $medium {
 
-
+  padding-left: 17.6%;
     }
     @media $large {
 
-
+  padding-left: 17.6%;
     }
     @media $ex-large {
 
-
+padding-left: 17.6%;
     }
 
 }
@@ -227,15 +448,17 @@
 }
 .shift-text-4 {
     @media $medium {
-
-
+text-align: right;
+padding-right: 17.6%;
     }
     @media $large {
-
+      text-align: right;
+padding-right: 17.6%;
 
     }
     @media $ex-large {
-
+      text-align: right;
+padding-right: 17.6%;
 
     }
 
