@@ -53,26 +53,44 @@ get_header(); ?>
 
 
 					<section class="front-content-area front-latest-posts row">
-								<div class="front-no-overlay2">
-									<div class="front-content-inner front-content-textonly std-content-area">
-											<h1 class="latest-posts-title front-content-heading front-content-heading4">Latest Posts</h1>
+						<div class="front-no-overlay2">
+							<div class="front-content-inner front-content-textonly std-content-area">
+								<h1 class="latest-posts-title front-content-heading front-content-heading4">Latest Posts</h1>
+								<?php // WP_Query arguments
+								$args = array(
+									'post_type'              => array( 'post' ),
+									'posts_per_page'         => '2',
+								);
 
-													<div class="latest-post-indiv">
-													<h2 class="latest-posts-date">Nov 1, 2016
-													</h2>
-													<div class="latest-posts-text front-content-text">Visualizing the Impacts of Network-Based Organizing
-													</div>
-											  </div>
+								// The Query
+								$query = new WP_Query( $args );
 
-												<div class="latest-post-indiv">
-													<h2 class="latest-posts-date">Oct 31, 2016
-													</h2>
-													<div class="latest-posts-text front-content-text">Co-Creating a Visual Vocabulary of Social Justice Imagery
-													</div>
-												</div>
+								// The Loop
+								if ( $query->have_posts() ) :
+									while ( $query->have_posts() ):
+										$query->the_post();
+								?>
+								<div class="latest-post-indiv">
+									<h2 class="latest-posts-date"><?php echo get_the_date();?></h2>
+									<div class="latest-posts-text front-content-text">
+									<?php the_title()?>
+									</div>
+							  	</div>
+								<?php endwhile;
 
-									</div><!-- .front-content-inner-->
-								</div><!-- .outer-content-->
+								else :
+									// no posts found
+								// Restore original Post Data
+								endif;
+
+								wp_reset_postdata();
+								?>
+								<!-- Loop End -->
+
+
+
+							</div><!-- .front-content-inner-->
+						</div><!-- front-no-overlay2-->
 					</section><!-- .front-content front-latest-posts -->
 
 
