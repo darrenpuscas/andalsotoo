@@ -19,11 +19,9 @@ get_header(); ?>
 
 				<div class="entry-content">
 
-					<header class="people-header entry-header">
-						<div class="bg">
-								<img src="/wp-content/uploads/2017/02/people-landing2.png">
-						</div>
-								<div class="outer-content">
+					<header class="people-intro">
+							<div class="bg-people-intro">
+								<div class="overlay-people-intro outer-content">
 									<div class="people-intro-content">
 											<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 											<div class="landing-person">
@@ -52,24 +50,26 @@ get_header(); ?>
 											</div>
 											<div class="landing-person">
 													<div class="landing-name landing-bold">
-														Shameela Lazan
+														Shameela Zaman
 													</div>
 													<div class="landing-title landing-italic">
 														Studio Coordinator
 													</div>
 											</div>
-									</div><!-- .people-content-->
+									</div><!-- .people-intro-content-->
 
-								</div><!-- .outer-content-->
+								</div><!-- .overlay-people-intro-->
+							</div><!-- .bg-people-intro-->
+					</header><!-- .front-content people-intro -->
 
 
-					</header><!-- .entry-header -->
+
 
 					<div class="outer-content people-content row-top-pad">
 							<div class="people-col1 left-content-full">
-									<h2 class="people-name">
+									<h3 class="people-name">
 										Una Lee
-									</h2>
+									</h3>
 									<div class="people-title">
 										Creative Director
 									</div>
@@ -78,15 +78,15 @@ get_header(); ?>
 								</div>
 							</div>
 							<div class="people-col2 people-image right-content-smaller">
-								<img src="/wp-content/uploads/2017/01/una.png">
+								<img src="/wp-content/uploads/2017/02/una.jpg">
 							</div>
 					</div><!-- .outer-content-->
 
 					<div class="outer-content people-content row-top-pad">
 						<div class="people-col1 left-content-full">
-							<h2 class="people-name">
+							<h3 class="people-name">
 								Lara Stefanovich-Thomson
-							</h2>
+							</h3>
 							<div class="people-title">
 								Designer
 							</div>
@@ -95,15 +95,15 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/01/lara.png">
+							<img src="/wp-content/uploads/2017/02/lara.jpg">
 						</div>
 					</div><!-- .outer-content-->
 
 					<div class="outer-content people-content row-top-pad">
 						<div class="people-col1 left-content-full">
-							<h2 class="people-name">
+							<h3 class="people-name">
 								Lupe Pérez
-							</h2>
+							</h3>
 							<div class="people-title">
 								Designer
 							</div>
@@ -112,15 +112,15 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/01/lupe.png">
+							<img src="/wp-content/uploads/2017/02/lupe.jpg">
 						</div>
 					</div><!-- .outer-content-->
 
 					<div class="outer-content people-content row-top-pad">
 						<div class="people-col1 left-content-full">
-							<h2 class="people-name">
+							<h3 class="people-name">
 								Shameela Zaman
-							</h2>
+							</h3>
 							<div class="people-title">
 								Studio Coordinator
 							</div>
@@ -129,7 +129,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/01/shameela.png">
+							<img src="/wp-content/uploads/2017/02/shameela.jpg">
 						</div>
 					</div><!-- .outer-content-->
 

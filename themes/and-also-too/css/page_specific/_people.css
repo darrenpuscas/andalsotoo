@@ -1,62 +1,99 @@
+.bg-people-intro {
+background: url(http://and-also-too.dev/wp-content/uploads/2017/02/people-landing2.png);
+  background-position: 55% 100%;
+    background-size: cover;
+  @media $medium {
+  background-position: 30% 50%;
+  }
+  @media $large {
+  background-position: 25% 30%;
+  }
+  @media $ex-large {
+    background-position: 65% 30%;
+  }
+}
+
+.overlay-people-intro {
+    padding-top: 18%;
+    padding-bottom: 8%;
+  @media $medium {
+    padding-top: 12%;
+    padding-bottom: 5.4%;
+  }
+  @media $large {
+    padding-top: 9%;
+    padding-bottom: 3%;
+  }
+  @media $ex-large {
+    padding-top: 10.2%;
+    padding-bottom: 4.2%;
+  }
+}
+
 
 .people-intro-content {
- position: absolute;
- top: 27%;
- @media $medium {
-    top: 21%;
- }
- @media $large {
- top: 22%;
- }
- @media $ex-large {
- top: 25%;
- }
  h1 {
    color: $white;
-   	letter-spacing: 3px;
+   	letter-spacing: 1px;
+    margin: 0 0 1rem;
+    @media $medium {
+       margin: 0 0 0.4rem;
+    }
+    @media $large {
+       margin: 0em 0 1.1rem;
+    }
+    @media $ex-large {
+       margin: 0em 0 1.9rem;
+    }
  }
 }
 
 .landing-person {
-  padding-bottom: 12px;
+  padding-bottom: 1.2rem;
   @media $medium {
-    padding-bottom: 24px;
+    padding-bottom: 1.6rem;
   }
   @media $large {
-padding-bottom: 24px;
+  padding-bottom: 2.1rem;
   }
   @media $ex-large {
-    padding-bottom: 24px;
+    padding-bottom: 2.6rem;
   }
 }
 .landing-name {
-  font-size: 12px;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  color: $white;
+  color: #fefefe;
   font-family: Montserrat;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
   @media $medium {
-    font-size: 18px;
+    font-size: 1.4rem;
   }
   @media $large {
-    font-size: 18px;
+    font-size: 1.6rem;
 
   }
   @media $ex-large {
-    font-size: 18px;
+    font-size: 1.9rem;
   }
 }
 .landing-title {
-    font-size: 12px;
+    color: #232323;
+    font-size: 1.5rem;
     font-family: vollkorn;
+    letter-spacing: -1px;
     @media $medium {
-      font-size: 18px;
+      font-size: 1.4rem;
+      letter-spacing: -0.5px;
     }
     @media $large {
-      font-size: 18px;
+      font-size: 1.9rem;
+      letter-spacing: -1px;
     }
     @media $ex-large {
-      font-size: 18px;
+      font-size: 2.1rem;
+      letter-spacing: -1px;
     }
 }
 .landing-bold {
@@ -88,20 +125,61 @@ padding-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0;
+  padding-bottom: 0;
+  padding-top: 1.8rem;
+  @media $medium {
+      padding-top: 0rem;
+  }
+  @media $large {
+      padding-top: 0rem;
+  }
+  @media $ex-large {
+      padding-top: 0rem;
+  }
+
 }
 .people-title {
   color: $siteTeal;
   font-style: italic;
   font-family: vollkorn;
   width: 100%;
-  font-size: 18px;
+  font-size: 2.3rem;
+  letter-spacing: -.5px;
+  padding: 0 0 0.4rem;
+
+  @media $medium {
+        font-size: 2.0rem;
+          padding: 0 0 1.2rem;
+  }
+  @media $large {
+    font-size: 2.5rem;
+      padding: 0 0 1.5rem;
+  }
+  @media $ex-large {
+    font-size: 2.5rem;
+    padding: 0 0 1.8rem;
+  }
 }
 .people-description {
   font-family: vollkorn;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.3;
-  padding-top: 4px;
-  padding-bottom: 18px;
+  padding-bottom: 0rem;
+  @media $medium {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding-bottom: 2.2rem;
+  }
+  @media $large {
+    font-size: 1.9rem;
+    line-height: 1.4;
+    padding-bottom: 2.2rem;
+  }
+  @media $ex-large {
+    font-size: 2.1rem;
+    line-height: 1.4;
+    padding-bottom: 2.2rem;
+  }
 }
 
 .people-col1 {

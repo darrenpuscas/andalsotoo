@@ -1,5 +1,6 @@
 .page-template-about .site-main {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .page-template-about .site-footer {
   border-top: 0px solid #787878;
@@ -23,9 +24,6 @@
 
   }
 }
-
-
-
 
 
 .bg-about-1 {
