@@ -73,7 +73,9 @@ get_header(); ?>
 								<div class="latest-post-indiv">
 									<h2 class="latest-posts-date"><?php echo get_the_date();?></h2>
 									<div class="latest-posts-text front-content-text">
-									<?php the_title()?>
+										<a href="<?php echo esc_url( get_permalink() );?>">
+											<?php the_title()?>
+										</a>
 									</div>
 							  	</div>
 								<?php endwhile;
