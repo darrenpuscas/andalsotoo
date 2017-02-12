@@ -121,7 +121,7 @@ function and_also_too_scripts() {
 
 	wp_enqueue_style( 'and-also-too-style', get_stylesheet_uri() );
 
-	if ( is_page( 'Stories' ) ) {
+	if ( is_page( 'Stories' ) || is_post_type_archive('stories') ) {
 	wp_enqueue_script( 'app-masonry', get_template_directory_uri() . '/js/app-masonry.js', array('masonry'), '', true );
 	}
 

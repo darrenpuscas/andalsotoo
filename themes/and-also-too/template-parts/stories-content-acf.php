@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying stories
+ * Template part for displaying signle story
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -26,7 +26,6 @@
 						?>
 						<h6 class="">with</h6>
 						<h6 class=""><?php the_field('sub-heading_for_title')?></h6>
-						<!-- catie, The Teresa Group, Womens College Hospital -->
 					</div><!-- .story-title -->
 		</div><!-- .featured-image -->
 
@@ -126,17 +125,7 @@
 				<?php endif; ?>
 	    </section>
 	    <section class="story-secondary-content">
-		    <p>
-		   		Out of my sight! Thou dost infect my eyes. Thou fobbing unchin-snouted devil-mon! Thou cullionly spur-galled puttock! Thou pribbling rough-hewn horn-beast! Thou dankish onion-eyed clotpole! Thou dankish onion-eyed clotpole! Thou paunchy dread-bolted giglet! Thou currish common-kissing boar-pig! Thou churlish flap-mouthed fustilarian!
-		    </p>
-		    <p>
-			   Thou dankish onion-eyed clotpole! Thou paunchy dread-bolted giglet! Thou currish common-kissing boar-pig! Thou churlish flap-mouthed fustilarian!
-		   </p>
+			<?php the_field('second_text_section')?>
 	    </section>
-
-
-
-
-
     </div><!-- .entry-content -->
 </article><!-- #post-## -->
