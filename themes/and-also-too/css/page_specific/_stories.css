@@ -6,31 +6,32 @@
 .first-story {
     width: 100%;
     @media $medium {
-      width: 64%;
+      width: 66.66%;
     }
     @media $large {
-      width: 49%;
+      width: 50%;
 
     }
     @media $ex-large {
       width: 48%;
+
     }
 }
-.story-width {
-    width: 48%;
+.stories-width {
+
     @media $medium {
-      width: 31%;
+      width: 33.33%;
     }
     @media $large {
-      width: 22%;
+      width: 25%;
       margin-bottom: 10px;
 
     }
     @media $ex-large {
-        width: 22%;
+        width: 24%;
     }
 }
-.story-summary {
+.stories-summary {
     margin-bottom: 30px;
 
     @media $medium {
@@ -44,7 +45,7 @@
 
     }
 }
-.story-title {
+.stories-title {
   text-transform: uppercase;
   color: $sitePurple;
     font-family: Montserrat;
@@ -62,7 +63,7 @@
 
     }
 }
-.story-italic {
+.stories-italic {
 
   color: $siteTeal;
     font-family: Vollkorn;

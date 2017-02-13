@@ -19,7 +19,7 @@
     padding-top: 0em;
 }
 
-.page-template-blog .site-main {
+.page-template-blog .site-main, .home .site-main {
     padding-bottom: 0em;
 }
 

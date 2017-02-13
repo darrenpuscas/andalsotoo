@@ -20,6 +20,7 @@ get_header(); ?>
 			<div class="entry-content">
 
 			  <header class="front-header entry-header">
+
 						<div class="bg-front-header">
 								 <div class="overlay-front-header std-content-area">
 										<h1 class="front-content-heading front-content-heading1">A collaborative design studio for social justice visionaries</h1>

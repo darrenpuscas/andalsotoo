@@ -51,7 +51,7 @@ get_header(); ?>
 							<div class="shift-image-1">
 								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-1.png" alt="" />
 								<div class="shift-icon-1">
-									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/blueSquare.png" alt="" />
+									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
 								</div>
 							</div>
 						</section>
@@ -59,27 +59,38 @@ get_header(); ?>
 
 						<section class="about-group-2 about-grid-item">
 							<div class="shift-icon-1-medium">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/blueSquare.png" alt="" />
+								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
 							</div>
 
 							<div class="shift-title-2">we work with social justice visionaries...</div>
 							<div class="shift-text-2">We collaborate with people who are imaginging alternatives to unjust systems, who see a need to use new and unconventional strategies to tackle complex social problems, and who are ready to participate deepley in the design process.</div>
-							<div class="shift-image-2">7
+							<div class="shift-image-2">
 								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-2.png" alt="" />
 						</div>
 						</section>
 
 						<section class="about-group3 about-grid-item">
+							<div class="shift-icon-2-medium">
+								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon2-1.png" alt="" />
+							</div>
 							<div class="shift-title-3">...and use community centered design processess</div>
 							<div class="shift-text-3">We facilitate groups of people connected by choice or circumstance to co-design the future. We belive that people are experts in their own experiences, that everyone has the ability to participate in creative processes, and so we design with and not for communities experiencing injustice.</div>
 						</section>
 
 						<section class="about-group4 about-grid-item">
+							<div class="shift-icon-3-medium">
+								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+							</div>
 							<div class="about-grid-item">
 								<div class="shift-title-4">...to make beautiful, powerful things.</div>
-								<div class="shift-text-4">Our task is to help shine light on the issues and uplift the answers that the community holds. We draw inspiration from the community's culture and history to co-create resources and tools that are unique, accessible, and delightful.</div>
-								<div class="shift-title-5">want to collaborate?</div>
-								<div class="about-button">get in touch</div>
+								<div class="shift-text-4">Our task is to help shine light on the issues and uplift the answers that the community holds. We draw inspiration from the community's culture and history to co-create resources and tools that are unique, accessible, and delightful.
+									<div class="shift-title-5">want to collaborate?</div>
+									<div class="about-button">Get in touch</div>
+							</div>
+
+
+
+
 							</div>
 
 						</section>
@@ -89,6 +100,8 @@ get_header(); ?>
 								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-3.png" alt="" />
 							</div>
 						</section>
+
+
 
 					</div><!-- .outer-content-->
 					<div class="about-flex eee">

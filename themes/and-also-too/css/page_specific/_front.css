@@ -48,16 +48,16 @@
   line-height: 1.6;
   padding-bottom: 18px;
   @media $medium {
-    font-size: 18px;
+    font-size: 1.6rem;
     padding-bottom: 18px;
   }
   @media $large {
-    font-size: 25px;
-    padding-bottom: 18px;
+    font-size: 2.2rem;
+    padding-bottom: 2.4rem;
   }
   @media $ex-large {
-    font-size: 28px;
-    padding-bottom: 12px;
+    font-size: 2.5rem;
+    padding-bottom: 2.4rem;
   }
 }
 .front-content-text1 {
@@ -78,8 +78,9 @@
 
 .front-header {
   color: white;
-  text-align: center;
+  text-align: left;
 }
+
 
 .bg-front-header {
 background: url(http://and-also-too.dev/wp-content/uploads/2017/02/home-landing.png);
@@ -87,10 +88,10 @@ background-position: 45% 100%;
 background-size: cover;
   @media $medium {
     background-size: cover;
-  background-position: 75% 20%;
+  background-position: 45% 20%;
   }
   @media $large {
-  background-position: 75% 20%;
+  background-position: 55% 20%;
   background-size: cover;
   }
   @media $ex-large {
@@ -100,19 +101,20 @@ background-size: cover;
 }
 
 .overlay-front-header {
-    padding-top: 16%;
-    padding-bottom: 16%;
+  text-align: center;
+    padding-top: 8%;
+    padding-bottom: 18%;
   @media $medium {
-    padding-top: 20%;
+    padding-top: 9.4%;
     padding-bottom: 20%;
   }
   @media $large {
-    padding-top: 16%;
+    padding-top: 7.4%;
     padding-bottom: 16%;
   }
   @media $ex-large {
-    padding-top: 16%;
-    padding-bottom: 16%;
+    padding-top: 9.3%;
+    padding-bottom: 18.2%;
   }
 }
 
@@ -121,7 +123,6 @@ background-size: cover;
 /*--------------# Front--How-We-Do-It---------------*/
 
 .how-we-do-it {
-  text-align: center;
 }
 
 .bg-how-we-do-it {
@@ -143,6 +144,7 @@ background-size: 105% 100%;
 }
 
 .overlay-how-we-do-it {
+  text-align: center;
     padding-top: 16%;
     padding-bottom: 16%;
   @media $medium {
@@ -259,6 +261,7 @@ background-size: cover;
   font-weight: 700;
   font-family: montserrat;
   letter-spacing: 3px;
+  font-size: 21px;
 }
 .announcement-text {
   font-family: vollkorn;

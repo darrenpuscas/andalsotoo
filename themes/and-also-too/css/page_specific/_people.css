@@ -47,6 +47,9 @@ background: url(http://and-also-too.dev/wp-content/uploads/2017/02/people-landin
     }
  }
 }
+.people-intro-content .entry-title {
+    text-align: left;
+}
 
 .landing-person {
   padding-bottom: 1.2rem;
