@@ -22,7 +22,8 @@ get_header(); ?>
 
 		<div class="entry-content">
 			<div id="stories" class="outer-content grid"><!-- Flex container: move to archive-stories.php -->
-
+				<div class="gutter-sizer"></div>
+				<div class="grid-sizer"></div>
 				<?php
 				if ( have_posts() ) :
 

@@ -1,3 +1,4 @@
+console.log('packery-app.js');
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("DOM fully loaded and parsed");
 
