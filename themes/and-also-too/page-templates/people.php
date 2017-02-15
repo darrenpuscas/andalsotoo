@@ -23,117 +23,58 @@ get_header(); ?>
 							<div class="bg-people-intro">
 								<div class="overlay-people-intro outer-content">
 									<div class="people-intro-content">
-											<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-											<div class="landing-person">
-													<div class="landing-name landing-bold">
-														Una Lee
-													</div>
-													<div class="landing-title landing-italic">
-														Creative Director
-													</div>
-											</div>
-											<div class="landing-person">
-													<div class="landing-name landing-bold">
-														Lara Stefanovich-Thomson
-													</div>
-													<div class="landing-title landing-italic">
-														Designer
-													</div>
-											</div>
-											<div class="landing-person">
-													<div class="landing-name landing-bold">
-														Lupe Pérez
-													</div>
-													<div class="landing-title landing-italic">
-														Designer
-													</div>
-											</div>
-											<div class="landing-person">
-													<div class="landing-name landing-bold">
-														Shameela Zaman
-													</div>
-													<div class="landing-title landing-italic">
-														Studio Coordinator
-													</div>
-											</div>
-									</div><!-- .people-intro-content-->
+										<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
+										<?php
+
+										// check if the repeater field has rows of data
+										if( have_rows('people_landing') ):
+
+										 	// loop through the rows of data
+										    while ( have_rows('people_landing') ) : the_row();
+										?>
+											<div class="landing-person">
+												<div class="landing-name landing-bold">
+													<?php the_sub_field('people_name_landing'); ?>
+												</div>
+												<div class="landing-title landing-italic">
+													<?php the_sub_field('people_title_landing'); ?>
+												</div>
+											</div>
+										<?php
+										    endwhile;
+										else :
+										    // no rows found
+										endif;
+										?>
+									</div><!-- .people-intro-content-->
 								</div><!-- .overlay-people-intro-->
 							</div><!-- .bg-people-intro-->
 					</header><!-- .front-content people-intro -->
 
-
-
-
-					<div class="outer-content people-content row-top-pad">
-							<div class="people-col1 left-content-full">
-									<h3 class="people-name">
-										Una Lee
-									</h3>
-									<div class="people-title">
-										Creative Director
-									</div>
-								<div class="people-description">
-									Una Lee is a graphic designer, facilitator, and design theorist working in social justice. She uses collaborative and community centered design processes to draw on the brilliance, wisdom, and creativity of communities affected by urgent social issues. The tools and images that have been cocreated through these processes have contributed to substantial changes in legislation and policy, rallied international support, received coverage from major media outlets in Canada, the US, and Mexico, as well as garnered numerous awards. Una resides in Toronto and collaborates internationally.
+					<?php if( have_rows('people_bios') ): ?>
+						<?php while( have_rows('people_bios') ): the_row();
+							$image = get_sub_field('poeple_bio_image');
+						?>
+							<div class="outer-content people-content row-top-pad">
+								<div class="people-col1 left-content-full">
+								<h3 class="people-name">
+									<?php the_sub_field('people_name_bio'); ?>
+								</h3>
+								<div class="people-title">
+									<?php the_sub_field('people_title_bio'); ?>
 								</div>
-							</div>
+								<div class="people-description">
+									<?php the_sub_field('people_bio_text'); ?>
+								</div>
+							</div><!-- people-col1 -->
 							<div class="people-col2 people-image right-content-smaller">
-								<img src="/wp-content/uploads/2017/02/una.jpg">
-							</div>
-					</div><!-- .outer-content-->
-
-					<div class="outer-content people-content row-top-pad">
-						<div class="people-col1 left-content-full">
-							<h3 class="people-name">
-								Lara Stefanovich-Thomson
-							</h3>
-							<div class="people-title">
-								Designer
-							</div>
-							<div class="people-description">
-								Lara is interested in how graphic design can have a social impact and support positive change in the world and is happy to be part of the collaborative, inventive work of And Also Too. Her previous work experience at a community art organization, literacy programs, women's shelters and organic farming informs her design practice. Lara is a graduate of the St. Lawrence College Graphic Design Program and has a BFA in Visual Art from York University.
-							</div>
-						</div>
-						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/02/lara.jpg">
-						</div>
-					</div><!-- .outer-content-->
-
-					<div class="outer-content people-content row-top-pad">
-						<div class="people-col1 left-content-full">
-							<h3 class="people-name">
-								Lupe Pérez
-							</h3>
-							<div class="people-title">
-								Designer
-							</div>
-							<div class="people-description">
-								Lupe is an Argentinean graphic designer, researcher and design thinker at the service of social justice initiatives. Interested in questions of power, identity and politics, she is an advocate for collaborative, mindful design as an avenue for social change. Lupe holds a BFA from Concordia University (Double Major in Design and Philosophy), and has recently completed a Permaculture Design Certificate at P3 Permaculture. Residing in Montreal, Quebec, she loves filling notebooks with poems and rubbing cats’ bellies during alleyway walks.
-							</div>
-						</div>
-						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/02/lupe.jpg">
-						</div>
-					</div><!-- .outer-content-->
-
-					<div class="outer-content people-content row-top-pad">
-						<div class="people-col1 left-content-full">
-							<h3 class="people-name">
-								Shameela Zaman
-							</h3>
-							<div class="people-title">
-								Studio Coordinator
-							</div>
-							<div class="people-description">
-								Shameela Zaman is an artist, community organizer and a consultant. She is the studio coordinator forAnd Also Too, where her passion for social justice intersects with design. Her other areas of interest include research and social policy, looking into issues of safety and violence in the lives of Muslim women in Canada. Currently, she is pursuing a Masters in Social Work from the University of Windsor. Shameela is an avid consumer of gelatos, watching the Mindy Project and doodling inside circles.
-							</div>
-						</div>
-						<div class="people-col2 people-image right-content-smaller">
-							<img src="/wp-content/uploads/2017/02/shameela.jpg">
-						</div>
-					</div><!-- .outer-content-->
-
-				</div><!-- .entry-content -->
+									<!-- <img src="/wp-content/uploads/2017/02/una.jpg"> -->
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+								</div>
+							</div><!-- .outer-content-->
+						<?php endwhile; ?>
+					<?php endif; ?>
 
 			</article><!-- #post-## -->
 
