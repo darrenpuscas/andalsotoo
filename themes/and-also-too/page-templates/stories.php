@@ -26,7 +26,7 @@ get_header(); ?>
 					<div id="stories" class="outer-content grid">
 						<div class="gutter-sizer"></div>
 						<div class="grid-sizer"></div>
-
+						
 						<div class="stories-width stories-summary grid-item">
 							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo2.png" alt="" />
 							<h4 class="stories-title">Name of the Project in One Line 2</h4>
@@ -68,7 +68,6 @@ get_header(); ?>
 							<h4 class="stories-title">Name of the Project in One Line 9</h4>
 							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
 						</div><!-- stories-summary -->
-
 				</div><!-- .outer-content-->
 			</div><!-- .entry-content -->
 

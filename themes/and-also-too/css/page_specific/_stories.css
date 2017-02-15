@@ -18,7 +18,6 @@
     }
 }
 .stories-width {
-    width: 48%;
 
     @media $medium {
       width: 30.8%;
@@ -55,8 +54,7 @@
     margin-bottom: 30px;
 
     @media $medium {
-        margin-bottom: 45px;
-        /*orig 12px*/
+        margin-bottom: 12px;
     }
     @media $large {
         margin-bottom: 8px;
@@ -108,16 +106,6 @@
       line-height: 1.3;
     }
 }
-
-.grid-item {
-  margin-bottom: 1px;
-}
-
-/*masonry CSS*/
-.gutter-sizer { width: 4.8%;}
-
-.grid-sizer { width: 3.8%;}
-
 
 .item1 {
 
