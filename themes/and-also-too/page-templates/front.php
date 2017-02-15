@@ -13,12 +13,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
 			<div class="entry-content">
-
 			  <header class="front-header entry-header">
 						<div class="bg-front-header">
 								 <div class="overlay-front-header std-content-area">
@@ -26,8 +22,6 @@ get_header(); ?>
 								 </div><!-- .front-content-inner-->
 							</div><!-- .outer-content-->
 					</header><!-- .entry-header -->
-
-
 					<section class="front-content-area what-we-do row">
 								<div class="front-no-overlay1">
 									<div class="front-content-inner front-content-textonly std-content-area">
@@ -37,9 +31,6 @@ get_header(); ?>
 											<button class="front-button1">Read Stories</button>
 								  </div><!-- .outer-content-->
 					</section><!-- .front-content what-we-do -->
-
-
-
 					<section class="front-content-area how-we-do-it">
 							<div class="bg-how-we-do-it">
 								<div class="overlay-how-we-do-it std-content-area">
@@ -50,8 +41,6 @@ get_header(); ?>
 								</div><!-- .overlay-how-we-do-it-->
 							</div><!-- .bg-how-we-do-it-->
 					</section><!-- .front-content how-we-do-it -->
-
-
 					<section class="front-content-area front-latest-posts row">
 						<div class="front-no-overlay2">
 							<div class="front-content-inner front-content-textonly std-content-area">
@@ -88,32 +77,20 @@ get_header(); ?>
 								wp_reset_postdata();
 								?>
 								<!-- Loop End -->
-
-
-
 							</div><!-- .front-content-inner-->
 						</div><!-- front-no-overlay2-->
 					</section><!-- .front-content front-latest-posts -->
-
-
 					<section class="front-content-area announcements">
-
 						<div class="bg-announce">
 						<div class="overlay-announce outer-content">
-
 							<h1 class="announcements-heading front-content-heading">Announcements</h1>
-
 							<div class="announcement-content">
-
 								<?php
-
 								// check if the repeater field has rows of data
 								if( have_rows('annoucements') ):
-
 								 	// loop through the rows of data
 								    while ( have_rows('annoucements') ) : the_row();
 								?>
-
 									<div class="announcement-indiv announcement-1">
 										<div class="announcement-date"><?php the_sub_field('announcement_date');?></div>
 										<p class="announcement-text">
@@ -122,30 +99,17 @@ get_header(); ?>
 									</div>
 								<?php
 								    endwhile;
-
 								else :
-
 								    // no rows found
-
 								endif;
-
 								?>
 								</div><!-- .announcement-content-->
 							</div><!-- .overlay-announce-->
 						</div><!-- .bg-announce-->
 					</section><!-- .front-content announcements -->
-
 				</div><!-- .entry-content -->
-
 			</article><!-- #post-## -->
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
-
-
-
 <?php
 get_footer();
