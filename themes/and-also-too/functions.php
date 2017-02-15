@@ -124,15 +124,11 @@ function and_also_too_scripts() {
 
 	if ( is_page( 'Stories' ) || is_post_type_archive('stories') ) {
 		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery.js', array(), '', true );
-		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery-app.js', array(), '', true );
-
+		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery-app.js', array('jquery'), '', true );
 	}
 
 	if ( is_page( 'About' ) ) {
 	  wp_enqueue_script( 'about-macy-lib', get_template_directory_uri() . '/js/macy-min.js', array(), '', true );
-	}
-
-	if ( is_page( 'About' ) ) {
 	  wp_enqueue_script( 'about-macy', get_template_directory_uri() . '/js/about-macy.js', array(), '', true );
 	}
 

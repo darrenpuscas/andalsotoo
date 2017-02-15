@@ -1,6 +1,12 @@
 console.log('packery-app.js');
-document.addEventListener("DOMContentLoaded", function(event) {
-  console.log("DOM fully loaded and parsed");
+
+// document.addEventListener("DOMContentLoaded", function(event) {
+//   console.log("DOM fully loaded and parsed");
+
+// jQuery( document ).ready(function() {
+    // console.log( "ready!" );
+
+
     var elem = document.querySelector('.grid');
     var pckry = new Packery( elem, {
       // options
@@ -9,4 +15,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       columnWidth: '.grid-sizer',
       gutter: '.gutter-sizer'
     });
-});
+
+// });
