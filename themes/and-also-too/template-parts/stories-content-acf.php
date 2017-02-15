@@ -110,13 +110,13 @@
 				</div><!-- .story-tags -->
 			</aside><!-- story-right-col -->
 		</section><!-- story-2col-flex- -->
-	    <section class="story-image-gallery">
+	    <section class="story-static-image-gallery">
 			<?php
 
-				$images = get_field('story_image_gallery');
+				$images = get_field('story_static_image_gallery');
 				if( $images ): ?>
 				        <?php foreach( $images as $image ): ?>
-				            <div class="story-image-in-gallery">
+				            <div class="story-static-image">
 				                <a href="<?php echo $image['url']; ?>">
 				                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 				                </a>

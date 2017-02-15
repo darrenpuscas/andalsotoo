@@ -28,13 +28,6 @@
 						</div>
 					</div><!-- .entry-meta -->
 					<?php endif; ?>
-
-
-
-
-
-
-
 					<div class="blog-content std-content-area">
 						<!--  -->
 						<div class="featured-image">
@@ -80,6 +73,46 @@
 									'after'  => '</div>',
 								) );
 
+								?>
+								<div class="blog-footer-flex">
+
+
+									<div class="blog-next-post">
+
+										<?php
+										$next_post = get_next_post();
+										if ( $next_post ): ?>
+										  <a href="<?php echo get_permalink( $next_post->ID ); ?>">
+											  <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+											  <?php echo $next_post->post_title; ?>
+										  </a>
+									  	<?php else: ?>
+											&nbsp;
+										<?php endif; ?>
+									</div>
+									<div class="blog-social-links">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+										<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</div>
+									<div class="blog-previous-post">
+										<?php
+										$prev_post = get_previous_post();
+										if ( $prev_post ): ?>
+											<a href="<?php echo $prev_post->guid ?>">
+												<?php echo $prev_post->post_title ?>
+												<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+											</a>
+										<?php else: ?>
+											&nbsp;
+									<?php endif ?>
+									</div>
+
+								</div>
+						<?php
 								else :
 									the_excerpt();?>
 									<div class="align-right">

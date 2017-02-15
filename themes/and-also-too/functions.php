@@ -121,24 +121,11 @@ function and_also_too_scripts() {
 
 	wp_enqueue_style( 'and-also-too-style', get_stylesheet_uri() );
 
-	wp_register_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCJanOv-q2iQobdexmufcx2HsMTVYwryKg', array(), '3', true);
-	wp_register_script( 'local-google-maps', get_template_directory_uri() . '/js/google-maps.js', array('google-map-api', 'jquery'), false, true );
 
-
-	// if ( is_singular() ) {
-		wp_enqueue_script( 'google-map-api' );
-		wp_enqueue_script( 'local-google-maps' );
-	// }
-
-
-	// wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCJanOv-q2iQobdexmufcx2HsMTVYwryKg', array(), '3', true );
-
-	// wp_enqueue_script( 'google-map-init', get_template_directory_uri() . '/js/google-maps.js', array('google-map', 'jquery'), false, true );
-
-
-	if ( is_page( 'Stories' ) ) {
+	if ( is_page( 'Stories' ) || is_post_type_archive('stories') ) {
 		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery.js', array(), '', true );
 		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery-app.js', array(), '', true );
+
 	}
 
 	if ( is_page( 'About' ) ) {
@@ -158,10 +145,6 @@ function and_also_too_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'and_also_too_scripts' );
-
-
-
-
 
 /**
  * Implement the Custom Header feature.
