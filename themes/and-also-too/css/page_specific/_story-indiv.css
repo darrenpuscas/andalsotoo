@@ -78,3 +78,13 @@
     margin: 0;
     padding: 0;
 }
+.story-static-image-gallery {
+    margin: 0 -5px;
+    display: flex;
+}
+.story-static-image {
+    padding: 5px;
+    /*flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 95%;*/
+}
