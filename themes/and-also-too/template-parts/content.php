@@ -28,13 +28,6 @@
 						</div>
 					</div><!-- .entry-meta -->
 					<?php endif; ?>
-
-
-
-
-
-
-
 					<div class="blog-content std-content-area">
 						<!--  -->
 						<div class="featured-image">
@@ -79,6 +72,45 @@
 									'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'and-also-too' ),
 									'after'  => '</div>',
 								) );
+
+								?>
+								<div class="post-footer-flex">
+
+
+									<div>
+										<?php
+										$next_post = get_next_post();
+										if (!empty( $next_post )): ?>
+										  <a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo $next_post->post_title; ?></a>
+										<?php endif; ?>
+
+										</div>
+
+
+										<!-- if($previous){
+											echo 'there is a previous post';
+										}
+										else { echo 'no previous post'; }
+
+									 ?> -->
+
+
+
+									<div>center stuff</div>
+
+
+									<div>
+										previous
+										<?php
+										$prev_post = get_previous_post();
+										if (!empty( $prev_post )): ?>
+										<a href="<?php echo $prev_post->guid ?>"><?php echo $prev_post->post_title ?></a>
+									<?php endif ?>
+
+								</div>
+
+								</div>
+						<?php
 
 								else :
 									the_excerpt();?>

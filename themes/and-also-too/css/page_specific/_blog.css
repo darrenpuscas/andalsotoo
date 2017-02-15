@@ -183,3 +183,6 @@ font-size: 3.5rem
        width: 10%;
  }
 }
+.post-footer-flex {
+    display: flex;
+}
