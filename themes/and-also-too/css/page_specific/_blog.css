@@ -183,6 +183,19 @@ font-size: 3.5rem
        width: 10%;
  }
 }
-.post-footer-flex {
+.blog-footer-flex {
+    border-top: solid green 1px;
+    padding-top: 10px;
     display: flex;
+}
+.blog-next-post {
+    flex: 1;
+}
+.blog-social-links {
+    text-align: center;
+    flex: 2;
+}
+.blog-previous-post {
+    text-align: right;
+    flex: 1;
 }
