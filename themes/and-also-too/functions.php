@@ -122,7 +122,11 @@ function and_also_too_scripts() {
 	wp_enqueue_style( 'and-also-too-style', get_stylesheet_uri() );
 
 	if ( is_page( 'Stories' ) || is_post_type_archive('stories') ) {
-	wp_enqueue_script( 'app-masonry', get_template_directory_uri() . '/js/app-masonry.js', array('masonry'), '', true );
+		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery.js', array(), '', true );
+		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery-app.js', array(), '', true );
+
+
+	// wp_enqueue_script( 'app-masonry', get_template_directory_uri() . '/js/app-masonry.js', array('masonry'), '', true );
 	}
 
 	if ( is_page( 'About' ) ) {

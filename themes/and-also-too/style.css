@@ -2972,7 +2972,8 @@ h1.entry-title {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .story-summary {
-        margin-bottom: 12px;
+        margin-bottom: 45px;
+        /*orig 12px*/
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3038,11 +3039,14 @@ h1.entry-title {
     }
 }
 .grid-item {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 /*masonry CSS*/
 .gutter-sizer {
-    width: 0%;
+    width: 4.8%;
+}
+.grid-sizer {
+    width: 3.8%;
 }
 .item1 {
     /*background: purple;*/
@@ -3308,9 +3312,9 @@ h1.entry-title {
     position: relative;
 }
 .story-title {
-    position: absolute;
+    /*position: absolute;
     top: 20%;
-    left: 7%;
+    left: 7%;*/
 }
 .story-image {
     width: 45%;

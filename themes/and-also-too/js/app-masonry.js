@@ -5,6 +5,7 @@ console.log(elem);
 var msnry = new Masonry(elem, {
                 itemSelector: '.grid-item',
                 percentPosition: true,
-                columnWidth: 50,
+                columnWidth: 25,
+                gutter: '.gutter-sizer'
 
             });

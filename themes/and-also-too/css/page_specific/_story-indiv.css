@@ -5,9 +5,9 @@
     position: relative;
 }
 .story-title {
-    position: absolute;
+    /*position: absolute;
     top: 20%;
-    left: 7%;
+    left: 7%;*/
 }
 .story-image {
     width: 45%;
