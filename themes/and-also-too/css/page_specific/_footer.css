@@ -17,6 +17,9 @@
   }
 
 }
+.home .site-footer, .page-template-about .site-footer {
+  border-top: none;
+}
 
 .footer-content {
     align-items: center;

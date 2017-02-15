@@ -15,17 +15,21 @@
     }
     @media $ex-large {
         display: flex;
-        width: 92%;
+        width: 76%;
     }
 }
 .contact-col-left {
-    flex: 1;
-    margin: 10px;
+    /*flex: 1;*/
+    width: 60%;
+    margin: 1rem 2rem;
 }
 .contact-col-right {
-    flex: 1;
-    margin: 10px;
+    margin: 1rem 2rem;
     padding-bottom: 33%;
+}
+.contact-col-right > .page-title {
+    text-align: left;
+    color: $sitePurple;
 }
 .contact-map {
     max-width: 650px;
@@ -33,13 +37,25 @@
     min-width: 300px;
     /*min-height: 400px;*/
     /*padding-bottom: 33%;*/
+}
 
+.contact-form {
+  width: 70%;
+}
+.contact-address {
+  font-family: Vollkorn;
+  span {
+    display: block;
+  }
+
+  font-size: 2rem;
 }
 
 #wpgmza_map[style] {
     height: auto !important;
-    min-height: 200px;
-    position: static !important;
+    min-height: 700px;
+    /*min-height: 200px;*/
+    /*position: static !important;*/
 
 }
 /*maintain aspect-ratio*/
@@ -90,4 +106,21 @@
 /* Styles for the content in the main box */
 .main-box > .content {
     background: #ffe5e5;
+}
+
+.contact-form-section {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: $sitePurple;
+  text-transform: uppercase;
+    padding: 1rem 0;
+}
+.contact-form-section > input {
+  padding-top: 1.6rem;
+}
+.contact-form-section button, input[type="button"], input[type="reset"], input[type="submit"] {
+
+  width: 100%;
+  color: $siteTeal;
 }

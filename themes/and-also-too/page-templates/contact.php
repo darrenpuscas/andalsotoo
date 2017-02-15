@@ -37,7 +37,7 @@ get_header(); ?>
 						</section><!-- contact-col-left -->
 
 						<section class="contact-col-right">
-							<h1>contact</h1>
+							<div class="page-title">contact</div>
 
 							<div class="contact-address">
 								<span class="contact-address-text">192 Spadina Avenue, Suite 314,</span>

@@ -1,5 +1,5 @@
 .bg-people-intro {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/people-landing2.png);
+background: url("../and-also-too/css/images/people-landing2.png");
   background-position: 55% 100%;
     background-size: cover;
   @media $medium {

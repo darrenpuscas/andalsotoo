@@ -8,18 +8,16 @@
     z-index: 1000;
     left: 50%;
     transform: translateX(-50%);
-        padding: 2.1em 0;
-        background: white;
-        border-bottom: 2px solid #787878;
+    padding: 2.1em 0;
+    background: white;
+    border-bottom: 2px solid #787878;
     @media $medium {
         padding: 3em 0;
     }
     @media $large {
-
         padding: 3em 0;
     }
     @media $ex-large {
-
         max-width: 900000000px;
         padding: 3em 0;
     }
@@ -34,18 +32,19 @@
         padding: 4.5em 0;
     }
     @media $large {
-
         padding: 4.5em 0;
     }
     @media $ex-large {
-
         max-width: 900000000px;
         padding: 4.5em 0;
     }
 }
+.page-template-about .site-header { 
+   border-bottom: none;
+}
 
 .site-header-home .header-content {
-    align-items: normal;
+    align-items: flex-start;
   }
 
 .site-content {

@@ -44,7 +44,7 @@
 .front-content-text {
   font-family: Vollkorn;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 1.6;
   padding-bottom: 18px;
   @media $medium {
@@ -83,7 +83,7 @@
 
 
 .bg-front-header {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/home-landing.png);
+background: url("../and-also-too/css/images/home-landing.png");
 background-position: 45% 100%;
 background-size: cover;
   @media $medium {
@@ -127,6 +127,7 @@ background-size: cover;
 
 .bg-how-we-do-it {
 background: url(http://and-also-too.dev/wp-content/uploads/2017/02/how-do-it.png);
+background: url("../and-also-too/css/images/how-do-it.png");
   background-position: 45% 100%;
     background-size: cover;
   @media $medium {
@@ -183,13 +184,17 @@ background-size: 105% 100%;
 }
 .latest-posts-text {
   border-bottom: 0.5px solid $siteTeal;
+  a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 
 /*--------------# Front--Announcements---------------*/
 
 .bg-announce {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/announcements.png);
+  background: url("../and-also-too/css/images/announcements.png");
   background-size: 145% 120%;
   @media $medium {
   }
@@ -261,17 +266,48 @@ background-size: cover;
   font-weight: 700;
   font-family: montserrat;
   letter-spacing: 3px;
-  font-size: 21px;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  @media $medium {
+    font-size: 1.8rem;
+
+  }
+  @media $large {
+    font-size: 1.8rem;
+  }
+  @media $ex-large {
+   font-size: 1.8rem;
+  }
 }
 .announcement-text {
-  font-family: vollkorn;
-  font-size: 21px;
-  margin-top: 6px;
+  font-family: Vollkorn;
+  font-size: 2.0rem;
+  padding-bottom: 2.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 0.7rem;
+  @media $medium {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+  }
+  @media $large {
+    font-size: 2.0rem;
+    line-height: 1.5;
+    margin-top: 0.9rem;
+  }
+  @media $ex-large {
+   font-size: 2.2rem;
+   line-height: 1.6;
+   margin-top: 0.9rem;
+
+  }
 }
+
 .announcements-heading {
   color: $white;
   text-align: center;
-  padding-bottom: 12px;
+  padding-bottom: 2rem;
     @media $medium {
   padding-bottom: 2.5rem;
 

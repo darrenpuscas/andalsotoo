@@ -35,7 +35,7 @@ a:active {
 	text-transform: uppercase;
 	font-size: 1.7rem;
 	font-family: Roboto;
-	font-weight: 400;
+	font-weight: 700;
 	flex: 1.4;
 	display: none;
 	color: $black;
@@ -102,7 +102,7 @@ ul.simple-toggle li {
 
 .site-header-home ul.simple-toggle li a {
 	padding: 0px 10px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 ul.simple-toggle li a {
@@ -110,7 +110,7 @@ ul.simple-toggle li a {
 	padding: 15px 10px;
 	text-decoration: none;
 	color: #222;
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: 3px;
 }
 

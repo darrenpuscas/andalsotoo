@@ -200,7 +200,7 @@
 
 								<div class="announcement-indiv announcement-1">
 									<div class="announcement-date">Nov 1, 2016</div>
-									<p class="announcement-text">
+									<p class="announcement-text front-content-text">
 										We’re so excited to be presenting in Malmö, Sweden alongside Feathers of Hope at the Decolonising Design Symposium: Intersectional Perspectives on Design, Politics and Power. Una will be presenting about Design Justice.
 									</p>
 								</div>

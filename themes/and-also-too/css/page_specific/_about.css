@@ -2,9 +2,6 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-.page-template-about .site-footer {
-  border-top: 0px solid #787878;
-}
 
 .about-full-width {
     /*background: #D8BFD8;*/
@@ -27,7 +24,7 @@
 
 
 .bg-about-1 {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/about-background-1.png);
+background: url("../and-also-too/css/images/about-background-1.png");
   background-position: 45% 100%;
     background-size: cover;
   @media $medium {
@@ -204,9 +201,15 @@ position: static!important;
     }
     @media $ex-large {
       position: absolute!important;
-      top: 76%!important;
+      top: 73%!important;
 
     }
+    @media $ex-large-background {
+      position: absolute!important;
+      top: 76.5%!important;
+
+    }
+
 }
 .about-group5[style] {
     position: static!important;
@@ -335,17 +338,20 @@ position: static!important;
     }
 }
 .shift-text-1 {
-  color: $white;
+  color: $black;
     @media $medium {
+        color: $black;
     width: 100%;
     }
     @media $large {
+        color: $white;
     width: 82.6%;
     font-size: 2.2rem;
     line-height: 1.4;
     padding-bottom: 2.2rem;
     }
     @media $ex-large {
+        color: $white;
     width: 82.6%;
     font-size: 2.2rem;
     line-height: 1.4;
@@ -583,6 +589,8 @@ padding-left: 17.6%;
       padding: 0 1.8em 1em 0.7em;
       }
       @media $ex-large {
+
+        align: right;
         text-align: right;
         padding: 0 1.8em 1em 0.7em;
       }
