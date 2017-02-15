@@ -35,25 +35,25 @@ a:active {
 	text-transform: uppercase;
 	font-size: 1.7rem;
 	font-family: Roboto;
-	font-weight: 400;
+	font-weight: 700;
 	flex: 1.4;
 	display: none;
 	color: $black;
 	    @media $medium {
 	    	display: block;
-				font-size: 1rem;
+				font-size: 1.3rem;
 				color: $black;
 				text-align: end;
 	    }
 	    @media $large {
 	        display: block;
-					font-size: 1.3rem;
+					font-size: 1.4rem;
 					color: $black;
 					text-align: end;
 	    }
 	    @media $ex-large {
 			display: block;
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 			color: $black;
 			text-align: end;
 	    }
@@ -100,12 +100,17 @@ ul.simple-toggle li {
     text-align: left;
 }
 
+.site-header-home ul.simple-toggle li a {
+	padding: 0px 10px;
+	font-weight: 700;
+}
+
 ul.simple-toggle li a {
 	display: block;
 	padding: 15px 10px;
 	text-decoration: none;
 	color: #222;
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: 3px;
 }
 

@@ -2,9 +2,6 @@
   padding-top: 0;
   padding-bottom: 0;
 }
-.page-template-about .site-footer {
-  border-top: 0px solid #787878;
-}
 
 .about-full-width {
     /*background: #D8BFD8;*/
@@ -27,7 +24,7 @@
 
 
 .bg-about-1 {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/about-background-1.png);
+background: url("../and-also-too/css/images/about-background-1.png");
   background-position: 45% 100%;
     background-size: cover;
   @media $medium {
@@ -53,12 +50,12 @@ background-size: 105% 100%;
     padding-bottom: 17%;
   }
   @media $large {
-    padding-top: 12%;
-    padding-bottom: 12%;
+    padding-top: 13.2%;
+    padding-bottom: 13.2%;
   }
   @media $ex-large {
-    padding-top: 16%;
-    padding-bottom: 16%;
+    padding-top: 13.2%;
+    padding-bottom: 13.2%;
   }
 }
 .overlay-about-2 {
@@ -114,100 +111,179 @@ background-size: 105% 100%;
 
 }
 .about-grid-item[style] {
-    width: 50%!important;
-}
-.about-group1[style] {
-    top: -30%!important;
+    width: 100%!important;
     @media $medium {
-      top: -26%!important;
-      left: 50%!important;
-
+    width: 100%!important;
     }
     @media $large {
-      top: -20%!important;
+    width: 50%!important;
+    }
+    @media $ex-large {
+      width: 50%!important;
+    }
+}
+
+
+.about-blank1 {
+  display: none;
+  @media $large {
+  display: block;
+  }
+  @media $ex-large {
+      display: block;
+  }
+
+}
+.about-group1[style] {
+  position: static!important;
+    left: 0%!important;
+    @media $medium {
+position: static!important;
+    }
+    @media $large {
+      position: absolute!important;
+      top: -17%!important;
       left: 50%!important;
 
     }
     @media $ex-large {
-      top: -26%!important;
+      position: absolute!important;
+      top: -18%!important;
       left: 50%!important;
     }
 }
 .about-group-2[style] {
-    top: -30%!important;
+    position: static!important;
+      left: 0%!important;
     @media $medium {
-      top: 10%!important;
+      top: 0%!important;
     }
     @media $large {
+      position: absolute!important;
       top: 5%!important;
 
     }
     @media $ex-large {
+      position: absolute!important;
       top: 5%!important;
 
     }
 }
 .about-group3[style] {
-    top: 40%!important;
+    position: static!important;
+      left: 0%!important;
     @media $medium {
-      top: 40%!important;
-    left: 50%!important;
+      top: 0%!important;
+
     }
     @media $large {
+      position: absolute!important;
       top: 30%!important;
     left: 50%!important;
     }
     @media $ex-large {
+      position: absolute!important;
       top: 30%!important;
     left: 50%!important;
     }
 }
 .about-group4[style] {
-    top: 70%!important;
+    position: static!important;
+      left: 0%!important;
     @media $medium {
-      top: 70%!important;
+      top: 0%!important;
 
     }
     @media $large {
-      top: 70%!important;
+      position: absolute!important;
+      top: 73%!important;
 
     }
     @media $ex-large {
-      top: 80%!important;
+      position: absolute!important;
+      top: 73%!important;
 
     }
+    @media $ex-large-background {
+      position: absolute!important;
+      top: 76.5%!important;
+
+    }
+
 }
 .about-group5[style] {
-    top: 70%!important;
+    position: static!important;
+      left: 0%!important;
     @media $medium {
-      top: 70%!important;
-    left: 50%!important;
+      top: 0%!important;
+
     }
     @media $large {
+      position: absolute!important;
       top: 70%!important;
     left: 50%!important;
     }
     @media $ex-large {
-      top: 60%!important;
+      position: absolute!important;
+      top: 72%!important;
     left: 50%!important;
     }
 }
 .eee {
   position: relative;
+  top: -300px;
+  @media $large {
+    top: -260px;
+  }
+  @media $ex-large {
+    bottom: 280px;
+  }
 }
+.page-template-about .entry-content {
+  @media $large {
+  margin-bottom: -260px;
+  }
+  @media $ex-large {
+  margin-bottom: -280px;
+  }
+}
+
 .about-contact[style] {
-    top: 70%!important;
+    position: static!important;
     @media $medium {
-      top: 70%!important;
+      top: 0%!important;
 
     }
     @media $large {
+      position: absolute!important;
       top: 90%!important;
 
     }
     @media $ex-large {
+      position: absolute!important;
       top: 70%!important;
 
+    }
+}
+
+.about-button {
+      border: 1px solid;
+      font-size: 16px;
+      font-family: Montserrat;
+      line-height: 1;
+      letter-spacing: 4px;
+      padding: 1.3em 2.7em 1.3em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      width: 67%;
+      float: right;
+      margin-top: 1.2rem;
+      @media $medium {
+      font-size: 16px;
+      padding: 1.3em 1em 1.3em;
+      width: 50%;
     }
 }
 
@@ -246,37 +322,48 @@ background-size: 105% 100%;
 
 .shift-title-1 {
     text-transform: uppercase;
-
+    letter-spacing: 2px;
     @media $medium {
     width: 82.6%;
 
     }
     @media $large {
     width: 82.6%;
-
+      padding-bottom: 0.8rem;
     }
     @media $ex-large {
     width: 82.6%;
+    padding-bottom: 1.1rem;
 
     }
 }
 .shift-text-1 {
-  color: $white;
+  color: $black;
     @media $medium {
-    width: 82.6%;
+        color: $black;
+    width: 100%;
     }
     @media $large {
+        color: $white;
     width: 82.6%;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    padding-bottom: 2.2rem;
     }
     @media $ex-large {
+        color: $white;
     width: 82.6%;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    padding-bottom: 2.8rem;
     }
 
 }
 .shift-image-1 {
     position: relative;
+    width: 100%;
     @media $medium {
-    width: 82.6%;
+    width: 100%;
     }
     @media $large {
     width: 82.6%;
@@ -305,22 +392,25 @@ background-size: 105% 100%;
 
     }
 }
+
 .shift-icon-1-medium {
     display: none;
-
+        text-align: right;
     @media $medium {
         display: block;
-        position: absolute;
-
-
+        width: 84.6%;
     }
     @media $large {
         display: block;
-
+          width: 84.6%;
     }
     @media $ex-large {
         display: block;
 
+        width: 84.6%;
+    }
+    img {
+      width: 20%;
     }
 }
 .about-group-2{
@@ -329,24 +419,19 @@ background-size: 105% 100%;
 
 .shift-title-2 {
     text-transform: uppercase;
+    letter-spacing: 2px;
     @media $medium {
       text-align: right;
-      padding: 0 1.4em 1em 0.7em;
-
-
+      padding: 0 1.8em 1.6em 0.7em;
     }
     @media $large {
-
-text-align: right;
-padding: 0 1.4em 1em 0.7em;
-
+    text-align: right;
+    padding: 0 1.8em 1.6em 0.7em;
     }
     @media $ex-large {
       text-align: right;
-      padding: 0 1.4em 1em 0.7em;
-
+      padding: 0 1.8em 1.6em 0.7em;
     }
-
 }
 .shift-text-2 {
     @media $medium {
@@ -377,22 +462,62 @@ padding: 0 1.4em 1em 0.7em;
 
     }
     @media $ex-large {
-
+      top: 90px;
 
     }
 
 }
+.shift-icon-2 {
+    height: 5px;
+    position: absolute;
+    bottom: 6%;
+    right: 50%;
+
+    @media $medium {
+        display: none;
+
+    }
+    @media $large {
+        display: none;
+
+    }
+    @media $ex-large {
+        display: none;
+
+    }
+}
+.shift-icon-2-medium {
+    display: none;
+        text-align: left;
+    @media $medium {
+        display: block;
+          padding-left: 16.4%;
+    }
+    @media $large {
+        display: block;
+            padding-left: 16.4%;
+    }
+    @media $ex-large {
+        display: block;
+        padding-left: 16.4%;
+    }
+    img {
+      width: 20%;
+    }
+}
 .shift-title-3 {
     text-transform: uppercase;
+    letter-spacing: 2px;
     @media $medium {
 
 
     }
     @media $large {
 
-
+    padding: 0 0.7em 1.6em 1.8em;
     }
     @media $ex-large {
+      padding: 0 0.7em 1.6em 1.8em;
 
 
     }
@@ -413,33 +538,74 @@ padding-left: 17.6%;
     }
 
 }
-.shift-title-4 {
-    text-transform: uppercase;
-    @media $medium {
+.shift-icon-3 {
+    height: 5px;
+    position: absolute;
+    bottom: 6%;
+    right: 50%;
 
+    @media $medium {
+        display: none;
 
     }
     @media $large {
-
+        display: none;
 
     }
     @media $ex-large {
-
+        display: none;
 
     }
-
 }
-.shift-image-4 {
+.shift-icon-3-medium {
+    display: none;
+        text-align: right;
+    @media $medium {
+        display: block;
+        width: 84.6%;
+    }
+    @media $large {
+        display: block;
+          width: 84.6%;
+    }
+    @media $ex-large {
+        display: block;
+
+        width: 84.6%;
+    }
+    img {
+      width: 20%;
+    }
+}
+.shift-title-4 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      @media $medium {
+        text-align: right;
+        padding: 0 1.4em 1em 0.7em;
+      }
+      @media $large {
+      text-align: right;
+      padding: 0 1.8em 1em 0.7em;
+      }
+      @media $ex-large {
+
+        align: right;
+        text-align: right;
+        padding: 0 1.8em 1em 0.7em;
+      }
+  }
+.shift-image-3 {
     @media $medium {
 
 
     }
     @media $large {
-
+    top: 30%;
 
     }
     @media $ex-large {
-
+top: 30%;
 
     }
 
@@ -452,11 +618,15 @@ padding-right: 17.6%;
     @media $large {
       text-align: right;
 padding-right: 17.6%;
+padding-top: 4.2rem;
+color: $white;
 
     }
     @media $ex-large {
       text-align: right;
 padding-right: 17.6%;
+padding-top: 4.2rem;
+color: $white;
 
     }
 

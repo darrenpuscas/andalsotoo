@@ -6,31 +6,51 @@
 .first-story {
     width: 100%;
     @media $medium {
-      width: 64%;
+      width: 66.66%;
     }
     @media $large {
-      width: 49%;
+      width: 50%;
 
     }
     @media $ex-large {
       width: 48%;
+
     }
 }
-.story-width {
-    width: 48%;
+.stories-width {
+
     @media $medium {
-      width: 31%;
+      width: 30.8%;
     }
     @media $large {
-      width: 22%;
+      width: 22.9%;
       margin-bottom: 10px;
 
     }
     @media $ex-large {
-        width: 22%;
+        width: 23%;
     }
 }
-.story-summary {
+
+.grid-item {
+  margin-bottom: 20px;
+}
+
+.gutter-sizer {
+  width: 3.8%;
+  @media $medium {
+  }
+  @media $large {
+    width: 2.7%;
+  }
+  @media $ex-large {
+    width: 2.5%;
+  }
+}
+
+.grid-sizer { width: 0%;}
+
+.stories-summary {
     margin-bottom: 30px;
 
     @media $medium {
@@ -44,7 +64,7 @@
 
     }
 }
-.story-title {
+.stories-title {
   text-transform: uppercase;
   color: $sitePurple;
     font-family: Montserrat;
@@ -62,14 +82,14 @@
 
     }
 }
-.story-italic {
-
+.stories-italic {
   color: $siteTeal;
     font-family: Vollkorn;
   line-height: 1.2;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: italic;
+  margin: 0.5rem 0 0;
     @media $medium {
       font-size: 1.4rem;
       margin: 3px 0;
@@ -86,14 +106,6 @@
       line-height: 1.3;
     }
 }
-
-.grid-item {
-  margin-bottom: 20px;
-}
-
-/*masonry CSS*/
-.gutter-sizer { width: 0%;}
-
 
 .item1 {
 

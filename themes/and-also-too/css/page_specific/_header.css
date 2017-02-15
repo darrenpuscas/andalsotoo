@@ -8,22 +8,45 @@
     z-index: 1000;
     left: 50%;
     transform: translateX(-50%);
-        padding: 2.1em 0;
-        background: white;
-        border-bottom: 2px solid #787878;
+    padding: 2.1em 0;
+    background: white;
+    border-bottom: 2px solid #787878;
     @media $medium {
         padding: 3em 0;
     }
     @media $large {
-
         padding: 3em 0;
     }
     @media $ex-large {
-
         max-width: 900000000px;
         padding: 3em 0;
     }
 }
+.site-header-home {
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    z-index: 1000;
+    padding: 2.1em 0;
+    @media $medium {
+        padding: 4.5em 0;
+    }
+    @media $large {
+        padding: 4.5em 0;
+    }
+    @media $ex-large {
+        max-width: 900000000px;
+        padding: 4.5em 0;
+    }
+}
+.page-template-about .site-header { 
+   border-bottom: none;
+}
+
+.site-header-home .header-content {
+    align-items: flex-start;
+  }
+
 .site-content {
     margin-top: 52px;
     @media $medium {
@@ -37,6 +60,11 @@
 
     }
 }
+.site-content-home {
+    margin-top: 0;
+}
+
+
 
 .header-content {
     /*.nav from menu.css*/
@@ -108,6 +136,28 @@
         font-size: 1.7rem;
 	}
 }
+
+.site-content-home .nav-social-medium {
+    display: none;
+    flex: .3;
+    color: #000;
+
+    @media $medium {
+        display: flex;
+        align-items: baseline;
+	}
+
+	@media $large {
+        display: flex;
+        align-items: baseline;
+	}
+
+	@media $ex-large {
+        display: flex;
+        align-items: baseline;
+	}
+}
+
 .nav-social-medium .fa {
     padding-left: 0.6em;
     @media $medium {
@@ -152,6 +202,22 @@
         flex: .6;
     }
 }
+.site-header-home .site-branding-medium img {
+    display: block;
+    flex: none;
+    width: 12%;
+
+    @media $medium {
+        width: 24%;
+    }
+    @media $large {
+        width: 24%;
+    }
+    @media $ex-large {
+        width: 24%;
+    }
+}
+
 .site-branding {
     width: 35%;
     flex: 3;

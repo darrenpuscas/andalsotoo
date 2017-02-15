@@ -16,13 +16,18 @@ input[type="submit"] {
 	text-transform: uppercase;
 	@media $medium {
 	font-size: 16px;
-
+	padding: 1.3em 1em 1.3em;
+	width: 50%;
 	}
 	@media $large {
 font-size: 25px;
+padding: 1.1em 1em 1.1em;
+width: 50%;
 	}
 	@media $ex-large {
 font-size: 25px;
+padding: 1.1em 1em 1.1em;
+width: 50%;
 	}
 }
 

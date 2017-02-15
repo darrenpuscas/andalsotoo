@@ -24,54 +24,50 @@ get_header(); ?>
 
 				<div class="entry-content">
 					<div id="stories" class="outer-content grid">
+						<div class="gutter-sizer"></div>
+						<div class="grid-sizer"></div>
+						
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo2.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 2</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
 
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo1.png">
-							<h5 class="story-title">Name of the Project in One Line 1</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo2.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 2</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo3.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 3</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/Photo4.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 4</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/Photo5.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 5</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/story-photo1-1.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 6</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/story-photo3.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 7</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/story-photo2-1.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 8</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
-						<div class="story-width story-summary grid-item">
-							<img class="story-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/story-photo1-1.png" alt="" />
-							<h5 class="story-title">Name of the Project in One Line 9</h5>
-							<h3 class="story-italic">with Provincial Advocate for Children & Youth</h3>
-						</div><!-- story-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/photo3.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 3</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/Photo4.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 4</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/Photo5.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 5</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/stories-photo1-1.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 6</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/stories-photo3.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 7</h4>
+							<h3 class="-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/stories-photo2-1.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 8</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
+						<div class="stories-width stories-summary grid-item">
+							<img class="stories-img" src="http://and-also-too.dev/wp-content/uploads/2017/02/stories-photo1-1.png" alt="" />
+							<h4 class="stories-title">Name of the Project in One Line 9</h4>
+							<h3 class="stories-italic">with Provincial Advocate for Children & Youth</h3>
+						</div><!-- stories-summary -->
 				</div><!-- .outer-content-->
 			</div><!-- .entry-content -->
 

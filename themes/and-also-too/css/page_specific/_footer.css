@@ -17,6 +17,9 @@
   }
 
 }
+.home .site-footer, .page-template-about .site-footer {
+  border-top: none;
+}
 
 .footer-content {
     align-items: center;
@@ -30,7 +33,7 @@
     @media $large {
         display: flex;
         justify-content: space-between;
-        width: 58.9%;
+        width: 69.1%;
     }
     @media $ex-large {
         display: flex;

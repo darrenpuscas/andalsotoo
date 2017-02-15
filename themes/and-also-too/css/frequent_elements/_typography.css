@@ -57,7 +57,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     @media $medium {
         font-size: 1.5rem;
     }
@@ -87,14 +87,18 @@ h5, h6 {
 p {
     font-family: vollkorn;
     margin-bottom: 1.5em;
+    font-size: 2.0rem;
     @media $medium {
-
+      font-size: 2.2rem;
+      line-height: 1.4;
     }
     @media $large {
       font-size: 2.2rem;
+      line-height: 1.4;
     }
     @media $ex-large {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
+      line-height: 1.5;
     }
 }
 

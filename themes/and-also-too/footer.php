@@ -35,11 +35,11 @@
 						</div>
 					</div>
 					<div class="footer-phone">
-						<div class="contact-phone">Canada (416)628-8452</div>
-						<div class="contact-phone">USA (802)730 0091</div>
+						<div class="contact-phone">Canada (416) 628-8452</div>
+						<div class="contact-phone">USA 802-730-0091</div>
 					</div>
 					<div class="footer-email">
-						<div class="email-text">collborate@andalsotoo.net</div>
+						<div class="email-text">collaborate@andalsotoo.net</div>
 					</div>
 					<div class="footer-social">
 						<i class="fa fa-twitter-square" aria-hidden="true"></i>

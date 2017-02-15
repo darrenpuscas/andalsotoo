@@ -1,5 +1,5 @@
 .bg-people-intro {
-background: url(http://and-also-too.dev/wp-content/uploads/2017/02/people-landing2.png);
+background: url("../and-also-too/css/images/people-landing2.png");
   background-position: 55% 100%;
     background-size: cover;
   @media $medium {
@@ -46,6 +46,9 @@ background: url(http://and-also-too.dev/wp-content/uploads/2017/02/people-landin
        margin: 0em 0 1.9rem;
     }
  }
+}
+.people-intro-content .entry-title {
+    text-align: left;
 }
 
 .landing-person {
