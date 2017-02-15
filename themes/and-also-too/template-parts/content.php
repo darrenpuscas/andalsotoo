@@ -112,9 +112,6 @@
 									</div>
 
 								</div>
-
-
-
 						<?php
 								else :
 									the_excerpt();?>
