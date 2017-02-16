@@ -153,10 +153,13 @@
 				                    </div>
 				                <?php endforeach; ?>
 				        <?php endif; ?>
+
+<!-- Slider Gallery Here!! -->
+
+
+
 		        <?php endif;//rows
-
 		    endwhile;
-
 		else :
 
 		    // no layouts found
