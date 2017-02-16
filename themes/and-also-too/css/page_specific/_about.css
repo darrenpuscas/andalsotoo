@@ -23,6 +23,9 @@
 }
 
 
+
+
+
 .bg-about-1 {
 background: url("../and-also-too/css/images/about-background-1.png");
   background-position: 45% 100%;
@@ -32,10 +35,12 @@ background: url("../and-also-too/css/images/about-background-1.png");
       background-size: 105% 120%;
   }
   @media $large {
+      background-size: cover;
 
 background-size: 105% 100%;
   }
   @media $ex-large {
+      background-size: cover;
 
 background-size: 105% 100%;
   }
@@ -43,8 +48,8 @@ background-size: 105% 100%;
 
 
 .overlay-about-1 {
-    padding-top: 16%;
-    padding-bottom: 16%;
+    padding-top: 32%;
+    padding-bottom: 20%;
   @media $medium {
     padding-top: 17%;
     padding-bottom: 17%;
@@ -81,8 +86,32 @@ background-size: 105% 100%;
   letter-spacing: 4px;
   margin-bottom: 2px;
   color: white;
+  display: none;
+  @media $large {
+  text-align: left;
+  display: block;
+  }
+  @media $ex-large {
+    text-align: left;
+    display: block;
+  }
 }
 
+.outer-content-about-mobile {
+
+    width: 100%;
+    margin: 0 auto;
+    @media $medium {
+        width: 100%;
+    }
+    @media $large {
+        width: 85.2%;
+    }
+    @media $ex-large {
+        width: 85.2%;
+        max-width: 90000000px;
+    }
+}
 
 .about-background {
     position: absolute;
@@ -319,39 +348,69 @@ position: static!important;
 }
 
 
-
+.about-title-main-mobile {
+  top: -210px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  letter-spacing: 4px;
+  margin-bottom: 2px;
+  color: white;
+  @media $medium {
+  text-align: center;
+  top: -350px;
+  }
+  @media $large {
+  display: none;
+  }
+  @media $ex-large {
+    display: none;
+  }
+}
 .shift-title-1 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    top: -240px;
+    position: relative;
     @media $medium {
+      top: -200px;
     width: 82.6%;
 
     }
     @media $large {
+      top: 0;
     width: 82.6%;
       padding-bottom: 0.8rem;
     }
     @media $ex-large {
+      top: 0;
     width: 82.6%;
     padding-bottom: 1.1rem;
 
     }
 }
 .shift-text-1 {
-  color: $black;
+  color: $white;
+  position: relative;
+  top: -220px;
+  font-size: 2.2rem;
     @media $medium {
-        color: $black;
+font-size: 2.2rem;
+        top: -180px;
     width: 100%;
     }
     @media $large {
-        color: $white;
+
+        top: 0px;
     width: 82.6%;
     font-size: 2.2rem;
     line-height: 1.4;
     padding-bottom: 2.2rem;
     }
     @media $ex-large {
-        color: $white;
+        top: 0px;
+
     width: 82.6%;
     font-size: 2.2rem;
     line-height: 1.4;
@@ -361,15 +420,19 @@ position: static!important;
 }
 .shift-image-1 {
     position: relative;
+    top: -160px;
     width: 100%;
     @media $medium {
+      top: -120px;
     width: 100%;
     }
     @media $large {
     width: 82.6%;
+    top: 0;
     }
     @media $ex-large {
     width: 82.6%;
+    top: 0;
     }
 
 }

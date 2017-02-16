@@ -38,7 +38,7 @@ get_header(); ?>
 
 
 
-					<div class="outer-content about-flex">
+					<div class="outer-content-about-mobile about-flex">
 
 
 						<section class="about-blank1 about-grid-item">
@@ -46,6 +46,9 @@ get_header(); ?>
 						</section>
 
 						<section class="about-group1 about-grid-item">
+
+									<h1 class="about-title-main-mobile outer-content">About</h1>
+
 							<div class="shift-title-1">and also too </div>
 							<div class="shift-text-1">is a collaborative design studio. We work with social justice visionaries and use community centered design processes to make beautiful, powerful things.</div>
 							<div class="shift-image-1">
