@@ -121,46 +121,47 @@
 
 		<section class="test-col">
 			<?php
+
 		// check if the flexible content field has rows of data
 		if( have_rows('story_flex_content') ):
 		     // loop through the rows of data
 		    while ( have_rows('story_flex_content') ) : the_row();
-
 		        if( get_row_layout() == 'text_with_heading' ):?>
-
-				<div class="story-secondary-flex">
-					<div class="test-text-area">
-			        	<h6 class="test-heading">
-							<?php the_sub_field('heading');?>
-						</h6>
-						<div class="secondary-text-area">
-							<?php the_sub_field('text_area');?>
-						</div>
-					</div>
-				<?php elseif( get_row_layout() == 'in-line_image' ): ?>
+					<div class="story-secondary-flex">
+					    <div class="test-text-area">
+					        <h6 class="test-heading">
+					            <?php the_sub_field('heading');?>
+					        </h6>
+					        <div class="secondary-text-area">
+					            <?php the_sub_field('text_area');?>
+					        </div>
+					    </div>
+		        <?php elseif( get_row_layout() == 'in-line_image' ):?>
 					<div class="secondary-image">
 						<img src="
 						<?php echo the_sub_field('image_single');?>" alt=""
 						/>
 					</div>
-				</div><!-- test-col -->
-
+				</div><!-- .story-secondary-flex -->
 				<?php elseif( get_row_layout() == 'static_image_gallery_flex' ): ?>
-					<?php
-						$images = get_sub_field('story_static_image_gallery');
-						if( $images ): ?>
-								<?php foreach( $images as $image ): ?>
-									<div class="story-static-image">
-										<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-									</div>
-								<?php endforeach; ?>
-						<?php endif; ?>
+				    <?php
+				        $images = get_sub_field('story_static_image_gallery');
+				        if( $images ): ?>
+				                <?php foreach( $images as $image ): ?>
+				                    <div class="story-static-image">
+				                        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+				                    </div>
+				                <?php endforeach; ?>
+				        <?php endif; ?>
+		        <?php endif;//rows
 
-				<?php endif;//text_with_heading ?>
-		    <? endwhile;
+		    endwhile;
+
 		else :
+
 		    // no layouts found
-		endif;//story_flex_content
+
+		endif;
 		?>
 		</section>
     </div><!-- .entry-content -->
