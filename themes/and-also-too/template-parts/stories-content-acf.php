@@ -110,22 +110,62 @@
 				</div><!-- .story-tags -->
 			</aside><!-- story-right-col -->
 		</section><!-- story-2col-flex- -->
+
+
+
+
 	    <section class="story-static-image-gallery">
+
+	    </section>
+
+
+		<section class="test-col">
 			<?php
 
-				$images = get_field('story_static_image_gallery');
-				if( $images ): ?>
-				        <?php foreach( $images as $image ): ?>
-				            <div class="story-static-image">
-				                <a href="<?php echo $image['url']; ?>">
-				                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-				                </a>
-				            </div>
-				        <?php endforeach; ?>
-				<?php endif; ?>
-	    </section>
-	    <section class="story-secondary-content">
-			<?php the_field('second_text_section')?>
-	    </section>
+		// check if the flexible content field has rows of data
+		if( have_rows('story_flex_content') ):
+		     // loop through the rows of data
+		    while ( have_rows('story_flex_content') ) : the_row();
+		        if( get_row_layout() == 'text_with_heading' ):?>
+					<div class="story-secondary-flex">
+					    <div class="test-text-area">
+					        <h6 class="test-heading">
+					            <?php the_sub_field('heading');?>
+					        </h6>
+					        <div class="secondary-text-area">
+					            <?php the_sub_field('text_area');?>
+					        </div>
+					    </div>
+		        <?php elseif( get_row_layout() == 'in-line_image' ):?>
+					<div class="secondary-image">
+						<img src="
+						<?php echo the_sub_field('image_single');?>" alt=""
+						/>
+					</div>
+				</div><!-- .story-secondary-flex -->
+				<?php elseif( get_row_layout() == 'static_image_gallery_flex' ): ?>
+				    <?php
+				        $images = get_sub_field('story_static_image_gallery');
+				        if( $images ): ?>
+				                <?php foreach( $images as $image ): ?>
+				                    <div class="story-static-image">
+				                        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+				                    </div>
+				                <?php endforeach; ?>
+				        <?php endif; ?>
+
+<!-- Slider Gallery Here!! -->
+
+
+
+		        <?php endif;//rows
+		    endwhile;
+		else :
+
+		    // no layouts found
+
+		endif;
+		?>
+		</section>
     </div><!-- .entry-content -->
 </article><!-- #post-## -->

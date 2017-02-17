@@ -8,12 +8,9 @@
  */
 
 ?>
-
 <!-- loop start -->
-<div class="story-width story-summary grid-item">
+<div class="stories-width stories-summary grid-item">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
 		<a href="<?php echo esc_url( get_permalink() );?>">
 			<div class="story-img">
 				<?php

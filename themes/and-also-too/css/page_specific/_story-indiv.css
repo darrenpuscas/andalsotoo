@@ -78,6 +78,8 @@
     margin: 0;
     padding: 0;
 }
+
+/*Flexible Content Area*/
 .story-static-image-gallery {
     margin: 0 -5px;
     display: flex;
@@ -87,4 +89,14 @@
     /*flex-grow: 1;
     flex-shrink: 2;
     flex-basis: 95%;*/
+}
+.story-secondary-flex {
+    display: flex;
+    margin: 0 -5px;
+}
+.secondary-text-area {
+    padding: 5px;
+}
+.secondary-image {
+    padding: 5px;
 }

@@ -2,28 +2,80 @@
 /**
  * Template Name: Front
  *
- * This is the template for the front (home) page.
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package And_Also_Too
  */
 
-get_header(); ?>
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat|Vollkorn|Roboto">
+<?php wp_head(); ?>
+</head>
 
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'and-also-too' ); ?></a>
+	<div id="content" class="site-content-home">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="entry-content">
 			  <header class="front-header entry-header">
-
-						<div class="bg-front-header">
+					<div class="bg-front-header">
+						<header id="masthead" class="site-header-home" role="banner">
+							<div class="header-content">
+								<div class="site-branding-medium">
+									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/white-Logo.png" alt="">
+								</div><!-- .site-branding -->
+								<nav id="site-navigation" class="main-navigation" role="navigation">
+									<div class="site-branding">
+										<img src="http://and-also-too.dev/wp-content/uploads/2017/02/logo-vertical.png" alt="">
+									</div>
+									<div class="mobile-nav-middle">
+										<span>
+											<a id="close-toggle" class="anchor-close" href="#">
+												<i class="fa fa-times" aria-hidden="true"> </i>CLOSE
+											</a>
+										</span>
+										<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'simple-toggle', 'container' => 'ul' ) ); ?>
+										<div class="nav-social">
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										</div>
+									</div>
+								</nav><!-- #site-navigation -->
+								<span class="anchor-link">
+									<a id="open-toggle" href="#">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+										Menu
+									</a>
+								</span>
+								<div class="nav-social-medium">
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</div>
+								</span><!-- .site-header -->
+							</header><!-- #masthead -->
 								 <div class="overlay-front-header std-content-area">
 										<h1 class="front-content-heading front-content-heading1">A collaborative design studio for social justice visionaries</h1>
 								 </div><!-- .front-content-inner-->
 							</div><!-- .outer-content-->
 					</header><!-- .entry-header -->
 					<section class="front-content-area what-we-do row">
+						<div class="icon-home-1">
+							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+						</div>
 								<div class="front-no-overlay1">
 									<div class="front-content-inner front-content-textonly std-content-area">
 											<h1 class="front-content-heading front-content-heading2">What we do</h1>
@@ -33,6 +85,9 @@ get_header(); ?>
 								  </div><!-- .outer-content-->
 					</section><!-- .front-content what-we-do -->
 					<section class="front-content-area how-we-do-it">
+						<div class="icon-home-1">
+							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon2-1.png" alt="" />
+						</div>
 							<div class="bg-how-we-do-it">
 								<div class="overlay-how-we-do-it std-content-area">
 										<h1 class="front-content-heading front-content-heading3">How we do it</h1>
@@ -43,6 +98,9 @@ get_header(); ?>
 							</div><!-- .bg-how-we-do-it-->
 					</section><!-- .front-content how-we-do-it -->
 					<section class="front-content-area front-latest-posts row">
+						<div class="icon-home-1">
+							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon3-1.png" alt="" />
+						</div>
 						<div class="front-no-overlay2">
 							<div class="front-content-inner front-content-textonly std-content-area">
 								<h1 class="latest-posts-title front-content-heading front-content-heading4">Latest Posts</h1>
@@ -51,10 +109,8 @@ get_header(); ?>
 									'post_type'              => array( 'post' ),
 									'posts_per_page'         => '2',
 								);
-
 								// The Query
 								$query = new WP_Query( $args );
-
 								// The Loop
 								if ( $query->have_posts() ) :
 									while ( $query->have_posts() ):
@@ -69,12 +125,10 @@ get_header(); ?>
 									</div>
 							  	</div>
 								<?php endwhile;
-
 								else :
 									// no posts found
 								// Restore original Post Data
 								endif;
-
 								wp_reset_postdata();
 								?>
 								<!-- Loop End -->
@@ -82,6 +136,9 @@ get_header(); ?>
 						</div><!-- front-no-overlay2-->
 					</section><!-- .front-content front-latest-posts -->
 					<section class="front-content-area announcements">
+						<div class="icon-home-1">
+							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon4.png" alt="" />
+						</div>
 						<div class="bg-announce">
 						<div class="overlay-announce outer-content">
 							<h1 class="announcements-heading front-content-heading">Announcements</h1>
@@ -105,6 +162,7 @@ get_header(); ?>
 								endif;
 								?>
 								</div><!-- .announcement-content-->
+							</div><!-- .overlay-announce-->
 							</div><!-- .overlay-announce-->
 						</div><!-- .bg-announce-->
 					</section><!-- .front-content announcements -->
