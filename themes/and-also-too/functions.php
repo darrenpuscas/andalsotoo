@@ -121,7 +121,7 @@ function and_also_too_scripts() {
 	  wp_enqueue_script( 'about-macy', get_template_directory_uri() . '/js/macy/about-macy.js', array(), '', true );
 	}
 
-	if ( is_page( 'slider-test' ) ) {
+	if ( is_page( 'slider-test' ) || is_singular('stories') ) {
 		wp_enqueue_script( 'slider-pro-lib', get_template_directory_uri() . '/js/slider-pro/jquery.sliderPro.min.js', array('jquery'), '', true );
   		wp_enqueue_script( 'app-slider-pro', get_template_directory_uri() . '/js/slider-pro/app-slider.js', array(), '', true );
 

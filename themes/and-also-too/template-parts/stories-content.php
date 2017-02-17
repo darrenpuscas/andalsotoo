@@ -118,7 +118,7 @@
 		if( have_rows('story_flex_content') ):
 		     // loop through the rows of data
 		    while ( have_rows('story_flex_content') ) : the_row();
-
+			//to have inline image on right, need a standard flex container for all diff layouts. Question is: how will the slider react using a flex container?? Or should we have the slider a separate <section>?
 				if( get_row_layout() == 'text_with_heading' ):?>
 					<div class="story-secondary-flex">
 
@@ -142,8 +142,8 @@
 
 					</div><!-- .story-secondary-flex -->
 
-				<div class="static-img-gallery-flex">
-					<?php elseif( get_row_layout() == 'static_image_gallery_flex' ): ?>
+				<?php elseif( get_row_layout() == 'static_image_gallery_flex' ): ?>
+					<div class="static-img-gallery-flex">
 					    <?php
 					        $images = get_sub_field('story_static_image_gallery');
 					        if( $images ): ?>
@@ -154,10 +154,23 @@
 					                <?php endforeach; ?>
 					        <?php endif; ?>
 					</div>
-<!-- Slider Gallery Here!! -->
+					<!-- Slider Gallery Here!! -->
 
+					<?php elseif( get_row_layout() == 'story_slider' ):
+						$sliderImages = get_sub_field('story_slider_images');
+					?>
+					<div class="slider-pro" id="story-slider">
+						<div class="sp-slides">
+						<?php if( $sliderImages ): ?>
+								<?php foreach( $sliderImages as $image ): ?>
+									<div class="sp-slide">
+										<img class="sp-image" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+									</div>
+								<?php endforeach; ?>
+						<?php endif; ?>
 
-
+					    </div><!-- .sp-slides -->
+					</div><!-- #story-slider -->
 		        <?php endif;//rows
 		    endwhile;
 		else :
