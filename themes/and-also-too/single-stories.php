@@ -17,11 +17,7 @@ get_header(); ?>
 
 		//consider loading content directly since it uses completely different structure than archive
 
-			get_template_part( 'template-parts/stories-content-acf' );
-
-			the_post_navigation();
-
-
+			get_template_part( 'template-parts/stories-content' );
 		endwhile; // End of the loop.
 		?>
 
