@@ -82,7 +82,7 @@
 /*Flexible Content Area*/
 .story-flex-content {}
 
-.story-secondary-flex {
+.secondary-text-flex {
     /*contains text section and single in-line image*/
     display: flex;
     margin: 0 -5px;

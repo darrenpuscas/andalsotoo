@@ -111,8 +111,7 @@
 		</section><!-- story-2col-flex- -->
 
 		<section class="story-flex-content">
-			<p>Flex Section Begins</p>
-			<?php
+		<?php
 
 		// check if the flexible content field has rows of data
 		if( have_rows('story_flex_content') ):
@@ -120,9 +119,13 @@
 		    while ( have_rows('story_flex_content') ) : the_row();
 			//to have inline image on right, need a standard flex container for all diff layouts. Question is: how will the slider react using a flex container?? Or should we have the slider a separate <section>?
 				if( get_row_layout() == 'text_with_heading' ):?>
-					<div class="story-secondary-flex">
+					<div class="secondary-text-flex">
 
-
+					<?php if(get_sub_field('left_aligned_image')):?>
+						<div class="left-aligned-image">
+							<img src="<?php the_sub_field('left_aligned_image');?>" alt="" />
+						</div>
+					<?php endif;?>
 					    <div class="secondary-text-area">
 					        <div class="test-heading">
 					            <?php the_sub_field('heading');?>
@@ -131,14 +134,12 @@
 					            <?php the_sub_field('text_area');?>
 					        </div>
 					    </div>
+						<?php if(get_sub_field('right_aligned_image')):?>
+							<div class="right-aligned-image">
+								<img src="<?php the_sub_field('right_aligned_image');?>" alt="" />
+							</div>
+						<?php endif;?>
 
-				<?php elseif( get_row_layout() == 'in-line_image' ):?>
-						<div class="secondary-in-line-image">
-							<img
-							src="<?php echo the_sub_field('image_single');?>"
-							alt=""
-							/>
-						</div>
 
 					</div><!-- .story-secondary-flex -->
 
