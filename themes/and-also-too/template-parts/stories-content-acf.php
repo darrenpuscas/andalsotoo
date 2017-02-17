@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying signle story
+ * Template part for displaying single story: loaded from single-stories.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

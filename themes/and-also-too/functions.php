@@ -101,18 +101,6 @@ function and_also_too_widgets_init() {
 }
 add_action( 'widgets_init', 'and_also_too_widgets_init' );
 
-
-// function my_acf_init() {
-//
-// 	acf_update_setting('google_api_key', 'AIzaSyCJanOv-q2iQobdexmufcx2HsMTVYwryKg');
-// 	}
-//
-// add_action('acf/init', 'my_acf_init');
-
-/**
- * Enqueue scripts and styles.
- */
-
 function and_also_too_scripts() {
 
 	wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome-4.7.0/css/font-awesome.min.css' );
@@ -123,8 +111,9 @@ function and_also_too_scripts() {
 
 
 	if ( is_page( 'Stories' ) || is_post_type_archive('stories') ) {
-		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery.js', array(), '', true );
-		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery-app.js', array('jquery'), '', true );
+		wp_enqueue_script( 'imagesLoaded', get_template_directory_uri() . '/js/packery/imagesLoaded.min.js', array('jquery'), '', true );
+		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery/packery.min.js', array('jquery'), '', true );
+		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery/packery-app.js', array('jquery'), '', true );
 	}
 
 	if ( is_page( 'About' ) ) {
@@ -132,13 +121,13 @@ function and_also_too_scripts() {
 	  wp_enqueue_script( 'about-macy', get_template_directory_uri() . '/js/about-macy.js', array(), '', true );
 	}
 
-		if ( is_page( 'slider-test' ) ) {
-			wp_enqueue_script( 'slider-pro-lib', get_template_directory_uri() . '/js/jquery.sliderPro.min.js', array('jquery'), '', true );
-	  		wp_enqueue_script( 'app-slider-pro', get_template_directory_uri() . '/js/app-slider.js', array(), '', true );
+	if ( is_page( 'slider-test' ) ) {
+		wp_enqueue_script( 'slider-pro-lib', get_template_directory_uri() . '/js/jquery.sliderPro.min.js', array('jquery'), '', true );
+  		wp_enqueue_script( 'app-slider-pro', get_template_directory_uri() . '/js/app-slider.js', array(), '', true );
 
-			wp_register_style( 'slider-pro', get_template_directory_uri() . '/css/slider-pro/slider-pro.min.css' );
+		wp_register_style( 'slider-pro', get_template_directory_uri() . '/css/slider-pro/slider-pro.min.css' );
 
-			wp_enqueue_style( 'slider-pro');
+		wp_enqueue_style( 'slider-pro');
 
 	}
 

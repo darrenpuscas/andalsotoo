@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying stories
+ * Template part for static Story Page: to use change archive-stories to load this template.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *

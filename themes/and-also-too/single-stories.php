@@ -15,6 +15,8 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
+		//consider loading content directly since it uses completely different structure than archive
+
 			get_template_part( 'template-parts/stories-content-acf' );
 
 			the_post_navigation();
