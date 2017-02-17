@@ -26,13 +26,9 @@ get_header(); ?>
 				<div class="grid-sizer"></div>
 				<?php
 				if ( have_posts() ) :
-
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
-					//consider not loading template part--Uses unique content for archive
-
-						// get_template_part( 'template-parts/stories-content-from-static', get_post_format() );
-?>
+				?>
 					<div class="stories-width stories-summary grid-item">
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<a href="<?php echo esc_url( get_permalink() );?>">
@@ -49,19 +45,12 @@ get_header(); ?>
 						</article><!-- #post-## -->
 					</div><!-- story-summary -->
 					<?php endwhile; ?>
-					<!-- <div class="outer-content">
-						<?php the_posts_pagination( $args );?>
-					</div> -->
-
 				<?php else :
-
 					get_template_part( 'template-parts/content', 'none' );
-
 				endif; ?>
 			</div><!-- .outer-content-->
 		</div><!-- .entry-content -->
 	</main><!-- #main -->
 </div><!-- #primary -->
-
 <?php
 get_footer();
