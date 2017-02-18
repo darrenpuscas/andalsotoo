@@ -78,13 +78,13 @@
 					</div>
 					<div class="story-tags-section">
 						<h5>services</h5>
-						<?php the_terms( $post->ID, 'tax-service', '<ul class="story-tax"><li>', '                        </li><li>', '</li></ul>'); ?>
+						<?php the_terms( $post->ID, 'tax-service', '<ul class="story-tax"><li>', '</li><li>', '</li></ul>'); ?>
 					</div>
 					<div class="story-tags-section">
 						<h5>credits</h5>
 
-						// check if the repeater field has rows of data
 					<?php if( have_rows('story_credits') ):
+						// check if the repeater field has rows of data
 						// loop through the rows of data
 						while ( have_rows('story_credits') ) : the_row();
 						    // display a sub field value
@@ -127,9 +127,11 @@
 						</div>
 					<?php endif;?>
 					    <div class="secondary-text-area">
+						<?php if(get_sub_field('heading')):?>
 					        <div class="test-heading">
 					            <?php the_sub_field('heading');?>
 					        </div>
+						<?php endif; ?>
 					        <div class="secondary-text-area">
 					            <?php the_sub_field('text_area');?>
 					        </div>

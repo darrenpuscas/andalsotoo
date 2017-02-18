@@ -85,7 +85,18 @@
 .secondary-text-flex {
     /*contains text section and single in-line image*/
     display: flex;
+    flex-direction: column;
     margin: 0 -5px;
+
+    @media $medium {
+        flex-direction: row;
+    }
+    @media $large {
+        flex-direction: row;
+    }
+    @media $ex-large {
+        flex-direction: row;
+    }
 }
 
 /*Secondary Text Section*/
