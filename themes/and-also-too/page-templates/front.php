@@ -46,10 +46,18 @@
 										</span>
 										<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'simple-toggle', 'container' => 'ul' ) ); ?>
 										<div class="nav-social">
-											<i class="fa fa-twitter-square" aria-hidden="true"></i>
-											<i class="fa fa-facebook-square" aria-hidden="true"></i>
-											<i class="fa fa-instagram" aria-hidden="true"></i>
-											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+											<a href="https://twitter.com/and_also_too" target="_blank">
+												<i class="fa fa-twitter-square" aria-hidden="true"></i>
+											</a>
+											<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+												<i class="fa fa-facebook-square" aria-hidden="true"></i>
+											</a>
+											<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+												<i class="fa fa-instagram" aria-hidden="true"></i>
+											</a>
+											<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+												<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+											</a>
 										</div>
 									</div>
 								</nav><!-- #site-navigation -->
@@ -60,10 +68,18 @@
 									</a>
 								</span>
 								<div class="nav-social-medium">
-									<i class="fa fa-twitter-square" aria-hidden="true"></i>
-									<i class="fa fa-facebook-square" aria-hidden="true"></i>
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									<a href="https://twitter.com/and_also_too" target="_blank">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									</a>
+									<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+									<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+									<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+									</a>
 								</div>
 								</span><!-- .site-header -->
 							</header><!-- #masthead -->
