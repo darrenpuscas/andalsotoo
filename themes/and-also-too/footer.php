@@ -28,10 +28,18 @@
 							</div>
 						</div>
 						<div class="footer-social-medium">
-							<i class="fa fa-twitter-square" aria-hidden="true"></i>
-							<i class="fa fa-facebook-square" aria-hidden="true"></i>
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							<a href="https://twitter.com/and_also_too" target="_blank">
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 					<div class="footer-phone">
@@ -42,10 +50,18 @@
 						<div class="email-text">collaborate@andalsotoo.net</div>
 					</div>
 					<div class="footer-social">
-						<i class="fa fa-twitter-square" aria-hidden="true"></i>
-						<i class="fa fa-facebook-square" aria-hidden="true"></i>
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<a href="https://twitter.com/and_also_too" target="_blank">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</a>
 					</div>
 
 				</div><!-- .footer-content-->
