@@ -26,25 +26,20 @@ get_header(); ?>
 				<div class="grid-sizer"></div>
 				<?php
 				if ( have_posts() ) :
-
 					/* Start the Loop */
 					while ( have_posts() ) : the_post();
-						get_template_part( 'template-parts/stories-content-from-static', get_post_format() );
 
-					endwhile; ?>
-					<div class="outer-content">
-						<?php the_posts_pagination( $args );?>
-					</div>
+					get_template_part( 'template-parts/stories-preview' );
 
-				<?php else :
+					endwhile;
 
+
+				else :
 					get_template_part( 'template-parts/content', 'none' );
-
 				endif; ?>
 			</div><!-- .outer-content-->
 		</div><!-- .entry-content -->
 	</main><!-- #main -->
 </div><!-- #primary -->
-
 <?php
 get_footer();
