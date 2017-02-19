@@ -18,7 +18,16 @@
 
 }
 .home .site-footer, .page-template-about .site-footer {
-  border-top: none;
+    border-top: none;
+  @media $medium {
+    border-top: 1px solid $black;
+  }
+  @media $large {
+    border-top: none;
+  }
+  @media $ex-large {
+    border-top: none;
+  }
 }
 
 .footer-content {
