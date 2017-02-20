@@ -17,16 +17,26 @@
   }
 
 }
-.home .site-footer, .page-template-about .site-footer {
+.home .site-footer {
     border-top: none;
+}
+
+
+.page-template-about .site-footer {
+  border-top: none;
   @media $medium {
-    border-top: 1px solid $black;
+  border-top: 1px solid $black;
+  margin-top: 6.2rem;
+
   }
   @media $large {
-    border-top: none;
+  border-top: none;
   }
   @media $ex-large {
-    border-top: none;
+  border-top: none;
+  padding-bottom: -10rem;
+
+
   }
 }
 
