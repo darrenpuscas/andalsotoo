@@ -93,9 +93,16 @@
 									<div class="blog-social-links">
 										<i class="fa fa-twitter-square" aria-hidden="true"></i>
 										<i class="fa fa-facebook-square" aria-hidden="true"></i>
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-										<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+										<!-- <a href="https://www.instagram.com/mlsmith45/?ref=badge">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a> -->
+										<a data-pin-custom="true" href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>">
+											<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://plus.google.com/share?url={URL}" onclick="javascript:window.open(this.href,
+										  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
 										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										</a>
 										<i class="fa fa-envelope-o" aria-hidden="true"></i>
 									</div>
 									<div class="blog-previous-post">
