@@ -15,11 +15,9 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/stories-content-acf' );
+		//consider loading content directly since it uses completely different structure than archive
 
-			the_post_navigation();
-
-
+			get_template_part( 'template-parts/stories-content' );
 		endwhile; // End of the loop.
 		?>
 

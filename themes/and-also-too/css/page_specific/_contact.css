@@ -32,10 +32,10 @@
     color: $sitePurple;
 }
 .contact-map {
-    max-width: 650px;
-    /*max-height: 891px;*/
+    /*max-width: 650px;*/
+    max-height: 891px;
     min-width: 300px;
-    /*min-height: 400px;*/
+    min-height: 400px;
     /*padding-bottom: 33%;*/
 }
 
@@ -53,9 +53,9 @@
 
 #wpgmza_map[style] {
     height: auto !important;
-    min-height: 700px;
-    /*min-height: 200px;*/
-    /*position: static !important;*/
+    /*min-height: 700px;*/
+    min-height: 200px;
+    position: static !important;
 
 }
 /*maintain aspect-ratio*/

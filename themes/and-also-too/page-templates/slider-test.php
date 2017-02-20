@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<div class="slider-pro" id="my-slider">
+				<div class="slider-pro" id="story-slider">
 				    <div class="sp-slides">
 				        <!-- Slide 1 -->
 				        <div class="sp-slide">
