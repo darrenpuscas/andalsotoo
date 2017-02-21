@@ -62,7 +62,7 @@
 									</div>
 								</nav><!-- #site-navigation -->
 								<span class="anchor-link">
-									<a id="open-toggle" href="#">
+									<a id="open-toggle">
 										<i class="fa fa-bars" aria-hidden="true"></i>
 										Menu
 									</a>
@@ -104,31 +104,47 @@
 								<div class="mobile-nav-middle">
 
 									<span>
-										<a id="close-toggle" class="anchor-close" href="#">
+										<a id="close-toggle-fixed" class="anchor-close" href="#">
 											<i class="fa fa-times" aria-hidden="true"> </i>CLOSE
 										</a>
 									</span>
 									<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'simple-toggle', 'container' => 'ul' ) ); ?>
 
 									<div class="nav-social">
-										<i class="fa fa-twitter-square" aria-hidden="true"></i>
-										<i class="fa fa-facebook-square" aria-hidden="true"></i>
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										<a href="https://twitter.com/and_also_too" target="_blank">
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										</a>
 									</div>
 								</div>
 							</nav><!-- #site-navigation -->
 							<span class="anchor-link">
-								<a id="open-toggle" href="#">
+								<a id="open-toggle-fixed" >
 									<i class="fa fa-bars" aria-hidden="true"></i>
 									Menu
 								</a>
 							</span>
 							<div class="nav-social-medium">
-								<i class="fa fa-twitter-square" aria-hidden="true"></i>
-								<i class="fa fa-facebook-square" aria-hidden="true"></i>
-								<i class="fa fa-instagram" aria-hidden="true"></i>
-								<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								<a href="https://twitter.com/and_also_too" target="_blank">
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</a>
 							</div>
 
 

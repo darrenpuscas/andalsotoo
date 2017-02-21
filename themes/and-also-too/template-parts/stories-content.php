@@ -58,13 +58,26 @@
 			</div><!-- .story-left-col -->
 			<aside class="story-right-col">
 				<div class="story-social">
-					<i class="fa fa-twitter-square" aria-hidden="true"></i>
-					<i class="fa fa-facebook-square" aria-hidden="true"></i>
-					<i class="fa fa-instagram" aria-hidden="true"></i>
-					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-					<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+					<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>"  onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+						<i class="fa fa-twitter-square" aria-hidden="true"></i>
+					</a>
+
+					<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="">
+
+
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>
+
+					<a data-pin-custom="true" href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+						<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+					</a>
+					<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,
+					  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
 					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
+					<a href="mailto:&body=<?php the_permalink(); ?>">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
 				</div>
 				<div class="story-tags">
 					<h4>

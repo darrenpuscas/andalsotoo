@@ -18,10 +18,23 @@
 	if ( 'undefined' === typeof openToggle ) {
 		return;
 	}
+
+	openToggleFixed = document.getElementById( 'open-toggle-fixed' );
+	// console.log(openToggle);
+	if ( 'undefined' === typeof openToggleFixed ) {
+		return;
+	}
+
 	closeToggle = document.getElementById('close-toggle');
 	if ( 'undefined' === typeof closeToggle ) {
 		return;
 	}
+
+	closeToggleFixed = document.getElementById('close-toggle-fixed');
+	if ( 'undefined' === typeof closeToggle ) {
+		return;
+	}
+
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
@@ -42,11 +55,24 @@
 		menu.setAttribute( 'aria-expanded', 'true' );
 	};
 
+	openToggleFixed.onclick = function() {
+		container.className += ' toggled';
+		openToggle.setAttribute( 'aria-expanded', 'true' );
+		menu.setAttribute( 'aria-expanded', 'true' );
+	};
+
 	closeToggle.onclick = function() {
 			container.className = container.className.replace( ' toggled', '' );
 			closeToggle.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
 	};
+
+	closeToggleFixed.onclick = function() {
+			container.className = container.className.replace( ' toggled', '' );
+			closeToggle.setAttribute( 'aria-expanded', 'false' );
+			menu.setAttribute( 'aria-expanded', 'false' );
+	};
+
 
 	// Get all the link elements within the menu.
 	links = menu.getElementsByTagName( 'a' );
