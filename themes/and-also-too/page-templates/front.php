@@ -128,30 +128,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<section class="front-content-area what-we-do row">
 						<div class="icon-home-1">
 							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
@@ -161,7 +137,7 @@
 											<h1 class="front-content-heading front-content-heading2">What we do</h1>
 											<div class="what-we-do-text front-content-text">We work with and within communities that are fighting back against injustice to co-design awesome new things in awesome new ways.
 											</div>
-											<button class="front-button1">Read Stories</button>
+											<a href="http://and-also-too.dev/stories"><button class="front-button1">Read Stories</button></a>
 								  </div><!-- .outer-content-->
 					</section><!-- .front-content what-we-do -->
 					<section class="front-content-area how-we-do-it">
@@ -173,7 +149,7 @@
 										<h1 class="front-content-heading front-content-heading3">How we do it</h1>
 										<div class="front-content-text front-content-text2">Our work is rooted in design justice, which informs our day-to-day practice. We document our learnings by sharing research; these learnings can support or transform our theory.
 										</div>
-										<button class="front-button2">About Us</button>
+										<a href="http://and-also-too.dev/about"><button class="front-button2">About Us</button></a>
 								</div><!-- .overlay-how-we-do-it-->
 							</div><!-- .bg-how-we-do-it-->
 					</section><!-- .front-content how-we-do-it -->
@@ -231,9 +207,9 @@
 								?>
 									<div class="announcement-indiv announcement-1">
 										<div class="announcement-date"><?php the_sub_field('announcement_date');?></div>
-										<p class="announcement-text">
+										<div class="announcement-text">
 											<?php the_sub_field('announcement_text');?>
-										</p>
+										</div>
 									</div>
 								<?php
 								    endwhile;
