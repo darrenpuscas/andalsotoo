@@ -12,52 +12,24 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="">
 		<div class="story-featured-image">
-			<?php
-			if ( has_post_thumbnail() ) :
-			    the_post_thumbnail();?>
+			<?php the_post_thumbnail();?>
 
-				<div class="story-title">
-					<?php
-					if ( is_single() ) :
-						the_title( '<h1 class="entry-title">', '</h1>' );
-						else :
-							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-						endif;
-						?>
-						<h6 class="">with</h6>
-						<h6 class=""><?php the_field('sub-heading_for_title')?></h6>
-					</div><!-- .story-title -->
 		</div><!-- .featured-image -->
 
-	<?php else: ?>
-
-		<div class="story-title-basic">
-			<!-- need a class that doesn't absolutely position title Or have default background image that loads with no featured image -->
-			<?php
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				endif;
-				?>
-			<h6 class="">with</h6>
-			<h6 class=""><?php the_field('sub-heading_for_title')?></h6>
-			<!--  -->
-		</div>
-	<?php endif;?>
-
 	</header><!-- .outer-content -->
+
 
 	<div class="entry-content outer-content story-main-content">
 		<!-- NOTE to Darren - I don't think we sketched out this page, so I wasn't sure what width percentages are used here. I left the header to go full width and used outer-content here. -->
 		<section class="story-2col-flex">
 			<div class="story-left-col">
-				<h1 class=""><?php the_title( '<h1 class="entry-title">', '</h1>' );?></h1>
-
+				<div class=""><?php the_title( '<h1 class="entry-title">', '</h1>' );?></div>
 				<?php the_field('story_main_text_section')?>
 			</div><!-- .story-left-col -->
 			<aside class="story-right-col">
+
 				<div class="story-social">
+					<h5 class="story-social-heading">Share</h5>
 					<i class="fa fa-twitter-square" aria-hidden="true"></i>
 					<i class="fa fa-facebook-square" aria-hidden="true"></i>
 					<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -81,7 +53,7 @@
 						<?php the_terms( $post->ID, 'tax-service', '<ul class="story-tax"><li>', '</li><li>', '</li></ul>'); ?>
 					</div>
 					<div class="story-tags-section">
-						<h5>credits</h5>
+						<h5 class="stories-credits">credits</h5>
 
 					<?php if( have_rows('story_credits') ):
 						// check if the repeater field has rows of data
@@ -90,21 +62,21 @@
 						    // display a sub field value
 							$terms = get_sub_field('name_or_partner');
 					?>
-						<h6><?php the_sub_field('story_credit_title');?></h6>
-						<?php
-							if( $terms ): ?>
-								<ul>
-									<?php foreach( $terms as $term ): ?>
-										<li><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></li>
-									<?php endforeach; ?>
-								</ul>
-							<?php endif; ?>
-						<?php endwhile;
+									<h6><?php the_sub_field('story_credit_title');?></h6>
+									<?php
+										if( $terms ): ?>
+											<ul>
+												<?php foreach( $terms as $term ): ?>
+													<li><a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></li>
+												<?php endforeach; ?>
+											</ul>
+										<?php endif; ?>
+									<?php endwhile;
 
-					else :
-					    // no rows found
-					endif;
-								?>
+								else :
+								    // no rows found
+								endif;
+											?>
 					</div><!-- story-tags-section -->
 				</div><!-- .story-tags -->
 			</aside><!-- story-right-col -->
@@ -128,11 +100,11 @@
 					<?php endif;?>
 					    <div class="secondary-text-area">
 						<?php if(get_sub_field('heading')):?>
-					        <div class="test-heading">
+					        <div class="secondary-heading">
 					            <?php the_sub_field('heading');?>
 					        </div>
 						<?php endif; ?>
-					        <div class="secondary-text-area">
+					        <div class="secondary-text">
 					            <?php the_sub_field('text_area');?>
 					        </div>
 					    </div>

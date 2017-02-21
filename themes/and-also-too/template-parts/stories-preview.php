@@ -19,7 +19,7 @@
                     }
                 ?>
             </div><!-- story-img -->
-            <h5 class=""><?php the_title();?></h5>
+            <h4 class="stories-title"><?php the_title();?></h4>
             <h3 class="story-italic"><?php the_field('sub-heading_for_title')?></h3>
         </a>
     </article><!-- #post-## -->

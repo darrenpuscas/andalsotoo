@@ -1,5 +1,12 @@
 /*Individual Story*/
 
+.single-stories .site-main {
+  padding-top: 0rem;
+}
+.single-stories .site-header {
+   border-bottom: none;
+}
+
 .story-featured-image {
     /*You'll probably replace all the featured image classes with bg and the calc positioning*/
     position: relative;
@@ -14,69 +21,302 @@
 }
 .story-2col-flex {
     align-items: baseline;
+    padding-top: 3rem;
 
     @media $medium {
         display: flex;
+        justify-content: space-between;
+        padding-top: 3.8rem;
     }
     @media $large {
         display: flex;
+        justify-content: space-between;
+        padding-top: 4.2rem;
     }
     @media $ex-large {
         display: flex;
+        justify-content: space-between;
+        padding-top: 5rem;
     }
 
 }
 .story-left-col {
-
+    width: 100%;
     @media $medium {
-        flex: 3;
+    width: 64%;
     }
     @media $large {
-        flex: 3;
+    width: 69%;
     }
     @media $ex-large {
-        flex: 3;
+    width: 62%;
     }
 
+    .entry-title {
+      text-align: left;
+      color: $sitePurple;
+    }
+    h1 {
+      padding-bottom: 1.6rem;
+      line-height: 1.2;
+      @media $medium {
+      font-size: 2.4rem;
+      padding-bottom: 2rem;
+      line-height: 1.2;
+      }
+      @media $large {
+      padding-bottom: 2rem;
+      line-height: 1.2;
+      }
+      @media $ex-large {
+      padding-bottom: 2rem;
+      line-height: 1.1;
+      }
+    }
+    h3 {
+      font-family: Montserrat;
+      text-transform: uppercase;
+      color: $sitePurple;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      padding-top: 1.1rem;
+      font-size: 2.1rem;
+      @media $medium {
+      padding-top: 1.2rem;
+      margin-bottom: 0.2rem;
+      font-size: 2.2rem;
+      }
+      @media $large {
+      padding-top: 1.2rem;
+      margin-bottom: 0rem;
+      font-size: 2.5rem;
+      }
+      @media $ex-large {
+      padding-top: 1.8rem;
+      margin-bottom: 0.4rem;
+      font-size: 2.4rem;
+      }
+    }
+    p {
+      @media $medium {
+      font-size: 1.9rem;
+      }
+    }
 }
-.story.right-col {
 
+
+.secondary-heading {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color: $sitePurple;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-top: 1.1rem;
+  font-size: 2.1rem;
+  @media $medium {
+  padding-top: 2.1rem;
+  margin-bottom: 0.2rem;
+  font-size: 2.2rem;
+  }
+  @media $large {
+  padding-top: 2.4rem;
+  margin-bottom: 0rem;
+  font-size: 2.5rem;
+  }
+  @media $ex-large {
+  padding-top: 2.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 2.4rem;
+  }
+}
+
+
+.story-right-col {
+  width: 100%;
     @media $medium {
-        flex: 1;
+        width: 25%;
     }
     @media $large {
-        flex: 1;
+        width: 24%;
     }
     @media $ex-large {
-        flex: 1;
+          width: 28%;
     }
 }
+.story-tags {
+  color: $sitePurple;
+  font-family: Montserrat;
+  h4 {
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    @media $medium {
+    font-size: 2.0rem;
+    }
+    @media $large {
+    font-size: 2.2rem;
+    }
+    @media $ex-large {
+    font-size: 2.2rem;
+    }
+  }
+}
+
 .story-social {
-
+        color: $siteTeal;
+        border-top: solid 1px $siteTeal;
+        border-bottom: solid 1px $siteTeal;
+        padding: 6% 0;
     @media $medium {
         flex: 1;
-        border-top: solid 1px green;
-        border-bottom: solid 1px green;
         padding: 10% 0;
     }
     @media $large {
         flex: 1;
-        border-top: solid 1px green;
-        border-bottom: solid 1px green;
         padding: 10% 0;
     }
     @media $ex-large {
         flex: 1;
-        border-top: solid 1px green;
-        border-bottom: solid 1px green;
-        padding: 10% 0;
+        padding: 8% 0%;
     }
-
+    .fa {
+      padding-right: 4%;
+      font-size: 2.2rem;
+      @media $medium {
+      font-size: 1.5rem;
+      }
+      @media $large {
+          font-size: 2.1rem;
+      padding-right: 4%;
+      }
+      @media $ex-large {
+      font-size: 2.7rem;
+      padding-right: 5%;
+      }
+    }
 }
+.story-social-heading {
+  font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    @media $medium {
+    font-size: 1.4rem;
+    }
+    @media $large {
+    font-size: 1.8rem;
+    }
+    @media $ex-large {
+    font-size: 2.1rem;
+    }
+}
+.story-tags-section, .story-social {
+    h5 {
+      font-family: Montserrat;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.0rem;
+      @media $medium {
+      font-size: 1.8rem;
+      }
+      @media $large {
+      font-size: 1.9rem;
+      }
+      @media $ex-large {
+      font-size: 1.9rem;
+      }
+    }
+    h6 {
+      font-family: Montserrat;
+      margin-bottom: 0.2rem;
+      margin-top: 2.4rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      @media $medium {
+      font-size: 1.6rem;
+      }
+      @media $large {
+      font-size: 1.7rem;
+      }
+      @media $ex-large {
+      font-size: 1.7rem;
+      }
+    }
+}
+
+.story-tags-section {
+  h5 {
+    color: $sitePurple;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    @media $medium {
+    margin-top: 1.8rem;
+    margin-bottom: 0.2rem;
+    }
+    @media $large {
+    margin-top: 3rem;
+    margin-bottom: 0.4rem;
+    }
+    @media $ex-large {
+    margin-top: 3rem;
+    margin-bottom: 0.4rem;
+    }
+  }
+}
+
+.story-social {
+  h5 {
+    color: $siteTeal;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
+    @media $medium {
+    }
+    @media $large {
+    }
+    @media $ex-large {
+    }
+  }
+}
+
+
+
+h5.stories-credits {
+  margin-bottom: -2.0rem;
+}
+
 .story-tags-section ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    li {
+      color: $siteTeal;
+      font-family: vollkorn;
+      font-style: italic;
+      text-decoration: none;
+      a {
+          color: $siteTeal;
+          text-decoration: none;
+            font-size: 1.9rem;
+            line-height: 1.1;
+          @media $medium {
+            font-size: 1.9rem;
+            line-height: 1.2;
+          }
+          @media $large {
+          font-size: 2.1rem;
+          line-height: 1.2;
+          }
+          @media $ex-large {
+          font-size: 2.1rem;
+          line-height: 1.2;
+
+          }
+      }
+    }
 }
 
 /*Flexible Content Area*/
@@ -100,22 +340,78 @@
 }
 
 /*Secondary Text Section*/
+.secondary-heading {
+
+}
 .secondary-text-area {
-    padding: 5px;
+  width: 100%;
+  @media $medium {
+  width: 64%;
+  }
+  @media $large {
+  width: 69%;
+  }
+  @media $ex-large {
+  width: 62%;
+  }
+
 }
 
 .secondary-in-line-image {
-    padding: 5px;
+
+}
+.left-aligned-image {
+  margin: 2rem 0.5rem 1rem;
+  @media $medium {
+    margin: 0 1rem 0 0;
+  }
+  @media $large {
+    margin: 0 1rem 0 0;
+  }
+  @media $ex-large {
+      margin: 0 1rem 0 0;
+  }
+}
+.right-aligned-image {
+    margin: 1rem 0.5rem 0;
+    @media $medium {
+      margin: 0 0 0 4rem;
+    }
+    @media $large {
+      margin: 0 0 0 4rem;
+    }
+    @media $ex-large {
+      margin: 0 0 0 4rem;
+    }
 }
 
 /*static image gallery*/
 .static-img-gallery-flex {
-    margin: 0 -5px;
+    margin: 0rem -2% 2rem;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media $medium {
+        flex-direction: row;
+    }
+    @media $large {
+        flex-direction: row;
+    }
+    @media $ex-large {
+        flex-direction: row;
+    }
 }
 .story-static-image {
-    padding: 5px;
-    /*flex-grow: 1;
+    padding: 27px 2% 0;
+    flex-grow: 1;
     flex-shrink: 2;
-    flex-basis: 95%;*/
+    @media $medium {
+    padding: 0 2%;
+    }
+    @media $large {
+    padding: 0 2%;
+    }
+    @media $ex-large {
+    padding: 0 2%;
+    }
 }
