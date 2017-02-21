@@ -234,3 +234,12 @@ padding-top: 82px;
     width: 65%;
     align: right;
 }
+.nav-social, .nav-social-medium {
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+    a:visited {
+        color: $black;
+    }
+}

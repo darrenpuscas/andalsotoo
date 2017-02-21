@@ -36,7 +36,10 @@
 					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 					<i class="fa fa-pinterest-square" aria-hidden="true"></i>
 					<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
+					<a href="mailto:&body=<?php the_permalink(); ?>">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</a>
 				</div>
 				<div class="story-tags">
 					<h4>

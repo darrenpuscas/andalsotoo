@@ -16,10 +16,13 @@
 					<div class="blog-entry-meta-medium">
 						<div class="date-container">
 							<?php
-							// and_also_too_posted_on(); ?>
-							<span class="blog-date-num">30</span>
-							<span class="blog-date-month">nov</span>
-							<span class="blog-date-year">2016</span>
+							$month = get_the_date( 'M' );
+							$day = get_the_date( 'j' );
+							$year = get_the_date( 'y' );
+							 ?>
+							<span class="blog-date-num"><?php echo $day ?></span>
+							<span class="blog-date-month"><?php echo $month ?></span>
+							<span class="blog-date-year"><?php echo $year ?></span>
 						</div>
 						<div class="blog-category">
 							<?php the_category( ' ' ); ?>
@@ -91,14 +94,28 @@
 										<?php endif; ?>
 									</div>
 									<div class="blog-social-links">
-										<i class="fa fa-twitter-square" aria-hidden="true"></i>
-										<i class="fa fa-facebook-square" aria-hidden="true"></i>
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-										<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+										<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>"  onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										</a>
+
+										<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="">
+
+
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+										</a>
+
+										<a data-pin-custom="true" href="https://www.pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+											<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,
+										  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
 										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										</a>
+										<a href="mailto:&body=<?php the_permalink(); ?>">
+											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										</a>
 									</div>
-									<div class="blog-previous-post">
+									<div class="blog-previous-post<?php the_permalink(); ?>">
 										<?php
 										$prev_post = get_previous_post();
 										if ( $prev_post ): ?>

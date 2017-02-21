@@ -47,9 +47,9 @@ get_header(); ?>
 
 
 						<div class="hhh">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-1.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/about-image-1.png'?>" alt="" />
 								<div class="shift-icon-1">
-									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+									<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon1-3.png'?>" alt="" />
 								</div>
 						</div>
 
@@ -68,7 +68,7 @@ get_header(); ?>
 							<div class="shift-title-1">and also too </div>
 							<div class="shift-text-1">is a collaborative design studio. We work with social justice visionaries and use community centered design processes to make beautiful, powerful things.</div>
 							<div class="shift-image-1">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-1.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/about-image-1.png'?>" alt="" />
 							</div>
 						</section>
 
@@ -76,14 +76,14 @@ get_header(); ?>
 
 						<section class="about-group-2 about-grid-item">
 							<div class="shift-icon-1-medium">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon1-3.png'?>" alt="" />
 							</div>
 							<div class="shift-title-2">we work with social justice visionaries...</div>
 							<div class="shift-text-2">We collaborate with people who are imaginging alternatives to unjust systems, who see a need to use new and unconventional strategies to tackle complex social problems, and who are ready to participate deeply in the design process.</div>
 							<div class="shift-image-2">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-2.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/about-image-2.png'?>" alt="" />
 								<div class="shift-icon-2">
-									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon2-1.png" alt="" />
+									<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon2-1.png'?>" alt="" />
 								</div>
 							</div>
 
@@ -91,7 +91,7 @@ get_header(); ?>
 
 						<section class="about-group3 about-grid-item">
 							<div class="shift-icon-2-medium">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon2-1.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon2-1.png'?>" alt="" />
 							</div>
 							<div class="shift-title-3">...and use community centered design processes</div>
 							<div class="shift-text-3">We facilitate groups of people connected by choice or circumstance to co-design the future. We belive that people are experts in their own experiences, that everyone has the ability to participate in creative processes, and so we design with and not for communities experiencing injustice.</div>
@@ -100,13 +100,13 @@ get_header(); ?>
 
 						<div class="hhh">
 							<div class="about-grid-item">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-3.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/about-image-3.png'?>" alt="" />
 							</div>
 						</div>
 
 						<section class="about-group4">
 							<div class="shift-icon-3-medium">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon1-3.png'?>" alt="" />
 							</div>
 
 							<div class="non-mobile4">
@@ -123,7 +123,7 @@ get_header(); ?>
 
 						<section class="about-group5 about-grid-item">
 							<div class="shift-image-3 about-grid-item">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/about-image-3.png" alt="" />
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/about-image-3.png'?>" alt="" />
 							</div>
 						</section>
 
@@ -133,7 +133,7 @@ get_header(); ?>
 
 					<div class="about-flex eee">
 						<div class="shift-icon-3">
-							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+							<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon1-3.png'?>" alt="" />
 						</div>
 							<section class="about-full-width about-full-width2">
 									<div class="bg-about-2">
