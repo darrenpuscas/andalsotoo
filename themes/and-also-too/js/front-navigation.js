@@ -60,7 +60,6 @@
 	};
 
 	openToggleFixed.onclick = function() {
-		console.log('openToggle clicked');
 		fixedContainer.className += ' toggled';
 		openToggle.setAttribute( 'aria-expanded', 'true' );
 		menu.setAttribute( 'aria-expanded', 'true' );
