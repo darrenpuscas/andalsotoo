@@ -62,7 +62,7 @@
 									</div>
 								</nav><!-- #site-navigation -->
 								<span class="anchor-link">
-									<a id="open-toggle" href="#">
+									<a id="open-toggle">
 										<i class="fa fa-bars" aria-hidden="true"></i>
 										Menu
 									</a>
@@ -88,6 +88,102 @@
 								 </div><!-- .front-content-inner-->
 							</div><!-- .outer-content-->
 					</header><!-- .entry-header -->
+
+<!-- Fixed Menu copied from header.php -->
+					<header id="front-sticky-masthead" class="site-header front-fixed-menu" role="banner">
+						<div class="header-content">
+
+							<div class="site-branding-medium">
+								<?php the_custom_logo(); ?>
+							</div><!-- .site-branding -->
+
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<div class="site-branding">
+									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/logo-vertical.png" alt="">
+								</div>
+								<div class="mobile-nav-middle">
+
+									<span>
+										<a id="close-toggle-fixed" class="anchor-close" href="#">
+											<i class="fa fa-times" aria-hidden="true"> </i>CLOSE
+										</a>
+									</span>
+									<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'simple-toggle', 'container' => 'ul' ) ); ?>
+
+									<div class="nav-social">
+										<a href="https://twitter.com/and_also_too" target="_blank">
+											<i class="fa fa-twitter-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+											<i class="fa fa-facebook-square" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+										<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+											<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+							</nav><!-- #site-navigation -->
+							<span class="anchor-link">
+								<a id="open-toggle-fixed" >
+									<i class="fa fa-bars" aria-hidden="true"></i>
+									Menu
+								</a>
+							</span>
+							<div class="nav-social-medium">
+								<a href="https://twitter.com/and_also_too" target="_blank">
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.facebook.com/andalsotoo/" target="_blank">
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.instagram.com/andalsotoo/" target="_blank">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/and-also-too target="_blank"">
+									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+								</a>
+							</div>
+
+
+
+
+						</span><!-- .site-header -->
+
+					</header><!-- #masthead -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 					<section class="front-content-area what-we-do row">
 						<div class="icon-home-1">
 							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />

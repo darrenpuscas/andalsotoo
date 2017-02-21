@@ -3,10 +3,8 @@
   padding-bottom: 0;
 }
 
-.about-full-width {
-    /*background: #D8BFD8;*/
-    position: relative;
-}
+
+
 .about-full-width2 {
 
   z-index: -999;
@@ -22,29 +20,154 @@
   }
 }
 
-
-
-
-
-.bg-about-1 {
-background: url("../and-also-too/css/images/about-background-1.png");
-  background-position: 45% 100%;
+.bg-about-heading-mobile {
+  background: url("../and-also-too/css/images/about-background-1.png");
+  background-position: 5% 100%;
     background-size: cover;
   @media $medium {
-
-      background-size: 105% 120%;
+  background-size: 145% 100%;
   }
   @media $large {
-      background-size: cover;
-
-background-size: 105% 100%;
+  display: none!important;
   }
   @media $ex-large {
-      background-size: cover;
-
-background-size: 105% 100%;
+  display: none!important;
   }
 }
+.bg-about-heading-mobile-2 {
+  background: url("../and-also-too/css/images/about-background-1.png");
+  background-position: 5% 100%;
+    background-size: cover;
+    padding-bottom: 20px;
+  @media $medium {
+  background-size: 145% 100%;
+    display: none!important;
+  }
+  @media $large {
+  display: none!important;
+  }
+  @media $ex-large {
+  display: none!important;
+  }
+}
+
+.overlay-about-heading-mobile {
+  text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: -8%;
+  @media $medium {
+    padding-top: 12.2%;
+    padding-bottom: 12.2%;
+  }
+  @media $large {
+  display: none!important;
+  }
+  @media $ex-large {
+  display: none!important;
+  }
+}
+
+.about-content-heading-mobile {
+color: $white;
+text-transform: uppercase;
+font-size: 2.2rem;
+font-weight: 700;
+font-family: Montserrat;
+letter-spacing: 2px;
+padding-top: 6rem;
+padding-bottom: 4.8rem;
+@media $medium {
+  font-size: 28px;
+  padding-top: 4rem;
+  padding-bottom: 4.8rem;
+}
+}
+.about-content-title-mobile {
+color: $black;
+text-transform: uppercase;
+text-align: left;
+font-family: Montserrat;
+padding-left: 9%;
+padding-right: 9%;
+padding-bottom: 0;
+font-size: 2.0rem;
+letter-spacing: 2px;
+@media $medium {
+  font-size: 2.1rem;
+}
+}
+.about-content-text-mobile {
+    color: $white;
+    font-family: vollkorn;
+    text-align: left;
+    padding-left: 9%;
+    padding-top: 0;
+    padding-right: 9%;
+    font-size: 1.8rem;
+@media $medium {
+
+    font-size: 24px;
+    }
+}
+
+.hhh {
+  position: relative!important;
+  @media $medium {
+  width: 91%!important;
+  margin: 0 auto!important;
+  position: static!important;
+  }
+  @media $large {
+  display: none!important;
+  position: absolute!important;
+  }
+  @media $ex-large {
+  display: none!important;
+  position: absolute!important;
+  }
+}
+
+.bg-about-1 {
+  background: url("../and-also-too/css/images/about-background-1.png");
+  background-position: 45% 100%;
+  background-size: cover;
+  display: none;
+  @media $medium {
+  display: none;
+  background-size: 105% 120%;
+  }
+  @media $large {
+  display: block;
+  background-size: cover;
+  background-size: 105% 100%;
+  }
+  @media $ex-large {
+     display: block;
+    background-size: cover;
+    background-size: 105% 100%;
+  }
+}
+.bg-about-2 {
+  background: url("../and-also-too/css/images/about-background-1.png");
+  background-position: 45% 100%;
+  display: none;
+
+  @media $medium {
+    display: none;
+  }
+  @media $large {
+  display: block;
+  background-size: cover;
+  background-size: 105% 100%;
+  }
+  @media $ex-large {
+     display: block;
+    background-size: cover;
+    background-size: 105% 100%;
+  }
+}
+
 
 
 .overlay-about-1 {
@@ -55,12 +178,12 @@ background-size: 105% 100%;
     padding-bottom: 17%;
   }
   @media $large {
-    padding-top: 13.2%;
-    padding-bottom: 13.2%;
+    padding-top: 17.2%;
+    padding-bottom: 17.2%;
   }
   @media $ex-large {
-    padding-top: 13.2%;
-    padding-bottom: 13.2%;
+    padding-top: 17.2%;
+    padding-bottom: 17.2%;
   }
 }
 .overlay-about-2 {
@@ -71,12 +194,12 @@ background-size: 105% 100%;
     padding-bottom: 20%;
   }
   @media $large {
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 19%;
+    padding-bottom: 24%;
   }
   @media $ex-large {
     padding-top: 19%;
-    padding-bottom: 19%;
+    padding-bottom: 14%;
   }
 }
 
@@ -119,7 +242,7 @@ background-size: 105% 100%;
 }
 
 .about-grid-item {
-    margin-bottom: 10px;
+    margin: 2.2rem 0;
 }
 
 .shift-title-main {
@@ -142,7 +265,9 @@ background-size: 105% 100%;
 .about-grid-item[style] {
     width: 100%!important;
     @media $medium {
-    width: 100%!important;
+    width: 91%!important;
+    margin-left: auto;
+    margin-right: auto;
     }
     @media $large {
     width: 50%!important;
@@ -163,22 +288,34 @@ background-size: 105% 100%;
   }
 
 }
+.ddd {
+  display: none;
+  @media $large {
+  display: block;
+  }
+  @media $ex-large {
+      display: block;
+  }
+}
 .about-group1[style] {
-  position: static!important;
-    left: 0%!important;
+    position: static!important;
+
     @media $medium {
-position: static!important;
+    position: static!important;
+    display: none!important;
     }
     @media $large {
       position: absolute!important;
-      top: -17%!important;
+      top: -22.5%!important;
       left: 50%!important;
+      display: block!important;
 
     }
     @media $ex-large {
       position: absolute!important;
-      top: -18%!important;
+      top: -26.2%!important;
       left: 50%!important;
+      display: block!important;
     }
 }
 .about-group-2[style] {
@@ -189,54 +326,58 @@ position: static!important;
     }
     @media $large {
       position: absolute!important;
-      top: 5%!important;
+      top: 2.6%!important;
 
     }
     @media $ex-large {
       position: absolute!important;
-      top: 5%!important;
+      top: 2.6%!important;
 
     }
 }
 .about-group3[style] {
-    position: static!important;
+    position: relative!important;
       left: 0%!important;
     @media $medium {
       top: 0%!important;
-
+      position: static!important;
     }
     @media $large {
       position: absolute!important;
-      top: 30%!important;
+      top: 32%!important;
     left: 50%!important;
     }
     @media $ex-large {
       position: absolute!important;
-      top: 30%!important;
+      top: 32%!important;
     left: 50%!important;
     }
 }
 .about-group4[style] {
     position: static!important;
       left: 0%!important;
+
     @media $medium {
       top: 0%!important;
-
+      position: static!important;
+      width: 100%!important;
     }
     @media $large {
       position: absolute!important;
-      top: 73%!important;
+      top: 70%!important;
+        z-index: 999;
 
     }
     @media $ex-large {
       position: absolute!important;
-      top: 73%!important;
+      top: 64.9%!important;
+        z-index: 999;
 
     }
     @media $ex-large-background {
       position: absolute!important;
-      top: 76.5%!important;
-
+      top: 69%!important;
+        z-index: 999;
     }
 
 }
@@ -245,35 +386,71 @@ position: static!important;
       left: 0%!important;
     @media $medium {
       top: 0%!important;
-
     }
     @media $large {
       position: absolute!important;
-      top: 70%!important;
+      top: 66%!important;
     left: 50%!important;
+    display: block;
+      z-index: 999;
     }
     @media $ex-large {
       position: absolute!important;
-      top: 72%!important;
+      top: 62%!important;
     left: 50%!important;
+    display: block;
+    z-index: 999;
     }
 }
+.shift-image-3 {
+  display: none;
+  @media $medium {
+display: none;
+  }
+  @media $large {
+    display: block;
+  }
+  @media $ex-large {
+    display: block;
+  }
+}
+
+.about-group-mobile-image[style] {
+    position: static!important;
+      left: 0%!important;
+    @media $medium {
+      top: 0%!important;
+    }
+    @media $large {
+      display: none!important;
+    }
+    @media $ex-large {
+      display: none!important;
+    }
+}
+
+
 .eee {
   position: relative;
   top: -300px;
+  bottom: 0px;
+  @media $medium {
+    bottom: 0px;
+  }
   @media $large {
-    top: -260px;
+    top: -310px;
+    margin-bottom: -310px;
   }
   @media $ex-large {
-    bottom: 280px;
+    top:-450px;
+    margin-bottom: -450px;
   }
 }
-.page-template-about .entry-content {
+.page-template-about .footer {
   @media $large {
-  margin-bottom: -260px;
+
   }
   @media $ex-large {
-  margin-bottom: -280px;
   }
 }
 
@@ -297,22 +474,23 @@ position: static!important;
 
 .about-button {
       border: 1px solid;
-      font-size: 16px;
+      font-size: 1.4rem;
       font-family: Montserrat;
       line-height: 1;
-      letter-spacing: 4px;
-      padding: 1.3em 2.7em 1.3em;
+      letter-spacing: 2px;
+      padding: 1.6em 2.7em 1.6em;
       font-weight: 700;
       text-transform: uppercase;
       text-align: center;
       color: $white;
-      width: 67%;
+      width: 91%;
       float: right;
       margin-top: 1.2rem;
       @media $medium {
       font-size: 16px;
       padding: 1.3em 1em 1.3em;
-      width: 50%;
+      width: 75%;
+      color: $sitePurple;
     }
 }
 
@@ -320,33 +498,36 @@ position: static!important;
   color: $black;
   font-family: Montserrat;
   font-weight: 700;
-    font-size: 18px;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.3;
   @media $medium {
-    font-size: 18px;
+    font-size: 21px;
   }
   @media $large {
     font-size: 25px;
   }
   @media $ex-large {
     font-size: 25px;
-    padding: 0.4em 0;
+    padding: 0.7em 0;
   }
 }
 .shift-text-1, .shift-text-2, .shift-text-3, .shift-text-4 {
   color: $black;
   font-family: Vollkorn;
   font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
   @media $medium {
-    font-size: 22px;
+    font-size: 2.0rem;
   }
   @media $large {
-    font-size: 22px;
+    font-size: 2.1rem;
   }
   @media $ex-large {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
-
 
 .about-title-main-mobile {
   top: -210px;
@@ -394,9 +575,9 @@ position: static!important;
   color: $white;
   position: relative;
   top: -220px;
-  font-size: 2.2rem;
+
     @media $medium {
-font-size: 2.2rem;
+
         top: -180px;
     width: 100%;
     }
@@ -404,17 +585,17 @@ font-size: 2.2rem;
 
         top: 0px;
     width: 82.6%;
-    font-size: 2.2rem;
+
     line-height: 1.4;
-    padding-bottom: 2.2rem;
+    padding-bottom: 3.2rem;
     }
     @media $ex-large {
         top: 0px;
 
     width: 82.6%;
-    font-size: 2.2rem;
+
     line-height: 1.4;
-    padding-bottom: 2.8rem;
+    padding-bottom: 3.2rem;
     }
 
 }
@@ -424,7 +605,8 @@ font-size: 2.2rem;
     width: 100%;
     @media $medium {
       top: -120px;
-    width: 100%;
+      width: 91%;
+      margin: 0 auto;
     }
     @media $large {
     width: 82.6%;
@@ -434,14 +616,14 @@ font-size: 2.2rem;
     width: 82.6%;
     top: 0;
     }
-
 }
 .shift-icon-1 {
-    height: 5px;
-    position: absolute;
-    bottom: 6%;
-    right: 50%;
-
+  position: absolute;
+  bottom: -27px;
+  left: 43%;
+  width: 54px;
+  align: center;
+  z-index: 999;
     @media $medium {
         display: none;
 
@@ -458,59 +640,70 @@ font-size: 2.2rem;
 
 .shift-icon-1-medium {
     display: none;
-        text-align: right;
     @media $medium {
+      text-align: right;
         display: block;
         width: 84.6%;
+        position: static;
     }
     @media $large {
+      text-align: right;
         display: block;
           width: 84.6%;
+          position: static;
     }
     @media $ex-large {
+      text-align: right;
         display: block;
-
         width: 84.6%;
+        position: static;
     }
     img {
-      width: 20%;
+      width: 15%;
+      @media $large {
+          width: 20%;
+      }
+      @media $ex-large {
+          width: 18%;
+      }
     }
 }
-.about-group-2{
+.about-group-2 {
     position: relative;
 }
 
 .shift-title-2 {
-    text-transform: uppercase;
+    text-align: right;
     letter-spacing: 2px;
+    padding: 1em 6% 1.4em 0%;
+
     @media $medium {
-      text-align: right;
-      padding: 0 1.8em 1.6em 0.7em;
+
+      padding: 0 5% 1.2em 3%;
     }
     @media $large {
-    text-align: right;
-    padding: 0 1.8em 1.6em 0.7em;
+
+    padding: 0 1.8em 1.2em 0.7em;
     }
     @media $ex-large {
-      text-align: right;
-      padding: 0 1.8em 1.6em 0.7em;
+
+      padding: 0 1.8em 1.2em 0.7em;
     }
 }
 .shift-text-2 {
+  text-align: right;
+    padding: 0 17% 1.6em 9%;
     @media $medium {
-  width: 82.6%;
-  padding-bottom: 2em;
-
+    width: 82.6%;
+    padding: 0 0% 2.4em 9%;
     }
     @media $large {
-  width: 82.6%;
-  text-align: right;
-  padding-bottom: 2em;
+    width: 82.6%;
+    padding: 0 0 0em 0%;
     }
     @media $ex-large {
-  width: 82.6%;
-  text-align: right;
-  padding-bottom: 2em;
+    width: 82.6%;
+    padding: 0 0 0em 0%;
     }
 
 }
@@ -518,31 +711,29 @@ font-size: 2.2rem;
     position: relative;
     @media $medium {
 
-
+    width: 91%;
+    margin: 0 auto;
     }
     @media $large {
-
+      top: 60px;
 
     }
     @media $ex-large {
-      top: 90px;
-
+      top: 60px;
     }
 
 }
 .shift-icon-2 {
-    height: 5px;
-    position: absolute;
-    bottom: 6%;
-    right: 50%;
-
+  position: absolute;
+  bottom: -27px;
+  left: 43%;
+  width: 54px;
+  align: center;
     @media $medium {
         display: none;
-
     }
     @media $large {
         display: none;
-
     }
     @media $ex-large {
         display: none;
@@ -550,62 +741,76 @@ font-size: 2.2rem;
     }
 }
 .shift-icon-2-medium {
-    display: none;
-        text-align: left;
+  display: none;
     @media $medium {
         display: block;
-          padding-left: 16.4%;
+        padding-left: 12.4%;
+        position: static;
+        text-align: left;
     }
     @media $large {
         display: block;
-            padding-left: 16.4%;
+        padding-left: 16.4%;
+        position: static;
+        text-align: left;
     }
     @media $ex-large {
         display: block;
         padding-left: 16.4%;
+        position: static;
+        text-align: left;
     }
     img {
-      width: 20%;
+      width: 15%;
+      @media $large {
+          width: 20%;
+      }
+      @media $ex-large {
+          width: 18%;
+      }
     }
 }
 .shift-title-3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-align: left;
+    padding: 1em 14% 1.6em 8%;
     @media $medium {
-
+    width: 82.6%;
+    padding: 0em 14% 1.6em 8%;
 
     }
     @media $large {
 
-    padding: 0 0.7em 1.6em 1.8em;
+    padding: 0 0.7em 1.2em 1.8em;
     }
     @media $ex-large {
-      padding: 0 0.7em 1.6em 1.8em;
+      padding: 0 0.7em 1.2em 1.8em;
 
 
     }
 
 }
 .shift-text-3 {
+  text-align: left;
+    padding: 0 9% 1.6em 17%;
     @media $medium {
-
-  padding-left: 17.6%;
+    width: 91%;
+    padding: 0 0% 2.4em 16%;
     }
     @media $large {
-
-  padding-left: 17.6%;
+  padding: 0 0% 1.6em 17.6%;
     }
     @media $ex-large {
 
-padding-left: 17.6%;
+padding: 0 0% 1.6em 17.6%;
     }
 
 }
 .shift-icon-3 {
-    height: 5px;
-    position: absolute;
-    bottom: 6%;
-    right: 50%;
+  position: absolute;
+  top: 250px;
+  left: 43%;
+  width: 54px;
+  align: center;
 
     @media $medium {
         display: none;
@@ -619,6 +824,7 @@ padding-left: 17.6%;
         display: none;
 
     }
+
 }
 .shift-icon-3-medium {
     display: none;
@@ -637,60 +843,91 @@ padding-left: 17.6%;
         width: 84.6%;
     }
     img {
-      width: 20%;
+      width: 15%;
+      @media $large {
+          width: 20%;
+      }
+      @media $ex-large {
+          width: 18%;
+      }
     }
 }
 .shift-title-4 {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      @media $medium {
-        text-align: right;
-        padding: 0 1.4em 1em 0.7em;
-      }
-      @media $large {
+  text-align: right;
+  letter-spacing: 2px;
+  padding: 0em 6% 1.4em 15%;
+  @media $medium {
+    padding: 0 5% 1.2em 3%;
+  }
+    @media $large {
+    padding: 0 1.8em 1.2em 0.7em;
+    }
+    @media $ex-large {
       text-align: right;
-      padding: 0 1.8em 1em 0.7em;
-      }
-      @media $ex-large {
-
-        align: right;
-        text-align: right;
-        padding: 0 1.8em 1em 0.7em;
-      }
+      padding: 0 1.8em 1.2em 0.7em;
+    }
   }
 .shift-image-3 {
     @media $medium {
-
-
     }
     @media $large {
     top: 30%;
-
     }
     @media $ex-large {
-top: 30%;
+    top: 30%;
+    }
+}
+.non-mobile4 {
+  display: none;
+  @media $medium {
+  display: block;
+  }
+  @media $large {
+  display: block;
 
+  }
+  @media $ex-large {
+  display: block;
+  }
+}
+.shift-text-4 {
+  text-align: right;
+    padding: 0 17% 1.6em 9%;
+    @media $medium {
+    width: 82.6%;
+    padding: 0 0% 2.4em 9%;
+    }
+    @media $large {
+    padding-right: 17.6%;
+    padding-top: 4.2rem;
+    color: $white;
+    }
+    @media $ex-large {
+    padding-right: 17.6%;
+    padding-top: 4.2rem;
+    color: $white;
     }
 
 }
-.shift-text-4 {
+
+.shift-title-5 {
+    font-family: Montserrat;
+    text-align: center;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.8rem 0 0.4rem;
     @media $medium {
-text-align: right;
-padding-right: 17.6%;
+    padding: 1.8rem 0 1.4rem;
+    color: $sitePurple;
     }
     @media $large {
-      text-align: right;
-padding-right: 17.6%;
-padding-top: 4.2rem;
-color: $white;
-
+    padding: 1.2rem 0;
+    text-align: right;
     }
     @media $ex-large {
-      text-align: right;
-padding-right: 17.6%;
-padding-top: 4.2rem;
-color: $white;
-
+    padding: 1.2rem 0;
+    text-align: right;
     }
-
 }
