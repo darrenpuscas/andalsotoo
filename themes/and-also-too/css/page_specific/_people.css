@@ -85,18 +85,14 @@ background: url("../and-also-too/css/images/people-landing2.png");
     color: #232323;
     font-size: 1.5rem;
     font-family: vollkorn;
-    letter-spacing: -1px;
     @media $medium {
       font-size: 1.4rem;
-      letter-spacing: -0.5px;
     }
     @media $large {
       font-size: 1.9rem;
-      letter-spacing: -1px;
     }
     @media $ex-large {
       font-size: 2.1rem;
-      letter-spacing: -1px;
     }
 }
 .landing-bold {
@@ -169,8 +165,8 @@ background: url("../and-also-too/css/images/people-landing2.png");
   line-height: 1.3;
   padding-bottom: 0rem;
   @media $medium {
-    font-size: 1.5rem;
-    line-height: 1.3;
+    font-size: 1.7rem;
+    line-height: 1.4;
     padding-bottom: 2.2rem;
   }
   @media $large {

@@ -116,12 +116,9 @@
 							</div>
 
 
-
-
 						</span><!-- .site-header -->
 
 					</header><!-- #masthead -->
-
 
 
 
@@ -137,7 +134,9 @@
 											<h1 class="front-content-heading front-content-heading2">What we do</h1>
 											<div class="what-we-do-text front-content-text">We work with and within communities that are fighting back against injustice to co-design awesome new things in awesome new ways.
 											</div>
-											<a href="http://and-also-too.dev/stories"><button class="front-button1">Read Stories</button></a>
+											<div class="front-button1">
+												<a href="http://and-also-too.dev/stories"><button class="front-button">Read Stories</button></a>
+											</div>
 								  </div><!-- .outer-content-->
 					</section><!-- .front-content what-we-do -->
 					<section class="front-content-area how-we-do-it">
@@ -149,7 +148,9 @@
 										<h1 class="front-content-heading front-content-heading3">How we do it</h1>
 										<div class="front-content-text front-content-text2">Our work is rooted in design justice, which informs our day-to-day practice. We document our learnings by sharing research; these learnings can support or transform our theory.
 										</div>
-										<a href="http://and-also-too.dev/about"><button class="front-button2">About Us</button></a>
+										<div class="front-button2">
+											<a href="http://and-also-too.dev/about"><button class="front-button">About Us</button></a>
+										</div>
 								</div><!-- .overlay-how-we-do-it-->
 							</div><!-- .bg-how-we-do-it-->
 					</section><!-- .front-content how-we-do-it -->

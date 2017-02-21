@@ -20,12 +20,38 @@
 }
 .contact-col-left {
     /*flex: 1;*/
-    width: 60%;
-    margin: 1rem 2rem;
+    width: 100%;
+    margin: 0;
+    @media $medium {
+      margin: 1rem 2rem;
+      width: 50%;
+    }
+    @media $large {
+      margin: 1rem 2rem;
+      width: 47%;
+    }
+    @media $ex-large {
+      margin: 1rem 2rem;
+      width: 55%;
+    }
 }
 .contact-col-right {
-    margin: 1rem 2rem;
+    margin: 0;
     padding-bottom: 33%;
+    width: 50%;
+    width: 100%;
+    @media $medium {
+      margin: 1rem 2rem;
+      width: 50%;
+    }
+    @media $large {
+      margin: 1rem 2rem;
+      width: 47%;
+    }
+    @media $ex-large {
+      margin: 1rem 2rem;
+      width: 40%;
+    }
 }
 .contact-col-right > .page-title {
     text-align: left;
@@ -40,15 +66,28 @@
 }
 
 .contact-form {
-  width: 70%;
+  width: 100%;
+  margin-top: 3rem;
 }
 .contact-address {
   font-family: Vollkorn;
+  color: $black;
   span {
     display: block;
   }
-
   font-size: 2rem;
+  @media $medium {
+    font-size: 2rem;
+  }
+  @media $large {
+    font-size: 2rem;
+  }
+  @media $ex-large {
+    font-size: 1.8rem;
+  }
+}
+.contact-address-text {
+  padding-bottom: 0.2rem;
 }
 
 #wpgmza_map[style] {
@@ -114,13 +153,39 @@
   font-weight: 700;
   color: $sitePurple;
   text-transform: uppercase;
-    padding: 1rem 0;
+  padding: 1.4rem 0;
 }
+
+.contact-form-section > label {
+  font-family: Montserrat;
+  padding-bottom: 0.8rem;
+  display: block;
+}
+.contact-form-section textarea {
+  border: 1px solid $siteTeal;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  padding-left: 1.1rem;
+  font-family: Vollkorn;
+  font-weight: 400;
+}
+
 .contact-form-section > input {
-  padding-top: 1.6rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  padding-left: 1.1rem;
+  margin-top: 0rem;
+  border: 1px solid $siteTeal;
+  font-family: Vollkorn;
+  font-weight: 400;
+  color: $black;
+  width: 100%;
 }
 .contact-form-section button, input[type="button"], input[type="reset"], input[type="submit"] {
-
   width: 100%;
   color: $siteTeal;
+}
+.contact-form-section button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  border: 1px solid $sitePurple;
+  color: $sitePurple;
 }

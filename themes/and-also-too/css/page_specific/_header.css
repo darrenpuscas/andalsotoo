@@ -42,7 +42,9 @@
 .page-template-about .site-header {
    border-bottom: none;
 }
-
+.page-template-people .site-header {
+   border-bottom: none;
+}
 .site-header-home .header-content {
     align-items: flex-start;
   }
@@ -114,7 +116,6 @@
 .nav-social-medium {
     display: none;
     flex: .3;
-
     @media $medium {
         display: flex;
         justify-content: flex-end;
@@ -135,6 +136,9 @@
         align-items: flex-end;
         font-size: 1.7rem;
 	}
+}
+.nav-social-medium:hover > a {
+  color: $sitePurple;
 }
 
 .site-content-home .nav-social-medium {

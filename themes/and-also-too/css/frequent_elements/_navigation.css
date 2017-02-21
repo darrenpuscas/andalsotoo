@@ -15,7 +15,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: $white;
 }
 
 a:focus {
@@ -116,7 +116,7 @@ ul.simple-toggle li a {
 
 ul.simple-toggle li:hover > a,
 ul.simple-toggle li.focus > a {
-	background-color: #ccc;
+	color: $sitePurple;
 }
 
 .main-navigation .current_page_item > a,

@@ -25,6 +25,37 @@ q:after {
 blockquote,
 q {
 	quotes: "" "";
+	color: $sitePurple;
+	font-style: italic;
+p {
+	font-weight: 400;
+	font-size: 2.7rem;
+	margin: 3.0rem 2.2rem 2.6rem;
+	line-height: 1.2;
+	@media $medium {
+		font-size: 2.7rem;
+		margin: 3.0rem 2.2rem 2.6rem;
+		line-height: 1.2;
+	}
+	@media $large {
+		font-size: 3.2rem;
+		margin: 3.6rem 4.2rem 3.2rem;
+		line-height: 1.3;
+	}
+	@media $ex-large {
+		font-size: 3.2rem;
+		margin: 3.8rem 4.2rem 3.4rem;
+		line-height: 1.3;
+	}
+}
+}
+
+.story-left-col blockquote p {
+  @media $medium {
+    font-size: 2.4rem;
+    margin: 2.4rem 2.2rem 2.2rem;
+    line-height: 1.2;
+  }
 }
 
 hr {

@@ -113,7 +113,9 @@ get_header(); ?>
 								<div class="shift-title-4">...to make beautiful, powerful things.</div>
 								<div class="shift-text-4">Our task is to help shine light on the issues and uplift the answers that the community holds. We draw inspiration from the community's culture and history to co-create resources and tools that are unique, accessible, and delightful.
 									<div class="shift-title-5">want to collaborate?</div>
-									<div class="about-button">Get in touch</div>
+									<div class="about-button1">
+										<a href="http://and-also-too.dev/contact"><button class="abou-button">Get in touch</button></a>
+									</div>
 								</div>
 
 							</div>
@@ -150,7 +152,10 @@ get_header(); ?>
 								<div class="shift-title-4">...to make beautiful, powerful things.</div>
 								<div class="shift-text-4">Our task is to help shine light on the issues and uplift the answers that the community holds. We draw inspiration from the community's culture and history to co-create resources and tools that are unique, accessible, and delightful.
 									<div class="shift-title-5">want to collaborate?</div>
-									<div class="about-button">Get in touch</div>
+
+							</div>
+							<div class="about-button1">
+								<a href="http://and-also-too.dev/contact"><div class="about-button">Get in touch</div></a>
 							</div>
 
 

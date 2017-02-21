@@ -159,13 +159,19 @@ line-height: 1.2;
   @media $large {
     color: $sitePurple;
   font-size: 1.6rem;
-
   }
   @media $ex-large {
     color: $sitePurple;
     font-size: 1.6rem;
     padding-left: 32%;
-
+  }
+  a {
+    color: $sitePurple;
+      text-decoration: none;
+  }
+  a:hover {
+    color: $siteTeal;
+      text-decoration: none;
   }
 }
 
@@ -207,6 +213,9 @@ line-height: 1.2;
       text-decoration: none;
       color: $sitePurple;
     }
+    a:hover {
+      color: $siteTeal;
+    }
     p {
       	margin-top: 0;
     }
@@ -215,8 +224,8 @@ line-height: 1.2;
 .blog-content .read-link {
     text-transform: uppercase;
     font-weight: 700;
-        font-size: 2.1rem;
-        color: $siteTeal;
+    font-size: 2.1rem;
+    color: $siteTeal;
     float: right;
     letter-spacing: 1px;
     @media $medium {
@@ -232,8 +241,11 @@ line-height: 1.2;
       float: right;
     }
 }
-.read-link > i {
+.read-link a {
     color: $siteTeal;
+}
+.read-link a:hover {
+    color: $sitePurple;
 }
 
 
@@ -254,17 +266,40 @@ line-height: 1.2;
 }
 .blog-footer-flex {
     border-top: solid green 1px;
-    padding-top: 10px;
+    padding-top: 2rem;
     display: flex;
+}
+.blog-next-post, .blog-previous-post {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Montserrat;
 }
 .blog-next-post {
     flex: 1;
 }
-.blog-social-links {
-    text-align: center;
-    flex: 2;
-}
 .blog-previous-post {
     text-align: right;
     flex: 1;
+}
+.blog-previous-post .fa-arrow-circle-right, .blog-next-post .fa-arrow-circle-left {
+  color: $siteTeal;
+}
+.blog-social-title {
+  font-family: Montserrat;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    color: $siteTeal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.blog-social-links {
+    text-align: center;
+    flex: 2;
+    font-size: 1.8rem;
+}
+.blog-social-links .fa {
+    padding: 0 0.5rem;
+    color: $siteTeal;
 }

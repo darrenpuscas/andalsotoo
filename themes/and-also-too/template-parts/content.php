@@ -91,6 +91,7 @@
 										<?php endif; ?>
 									</div>
 									<div class="blog-social-links">
+										<div class="blog-social-title">Share</div>
 										<i class="fa fa-twitter-square" aria-hidden="true"></i>
 										<i class="fa fa-facebook-square" aria-hidden="true"></i>
 										<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -115,8 +116,8 @@
 						<?php
 								else :
 									the_excerpt();?>
-									<div class="align-right">
-									<a class="read-link" href="<?php echo get_permalink(); ?>">read
+									<div class="read-link align-right">
+									<a class="" href="<?php echo get_permalink(); ?>">read
 									 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></div>
 								<?php endif; ?>
 							</div><!-- .entry-content -->

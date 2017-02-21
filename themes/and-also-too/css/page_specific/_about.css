@@ -472,27 +472,6 @@ display: none;
     }
 }
 
-.about-button {
-      border: 1px solid;
-      font-size: 1.4rem;
-      font-family: Montserrat;
-      line-height: 1;
-      letter-spacing: 2px;
-      padding: 1.6em 2.7em 1.6em;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center;
-      color: $white;
-      width: 91%;
-      float: right;
-      margin-top: 1.2rem;
-      @media $medium {
-      font-size: 16px;
-      padding: 1.3em 1em 1.3em;
-      width: 75%;
-      color: $sitePurple;
-    }
-}
 
 .shift-title-1, .shift-title-2, .shift-title-3, .shift-title-4 {
   color: $black;
@@ -909,6 +888,50 @@ padding: 0 0% 1.6em 17.6%;
     }
 
 }
+
+.about-button1 button, .about-button1 input[type="button"], .about-button1 input[type="reset"], .about-button1 input[type="submit"] {
+        transition: border 0.3s ease;
+        border: 1px solid $white;
+        color: $white;
+        width: 100%;
+        background: none;
+        font-size: 1.8rem;
+
+        letter-spacing: 2px;
+        padding: 1.6em 2.7em 1.6em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+}
+.about-button1 button:hover, .about-button1 input[type="button"]:hover, .about-button1 input[type="reset"]:hover, .about-button1 input[type="submit"]:hover {
+    border: 1px solid $black;
+    color: $black;
+}
+
+.about-button {
+      border: 1px solid;
+      font-size: 1.4rem;
+      font-family: Montserrat;
+      line-height: 1;
+      letter-spacing: 2px;
+      padding: 1.6em 2.7em 1.6em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      width: 91%;
+      float: right;
+      margin-top: 1.2rem;
+      @media $medium {
+      font-size: 16px;
+      padding: 1.3em 1em 1.3em;
+      width: 75%;
+      color: $sitePurple;
+    }
+}
+
+
+
 
 .shift-title-5 {
     font-family: Montserrat;

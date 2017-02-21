@@ -18,7 +18,7 @@ Breakpoints:
 * 1000 - 1200 is cttovered by @large
 * narrower than 1020, we need a white gutter
 */
-
+$stories-medium: screen and (min-width: 524px) and (max-width: 767px);
 $medium: screen and (min-width: 768px) and (max-width: 1024px);
 $large: screen and (min-width: 1025px) and (max-width: 1320px);
 $ex-large: screen and (min-width: 1321px);

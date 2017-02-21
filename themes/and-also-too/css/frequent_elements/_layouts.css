@@ -60,7 +60,7 @@
 .left-content-full, .right-content-full {
     width: 100%;
     @media $medium {
-        width: 43%;
+        width: 53%;
     }
     @media $large {
         width: 50%;
@@ -72,7 +72,7 @@
 .left-content-smaller, .right-content-smaller {
   width: 100%;
   @media $medium {
-      width: 48.3%;
+      width: 38.3%;
   }
   @media $large {
       width: 41.3%;

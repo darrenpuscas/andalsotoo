@@ -6,29 +6,29 @@
 .first-story {
     width: 100%;
     @media $medium {
-      width: 66.66%;
+    width: 66.66%;
     }
     @media $large {
-      width: 50%;
-
+    width: 50%;
     }
     @media $ex-large {
-      width: 48%;
-
+    width: 48%;
     }
 }
 .stories-width {
-    width: 48%;
+    width: 98%;
+    @media $stories-medium {
+    width: 46.6%;
+    }
     @media $medium {
-      width: 30.8%;
+    width: 46.6%;
     }
     @media $large {
-      width: 22.9%;
-      margin-bottom: 10px;
-
+    width: 47.6%;
+    margin-bottom: 10px;
     }
     @media $ex-large {
-        width: 23%;
+    width: 31%;
     }
 }
 
@@ -37,14 +37,18 @@
 }
 
 .gutter-sizer {
-  width: 3.8%;
+  width: 1.8%;
+  @media $stories-medium {
+  width: 6.9%;
+  }
   @media $medium {
+  width: 6.8%;
   }
   @media $large {
-    width: 2.7%;
+  width: 4.8%;
   }
   @media $ex-large {
-    width: 2.5%;
+  width: 3.5%;
   }
 }
 

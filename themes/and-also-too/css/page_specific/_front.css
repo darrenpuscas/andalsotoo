@@ -1,3 +1,19 @@
+body .site-content-home {
+  margin-top: -16px;
+  @media $medium {
+    margin-top: 0px;
+  }
+  @media $large {
+    margin-top: 0px;
+  }
+  @media $ex-large {
+    margin-top: 0px;
+  }
+}
+
+
+
+
 /*--------------#
 
 Front Sticky Menu */
@@ -80,13 +96,27 @@ Front Sticky Menu */
 .front-content-text2 {
     color: $white;
 }
-
-.front-button1 {
+.front-button1 a {
   color: $siteTeal;
 }
-.front-button2 {
+.front-button2 a {
   color: $black;
-  border: 0px solid;
+}
+
+.front-button1 button, .front-button1 input[type="button"], .front-button1 input[type="reset"], .front-button1 input[type="submit"] {
+        transition: background-color 0.4s ease;
+        border: 1px solid $siteTeal;
+}
+.front-button1 button:hover, .front-button1 input[type="button"]:hover, .front-button1 input[type="reset"]:hover, .front-button1 input[type="submit"]:hover {
+        border: 1px solid $sitePurple;
+}
+.front-button2 button, .front-button2 input[type="button"], .front-button2 input[type="reset"], .front-button2 input[type="submit"] {
+      transition: background-color 0.8s ease;
+      border: 0px solid;
+}
+.front-button2 button:hover, .front-button2 input[type="button"]:hover, .front-button2 input[type="reset"]:hover, .front-button2 input[type="submit"]:hover {
+    background-color: $sitePurple;
+    color: $white;
 }
 
 /*--------------# Front--Header---------------*/
