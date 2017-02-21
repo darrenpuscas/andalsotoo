@@ -211,3 +211,12 @@ order: 4;
       padding: 0 0.3rem;
     }
 }
+.footer-social, .footer-social-medium {
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+    a:visited {
+        color: $black;
+    }
+}
