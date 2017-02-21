@@ -32,11 +32,11 @@
 						<header id="masthead" class="site-header-home" role="banner">
 							<div class="header-content">
 								<div class="site-branding-medium">
-									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/white-Logo.png" alt="">
+									<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/white-Logo.png'?>" alt="">
 								</div><!-- .site-branding -->
 								<nav id="site-navigation" class="main-navigation" role="navigation">
 									<div class="site-branding">
-										<img src="http://and-also-too.dev/wp-content/uploads/2017/02/logo-vertical.png" alt="">
+										<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/logo-vertical.png'?>" alt="">
 									</div>
 									<div class="mobile-nav-middle">
 										<span>
@@ -99,7 +99,7 @@
 
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								<div class="site-branding">
-									<img src="http://and-also-too.dev/wp-content/uploads/2017/02/logo-vertical.png" alt="">
+									<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/logo-vertical.png'?>" alt="">
 								</div>
 								<div class="mobile-nav-middle">
 
@@ -154,39 +154,9 @@
 
 					</header><!-- #masthead -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<section class="front-content-area what-we-do row">
 						<div class="icon-home-1">
-							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon1-3.png" alt="" />
+							<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon1-3.png'?>" alt="" />
 						</div>
 								<div class="front-no-overlay1">
 									<div class="front-content-inner front-content-textonly std-content-area">
@@ -198,7 +168,7 @@
 					</section><!-- .front-content what-we-do -->
 					<section class="front-content-area how-we-do-it">
 						<div class="icon-home-1">
-							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon2-1.png" alt="" />
+							<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon2-1.png'?>" alt="" />
 						</div>
 							<div class="bg-how-we-do-it">
 								<div class="overlay-how-we-do-it std-content-area">
@@ -211,7 +181,7 @@
 					</section><!-- .front-content how-we-do-it -->
 					<section class="front-content-area front-latest-posts row">
 						<div class="icon-home-1">
-							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon3-1.png" alt="" />
+							<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon3-1.png'?>" alt="" />
 						</div>
 						<div class="front-no-overlay2">
 							<div class="front-content-inner front-content-textonly std-content-area">
@@ -249,7 +219,7 @@
 					</section><!-- .front-content front-latest-posts -->
 					<section class="front-content-area announcements">
 						<div class="icon-home-1">
-							<img src="http://and-also-too.dev/wp-content/uploads/2017/02/icon4.png" alt="" />
+							<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/icon4.png'?>" alt="" />
 						</div>
 						<div class="bg-announce">
 						<div class="overlay-announce outer-content">

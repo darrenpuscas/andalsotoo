@@ -67,13 +67,6 @@ get_header(); ?>
 
 					</div><!-- .contact-content-->
 
-
-
-
-
-
-
-
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
 		<?php endwhile; // End of the loop.?>

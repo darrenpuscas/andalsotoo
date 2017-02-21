@@ -19,12 +19,12 @@
 					<div class="footer-middle">
 						<div class="footer-logo">
 							<div class="logo-img">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/01/Logo-1-e1485882114317.png" alt="">
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/01/Logo-1-e1485882114317.png'?>" alt="">
 							</div>
 						</div>
 						<div class="footer-logo-medium">
 							<div class="logo-img">
-								<img src="http://and-also-too.dev/wp-content/uploads/2017/02/logo-vertical.png" alt="">
+								<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/logo-vertical.png'?>" alt="">
 							</div>
 						</div>
 						<div class="footer-social-medium">
