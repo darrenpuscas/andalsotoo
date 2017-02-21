@@ -59,7 +59,7 @@ a:active {
 	    }
 
 }
-#close-toggle {
+#close-toggle, #close-toggle-fixed {
 	text-align: end;
 	color: $black;
 	font-weight: 700;

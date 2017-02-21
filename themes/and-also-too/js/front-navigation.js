@@ -4,19 +4,28 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
- console.log('navigation.js');
+  console.log('front-navigation.js');
 ( function() {
-	var container, button, menu, links, i, len;
+	var container, fixedContainer, button, menu, links, i, len;
 
-	container = document.getElementById( 'site-navigation' );
-	// console.log(container);
+	fixedContainer = document.getElementById( 'fixed-site-navigation' );
+	if ( ! fixedContainer ) {
+		return;
+	}
+
+	container = document.getElementById( 'site-navigation' )
 	if ( ! container ) {
 		return;
 	}
 
 	openToggle = document.getElementById( 'open-toggle' );
-	// console.log(openToggle);
 	if ( 'undefined' === typeof openToggle ) {
+		return;
+	}
+
+	var openToggleFixed = document.getElementById( 'open-toggle-fixed' );
+	console.log(openToggleFixed);
+	if ( 'undefined' === typeof openToggleFixed ) {
 		return;
 	}
 
@@ -24,6 +33,12 @@
 	if ( 'undefined' === typeof closeToggle ) {
 		return;
 	}
+
+	var closeToggleFixed = document.getElementById('close-toggle-fixed');
+	if ( 'undefined' === typeof closeToggle ) {
+		return;
+	}
+
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
@@ -44,11 +59,25 @@
 		menu.setAttribute( 'aria-expanded', 'true' );
 	};
 
-	closeToggle.onclick = function() {
-			container.className = container.className.replace( ' toggled', '' );
-			closeToggle.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
+	openToggleFixed.onclick = function() {
+		console.log('openToggle clicked');
+		fixedContainer.className += ' toggled';
+		openToggle.setAttribute( 'aria-expanded', 'true' );
+		menu.setAttribute( 'aria-expanded', 'true' );
 	};
+
+	closeToggle.onclick = function() {
+		container.className = container.className.replace( ' toggled', '' );
+		closeToggle.setAttribute( 'aria-expanded', 'false' );
+		menu.setAttribute( 'aria-expanded', 'false' );
+	};
+
+	closeToggleFixed.onclick = function() {
+		fixedContainer.className = fixedContainer.className.replace( ' toggled', '' );
+		closeToggle.setAttribute( 'aria-expanded', 'false' );
+		menu.setAttribute( 'aria-expanded', 'false' );
+	};
+
 
 	// Get all the link elements within the menu.
 	links = menu.getElementsByTagName( 'a' );

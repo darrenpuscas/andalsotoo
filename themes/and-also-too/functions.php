@@ -117,6 +117,8 @@ function and_also_too_scripts() {
 	}
 	if ( is_page( 'home-page' ) ) {
 	wp_enqueue_script( 'front-sticky', get_template_directory_uri() . '/js/front-fixed-menu.js', array('jquery'), '', true );
+
+	wp_enqueue_script( 'front-navigation', get_template_directory_uri() . '/js/front-navigation.js', array('jquery'), '', true );
 }
 
 
@@ -135,7 +137,10 @@ function and_also_too_scripts() {
 
 	}
 
+
+	if(!is_page('home-page')){
 	wp_enqueue_script( 'and-also-too-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, true );
+	}
 
 	wp_enqueue_script( 'and-also-too-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

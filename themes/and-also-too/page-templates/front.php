@@ -97,7 +97,7 @@
 								<?php the_custom_logo(); ?>
 							</div><!-- .site-branding -->
 
-							<nav id="site-navigation" class="main-navigation" role="navigation">
+							<nav id="fixed-site-navigation" class="main-navigation" role="navigation">
 								<div class="site-branding">
 									<img src="<?php echo content_url() .'/wp-content/uploads/2017/02/logo-vertical.png'?>" alt="">
 								</div>
