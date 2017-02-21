@@ -1,4 +1,18 @@
-/*--------------# Front--General---------------*/
+/*--------------#
+
+Front Sticky Menu */
+
+
+.front-fixed-menu {
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.fix {
+  display: block;
+}
+
+ /*Front--General---------------*/
 
 .front-header, .front-content-area {
   position: relative;

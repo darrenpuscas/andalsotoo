@@ -115,6 +115,10 @@ function and_also_too_scripts() {
 		wp_enqueue_script( 'packery-lib', get_template_directory_uri() . '/js/packery/packery.min.js', array('jquery'), '', true );
 		wp_enqueue_script( 'packery-app', get_template_directory_uri() . '/js/packery/packery-app.js', array('jquery'), '', true );
 	}
+	if ( is_page( 'home-page' ) ) {
+	wp_enqueue_script( 'front-sticky', get_template_directory_uri() . '/js/front-fixed-menu.js', array('jquery'), '', true );
+}
+
 
 	if ( is_page( 'About' ) ) {
 	  wp_enqueue_script( 'about-macy-lib', get_template_directory_uri() . '/js/macy/macy-min.js', array(), '', true );
