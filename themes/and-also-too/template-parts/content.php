@@ -16,10 +16,13 @@
 					<div class="blog-entry-meta-medium">
 						<div class="date-container">
 							<?php
-							// and_also_too_posted_on(); ?>
-							<span class="blog-date-num">30</span>
-							<span class="blog-date-month">nov</span>
-							<span class="blog-date-year">2016</span>
+							$month = get_the_date( 'M' );
+							$day = get_the_date( 'j' );
+							$year = get_the_date( 'y' );
+							 ?>
+							<span class="blog-date-num"><?php echo $day ?></span>
+							<span class="blog-date-month"><?php echo $month ?></span>
+							<span class="blog-date-year"><?php echo $year ?></span>
 						</div>
 						<div class="blog-category">
 							<?php the_category( ' ' ); ?>
